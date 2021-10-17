@@ -3,13 +3,6 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{31BCB464-3593-496B-AED3-F16692928256}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Documents\SCREAM JAM 2021\AUDIO\Ambient Sounds\"/>
-				<Property Name="Event Action List\{07E8342C-BC48-4621-B62C-711C28618EC9}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{393E9D90-F13A-4F01-90BC-30DC31D594EE}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{59390677-A2F3-4266-A95F-A9A6212C1392}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{6928D664-D1EE-4B09-BEAB-20209ADD52A7}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{C1899A96-259A-4EC9-BD7F-1EC977DC71E6}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{E45E06FD-B73E-45C3-8016-849769868FD8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -26,11 +19,8 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
-				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="HpsHLRZjWkaccLf49BHI8Q=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="2SJOipbnbE+qloXf5ZnpvA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="+NGDP+EcGkK5CyPDdFYSOQED0QX/////xtQb5P2gp0uOhoaHiYQjdAED0QX/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="+NGDP+EcGkK5CyPDdFYSOQEDxzv/////xtQb5P2gp0uOhoaHiYQjdAEDxzv/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -61,15 +51,15 @@
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8yZW29tTY19EoBAFl48h1Oo="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="j5ItJ26bUEGF0tGWQsoocjxW8zOFYWlJqC2cwbfXgbaGkDvtNG3iS75v/fnuOBkG"/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="aAL1aHBaBESQ0+mFDKTYmQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_9_1" Type="string" Value=""/>
-				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="c7ZERXmfpEKlfUgR1lVotA=="/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
