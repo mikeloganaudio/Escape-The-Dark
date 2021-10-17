@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="455001690">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="428212803">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="937063987" Name="Play_Baby_Mobile" ObjectPath="\Events\Default Work Unit\Play_Baby_Mobile" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="15.641916" DurationMax="15.641916">
+					<IncludedMemoryFiles>
+						<File Id="692160923" Language="SFX">
+							<ShortName>Baby Mobile.wav</ShortName>
+							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1660469979" Name="Play_Blind___Window_2" ObjectPath="\Events\Default Work Unit\Play_Blind___Window_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="8.305102" DurationMax="8.305102">
+					<IncludedMemoryFiles>
+						<File Id="76661075" Language="SFX">
+							<ShortName>Blind &amp; Window 2.wav</ShortName>
+							<Path>SFX\Blind &amp; Window 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3327054553" Name="Play_Door_Creaking" ObjectPath="\Events\Default Work Unit\Play_Door_Creaking" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="29.561882" DurationMax="29.561882">
+					<IncludedMemoryFiles>
+						<File Id="543103383" Language="SFX">
+							<ShortName>Door Creaking.wav</ShortName>
+							<Path>SFX\Door Creaking_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3365485150" Name="Play_Fridge_Hum" ObjectPath="\Events\Default Work Unit\Play_Fridge_Hum" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="985045596" Language="SFX">
+							<ShortName>Fridge Hum.wav</ShortName>
+							<Path>SFX\Fridge Hum_CB432769.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1621347150" Name="Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX" ObjectPath="\Events\Default Work Unit\Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="238093427" Language="SFX">
+							<ShortName>Kitchen_Room_Tone_Clock_Freezer_AmbiX.wav</ShortName>
+							<Path>SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_F2F7F05F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3627614682" Name="Play_Room_Tone_Light_Household_2" ObjectPath="\Events\Default Work Unit\Play_Room_Tone_Light_Household_2" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="536046281" Language="SFX">
+							<ShortName>Room Tone Light Household 2.wav</ShortName>
+							<Path>SFX\Room Tone Light Household 2_1218D4E8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2615280544" Name="Play_Wood_Creaking_1" ObjectPath="\Events\Default Work Unit\Play_Wood_Creaking_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="128.242661" DurationMax="128.242661">
+					<IncludedMemoryFiles>
+						<File Id="771568445" Language="SFX">
+							<ShortName>Wood Creaking 1.wav</ShortName>
+							<Path>SFX\Wood Creaking 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1905864408" Name="Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX" ObjectPath="\Events\Default Work Unit\Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1042786396" Name="Stop_Room_Tone_Light_Household_2" ObjectPath="\Events\Default Work Unit\Stop_Room_Tone_Light_Household_2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

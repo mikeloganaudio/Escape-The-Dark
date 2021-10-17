@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 88d36aae932c7a4785e6faaabbef54ae
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671424141256473
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2656dbdb53635f44a01005978f21d4ea
     GuidInternal: 
-    m_lastTime: -8585674534405711477
+    m_lastTime: -8585671401618153283
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: ResonanceAudio
+      guid: bb2e02e65dd48545abfe5431b4a7ef4d
+      id: 1129712971
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ResonanceAudio
+        ObjectType: 2
+        guid: bb2e02e65dd48545abfe5431b4a7ef4d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ResonanceAudio
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,8 +83,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 73b64445799fa442a57d4811d65568b4
     GuidInternal: 
-    m_lastTime: -8585674534405671582
-    List: []
+    m_lastTime: -8585671399639675996
+    List:
+    - name: Main
+      guid: d9224e8a96e76c4faa9685dfe599e9bc
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 73b64445799fa442a57d4811d65568b4
+      - ElementName: Main
+        ObjectType: 7
+        guid: d9224e8a96e76c4faa9685dfe599e9bc
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +111,178 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6802f568705a044490d3e9850ca4d899
     GuidInternal: 
-    m_lastTime: -8585674534405721450
-    List: []
+    m_lastTime: -8585671400326965143
+    List:
+    - name: Play_Baby_Mobile
+      guid: 969a89c19a25c94ebd7f1ec977dc71e6
+      id: 937063987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Baby_Mobile
+        ObjectType: 3
+        guid: 969a89c19a25c94ebd7f1ec977dc71e6
+      Path: Events\Default Work Unit\Play_Baby_Mobile
+      maxAttenuation: 20
+      maxDuration: 15.641916
+      minDuration: 15.641916
+    - name: Play_Blind___Window_2
+      guid: 2224bfd6d29de34e8090c5b723e2b7a6
+      id: 1660469979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Blind___Window_2
+        ObjectType: 3
+        guid: 2224bfd6d29de34e8090c5b723e2b7a6
+      Path: Events\Default Work Unit\Play_Blind___Window_2
+      maxAttenuation: 20
+      maxDuration: 8.305102
+      minDuration: 8.305102
+    - name: Play_Door_Creaking
+      guid: 5920856a3deec04995b92e43997b1a3a
+      id: 3327054553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Door_Creaking
+        ObjectType: 3
+        guid: 5920856a3deec04995b92e43997b1a3a
+      Path: Events\Default Work Unit\Play_Door_Creaking
+      maxAttenuation: 20
+      maxDuration: 29.561882
+      minDuration: 29.561882
+    - name: Play_Fridge_Hum
+      guid: 64d62869eed1094bbeab20209add52a7
+      id: 3365485150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Fridge_Hum
+        ObjectType: 3
+        guid: 64d62869eed1094bbeab20209add52a7
+      Path: Events\Default Work Unit\Play_Fridge_Hum
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+      guid: 77063959f3a26642a95fa9a6212c1392
+      id: 1621347150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+        ObjectType: 3
+        guid: 77063959f3a26642a95fa9a6212c1392
+      Path: Events\Default Work Unit\Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room_Tone_Light_Household_2
+      guid: b0c4ea7465fcd245bd4b3beafbde5fe6
+      id: 3627614682
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Room_Tone_Light_Household_2
+        ObjectType: 3
+        guid: b0c4ea7465fcd245bd4b3beafbde5fe6
+      Path: Events\Default Work Unit\Play_Room_Tone_Light_Household_2
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Wood_Creaking_1
+      guid: fd065ee43eb7c3458016849769868fd8
+      id: 2615280544
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Play_Wood_Creaking_1
+        ObjectType: 3
+        guid: fd065ee43eb7c3458016849769868fd8
+      Path: Events\Default Work Unit\Play_Wood_Creaking_1
+      maxAttenuation: 20
+      maxDuration: 128.24266
+      minDuration: 128.24266
+    - name: Stop_Fridge_Hum
+      guid: 2c34e80748bc2146b62c711c28618ec9
+      id: 2470329820
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Stop_Fridge_Hum
+        ObjectType: 3
+        guid: 2c34e80748bc2146b62c711c28618ec9
+      Path: Events\Default Work Unit\Stop_Fridge_Hum
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+      guid: b4d5902d8544ad4686ea98344c846de2
+      id: 1905864408
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+        ObjectType: 3
+        guid: b4d5902d8544ad4686ea98344c846de2
+      Path: Events\Default Work Unit\Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Room_Tone_Light_Household_2
+      guid: a9ff2b650198a64db8bb82462106d1f1
+      id: 1042786396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Stop_Room_Tone_Light_Household_2
+        ObjectType: 3
+        guid: a9ff2b650198a64db8bb82462106d1f1
+      Path: Events\Default Work Unit\Stop_Room_Tone_Light_Household_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +295,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: acff7596f53f164eb3cb74a176f85897
     GuidInternal: 
-    m_lastTime: -8585674534405721450
+    m_lastTime: -8585671424141356467
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +309,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: de0f12660276ac44ba915d94588a071a
     GuidInternal: 
-    m_lastTime: -8585674534405671582
+    m_lastTime: -8585671424141276471
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +323,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 57c3138a2d4eb843b86f3fd97aa299cf
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671424141266468
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +337,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 9c6801983c0e44418c5272f620dd0d98
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671424141256473
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000006000000090000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

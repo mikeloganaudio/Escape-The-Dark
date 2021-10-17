@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4544B673-9F79-42A4-A57D-4811D65568B4}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{4544B673-9F79-42A4-A57D-4811D65568B4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4544B673-9F79-42A4-A57D-4811D65568B4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{8A4E22D9-E796-4F6C-AA96-85DFE599E9BC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX" ID="{59390677-A2F3-4266-A95F-A9A6212C1392}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Wood_Creaking_1" ID="{E45E06FD-B73E-45C3-8016-849769868FD8}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Room_Tone_Light_Household_2" ID="{74EAC4B0-FC65-45D2-BD4B-3BEAFBDE5FE6}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Fridge_Hum" ID="{07E8342C-BC48-4621-B62C-711C28618EC9}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX" ID="{2D90D5B4-4485-46AD-86EA-98344C846DE2}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Door_Creaking" ID="{6A852059-EE3D-49C0-95B9-2E43997B1A3A}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Fridge_Hum" ID="{6928D664-D1EE-4B09-BEAB-20209ADD52A7}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Room_Tone_Light_Household_2" ID="{652BFFA9-9801-4DA6-B8BB-82462106D1F1}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Baby_Mobile" ID="{C1899A96-259A-4EC9-BD7F-1EC977DC71E6}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Blind___Window_2" ID="{D6BF2422-9DD2-4EE3-8090-C5B723E2B7A6}" WorkUnitID="{68F50268-5A70-4404-90D3-E9850CA4D899}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

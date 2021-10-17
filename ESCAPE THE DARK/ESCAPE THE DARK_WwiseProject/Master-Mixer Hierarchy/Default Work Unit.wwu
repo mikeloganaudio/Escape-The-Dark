@@ -9,6 +9,25 @@
 							<ObjectRef Name="System" ID="{448AE656-0229-4CEC-AAFA-AAF7683073B2}" WorkUnitID="{1247951D-738C-4D2E-BC53-90578D8BC2BA}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="ResonanceAudio" ID="{E6022EBB-D45D-4585-ABFE-5431B4A7EF4D}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{1DA0F155-7871-47AF-A325-BD7A08431455}" ShortID="739839961" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
