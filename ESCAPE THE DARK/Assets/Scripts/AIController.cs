@@ -27,7 +27,11 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timeSinceLastSawPlayer < chaseTime && spottedPlayer)
+        if(InAttacRangeOfPlayer())
+        {
+            AttackBehavior();
+        }
+        else if(timeSinceLastSawPlayer < chaseTime && spottedPlayer)
         {
             ChaseBehavior();
         }
@@ -37,6 +41,16 @@ public class AIController : MonoBehaviour
         }
         SpotPlayer();
         UpdatedTimers();
+    }
+
+    private void AttackBehavior()
+    {
+        //Put attack behavior here.
+    }
+
+    private bool InAttacRangeOfPlayer()
+    {
+        return false;//Put attack range check in here.
     }
 
     private void SpotPlayer()
