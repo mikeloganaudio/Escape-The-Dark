@@ -12944,6 +12944,7 @@ MonoBehaviour:
   waypointTolerance: 1
   waypointDwellTime: 0
   patrolSpeedFraction: 0.2
+  chaseDistance: 5
 --- !u!1 &1258411934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
@@ -20274,7 +20275,7 @@ GameObject:
   - component: {fileID: 1964520394}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
