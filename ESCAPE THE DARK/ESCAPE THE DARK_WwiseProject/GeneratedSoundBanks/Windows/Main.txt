@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	937063987	Play_Baby_Mobile			\Default Work Unit\Play_Baby_Mobile	
+	1042786396	Stop_Room_Tone_Light_Household_2			\Default Work Unit\Stop_Room_Tone_Light_Household_2	
+	1621347150	Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX			\Default Work Unit\Play_Kitchen_Room_Tone_Clock_Freezer_AmbiX	
+	1660469979	Play_Blind___Window_2			\Default Work Unit\Play_Blind___Window_2	
+	1905864408	Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX			\Default Work Unit\Stop_Kitchen_Room_Tone_Clock_Freezer_AmbiX	
+	2470329820	Stop_Fridge_Hum			\Default Work Unit\Stop_Fridge_Hum	
+	2615280544	Play_Wood_Creaking_1			\Default Work Unit\Play_Wood_Creaking_1	
+	3327054553	Play_Door_Creaking			\Default Work Unit\Play_Door_Creaking	
+	3365485150	Play_Fridge_Hum			\Default Work Unit\Play_Fridge_Hum	
+	3627614682	Play_Room_Tone_Light_Household_2			\Default Work Unit\Play_Room_Tone_Light_Household_2	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	76661075	Blind & Window 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Blind & Window 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Blind & Window 2		1465084
+	238093427	Kitchen_Room_Tone_Clock_Freezer_AmbiX	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_F2F7F05F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX		6571312
+	536046281	Room Tone Light Household 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Room Tone Light Household 2_1218D4E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Room Tone Light Household 2		3735336
+	543103383	Door Creaking	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Creaking_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Door Creaking		5214780
+	692160923	Baby_Mobile	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Baby Mobile_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Baby_Mobile		3003312
+	771568445	Wood Creaking 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Wood Creaking 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Wood Creaking 1		12311360
+	985045596	Fridge Hum	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Fridge Hum_CB432769.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\3DSFX\Fridge Hum		1495680
+
