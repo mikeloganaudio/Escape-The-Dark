@@ -15,8 +15,10 @@ namespace AK
     {
         static const AkUniqueID PLAY_BABY_MOBILE = 937063987U;
         static const AkUniqueID PLAY_BLIND___WINDOW_2 = 1660469979U;
+        static const AkUniqueID PLAY_BUMPS = 2730345109U;
         static const AkUniqueID PLAY_DOOR_CREAKING = 3327054553U;
         static const AkUniqueID PLAY_DOOR_SLAMMING_CLOSING = 2551992801U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FRIDGE_HUM = 3365485150U;
         static const AkUniqueID PLAY_KITCHENROOMTONE = 2905397547U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
@@ -25,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_WOOD_CREAKING_1 = 2615280544U;
         static const AkUniqueID PLAY_WOOD_CREAKING_2_SHORT = 2903002012U;
         static const AkUniqueID STOP_BABY_MOBILE = 2106530489U;
+        static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_FRIDGE_HUM = 2470329820U;
     } // namespace EVENTS
 
@@ -39,6 +42,13 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID RESONANCEAUDIO = 1129712971U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID BEDROOMVERB = 1655047192U;
+        static const AkUniqueID HALLVERB = 2411154035U;
+        static const AkUniqueID KITCHENVERB = 1122937468U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

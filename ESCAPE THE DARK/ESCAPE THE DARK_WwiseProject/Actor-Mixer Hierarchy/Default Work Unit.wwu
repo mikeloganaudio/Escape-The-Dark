@@ -5,6 +5,512 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambiences" ID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}" PersistMode="Reference"/>
 				<WorkUnit Name="3DObjects" ID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}" PersistMode="Reference"/>
+				<ActorMixer Name="Character Sounds" ID="{ADB43197-7DB9-4F49-8CB5-6E91535DB0B4}" ShortID="359118963">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Bumps" ID="{EEC680C2-8469-48E0-B1CF-3906064501DC}" ShortID="263202616">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8934D23E-FDD6-4039-82DC-B7C91B31A613}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Bump 1" ID="{8A35841A-8741-44AF-A087-53F0D0FCB8E0}" ShortID="93850601">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F3C5DF72-F3B7-4792-BD48-77C15E348521}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9240F0F6-F1D1-4AB3-B882-9098B4B9E4EE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{49B735A7-C211-41D6-94D4-0D7367203BE2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bump" ID="{EB207FD6-5AE8-46D1-9736-1A8DF1F04FEE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0761022398843931"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0579826589595376"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.393194906069364"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.85886813583815"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bump.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="324353487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Bump" ID="{EB207FD6-5AE8-46D1-9736-1A8DF1F04FEE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bump 2" ID="{94BEF15F-EBDA-4A85-A3C1-332339113C8D}" ShortID="172340647">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B70BF024-5186-4A34-BBD2-0BD09A58121F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E3C987A3-1861-4FE1-90EE-D405B97FEDCA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{45E33F33-B121-475E-BD54-C275660D2E4D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bump" ID="{457555C5-F7A4-4C8F-8266-3AF12D1C41EF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0308032875722544"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0833500722543353"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.503724349710982"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.87517575867052"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bump.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="68144532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Bump" ID="{457555C5-F7A4-4C8F-8266-3AF12D1C41EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Footsteps" ID="{E74A662E-CDCB-4FF2-BE39-A220F89E9DB8}" ShortID="481441624">
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2C2BB449-E15F-4E5F-A426-5B4D2310DFA0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="30"/>
+													<Property Name="Min" Type="Real64" Value="-30"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Step 1" ID="{886C7161-4EA5-4959-BD46-AD73144A0BBC}" ShortID="252788829">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{92F68005-F8E2-4E2A-825A-CD237E953C1B}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{426CFF45-32AD-4E32-96D4-266CF05E4626}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.314238935035652"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.557913712809208"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="968435521"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{426CFF45-32AD-4E32-96D4-266CF05E4626}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_01" ID="{E948E02D-65AD-4D7F-93DC-DD45F9812A30}" ShortID="857383987">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{95FD374E-020C-49C8-BD1B-C1305B1FB381}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.815450036417517"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.16111286495673"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="541646469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{95FD374E-020C-49C8-BD1B-C1305B1FB381}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_02" ID="{73F64139-AC59-4D60-A0A4-701E2E91B643}" ShortID="971671533">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{5A6628D2-9CC8-4761-907E-6D116940B425}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.07362555594124"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.69699364416759"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="126669571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{5A6628D2-9CC8-4761-907E-6D116940B425}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_03" ID="{C6FB8A1E-861B-437E-8507-83D48DEA3CD5}" ShortID="996742951">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{62A446DA-29E2-43BA-9B08-84C95A840A06}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.77877027535357"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.10422168431311"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417472375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{62A446DA-29E2-43BA-9B08-84C95A840A06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_04" ID="{6F4BA950-C772-431A-A77F-7683842ABB66}" ShortID="790599491">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{5E0DD12A-8EE8-4C8D-83F0-A18AA8C4B689}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.04997978281985"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.59239879775241"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="966732557"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{5E0DD12A-8EE8-4C8D-83F0-A18AA8C4B689}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_05" ID="{EAAE926A-0262-4D3E-8AA4-5E591FF561C1}" ShortID="944158087">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{7634923E-71F5-480F-AE43-3BA448ED0DDD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.14328903978056"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.54510725150964"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="355959567"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{7634923E-71F5-480F-AE43-3BA448ED0DDD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_06" ID="{D79CA8DE-5FDD-477D-8BB7-D5F7FAA06999}" ShortID="447213277">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{77995563-2D01-4FBC-A1FC-C81719A2642B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.61572811259062"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.11480544633042"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="626480471"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{77995563-2D01-4FBC-A1FC-C81719A2642B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_07" ID="{42214B18-109B-465C-B1CE-3AA10E784A71}" ShortID="190793348">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{92A3607B-A4BE-43D7-BA30-92B95EB8C23E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.87055866046918"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.52146147838825"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="505333696"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{92A3607B-A4BE-43D7-BA30-92B95EB8C23E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step 1_08" ID="{6688B4AF-22AA-4B5C-BBA0-5AB80E2DFA44}" ShortID="510197796">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Child Foosteps" ID="{1EF2F8B2-A924-48F2-BADC-9856AFAA667A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="11.8458339124937"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.1932153620588"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Child Foosteps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="520399519"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Child Foosteps" ID="{1EF2F8B2-A924-48F2-BADC-9856AFAA667A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

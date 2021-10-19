@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambiences" ID="{E98F9BF0-ACC5-42B5-B315-EB47A1F66748}" PersistMode="Reference"/>
 				<WorkUnit Name="3dObjects" ID="{B32E1E3E-80EF-48C6-BF0C-2A39C94B8536}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerSounds" ID="{C95C9DA9-3041-4828-AFD1-C5D9FB054BF8}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

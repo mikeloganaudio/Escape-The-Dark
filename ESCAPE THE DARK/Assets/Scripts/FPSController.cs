@@ -13,6 +13,8 @@ public class FPSController : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
+    public string eventName = "default";
+    public string stopEvent = "default";
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -41,7 +43,17 @@ public class FPSController : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-        
+
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+        {
+            AkSoundEngine.PostEvent(eventName, gameObject);
+        }
+
+        else
+        {
+            AkSoundEngine.PostEvent(stopEvent, gameObject);
+        }
+
 
         /*if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C95C9DA9-3041-4828-AFD1-C5D9FB054BF8}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
+	<Events>
+		<WorkUnit Name="PlayerSounds" ID="{C95C9DA9-3041-4828-AFD1-C5D9FB054BF8}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Player Sounds" ID="{8C719903-0750-4967-ADD1-D8AF84A82AA1}" ShortID="998763360">
+					<ChildrenList>
+						<Event Name="Play_Bumps" ID="{259B4ABC-CE91-4F99-94C3-F25E3385C010}">
+							<ChildrenList>
+								<Action Name="" ID="{FD461D98-16CB-4467-8F4F-BEF6675329F7}" ShortID="198065445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bumps" ID="{EEC680C2-8469-48E0-B1CF-3906064501DC}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Footsteps" ID="{497052B4-43B3-4A1C-A9ED-65A143E155D5}">
+							<ChildrenList>
+								<Action Name="" ID="{EEF7210E-E2AB-4612-A3D1-7C45D64DC48E}" ShortID="37072091">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E74A662E-CDCB-4FF2-BE39-A220F89E9DB8}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Footsteps" ID="{ED209F80-3C85-42EC-B485-C49E261CFDD6}">
+							<ChildrenList>
+								<Action Name="" ID="{DEA40543-5C66-48F5-B5F4-E7CF834F39BB}" ShortID="571474489">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{E74A662E-CDCB-4FF2-BE39-A220F89E9DB8}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -30,7 +30,7 @@
 						<Action Name="" ID="{4B16BBF6-96A4-427C-A29E-E71B16B04991}" ShortID="700431740">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Door Slamming Closing" ID="{7A554C55-FB07-4570-BA4F-24ED923F2518}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+									<ObjectRef Name="Door Slam 1" ID="{7A554C55-FB07-4570-BA4F-24ED923F2518}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
