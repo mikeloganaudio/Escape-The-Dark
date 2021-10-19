@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.25
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.083333336
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 589f1f99655a1f3499362c8266fdf59c, type: 2}
 --- !u!1 &1518675
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +155,76 @@ Transform:
   m_Father: {fileID: 269607222}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2729803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
+  m_PrefabInstance: {fileID: 979998958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2729804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ed3af5c0aa82443842ff829fbcacb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 6
+--- !u!114 &2729805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a143a61b0a3da8d47aa9008225144b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPath: {fileID: 2729806}
+  waypointTolerance: 1
+  waypointDwellTime: 0
+  patrolSpeedFraction: 0.2
+  chaseDistance: 2
+  chaseTime: 3
+--- !u!114 &2729806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02e8719cf836e54e87c8a719cb9ebf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &2729807
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729803}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &19507426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -165,6 +235,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -235,6 +309,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -310,6 +388,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602940186}
     m_Modifications:
+    - target: {fileID: 2552716002530014112, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230990514591952183, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341051804104784071, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813162384101375727, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4834528408337483204, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
       propertyPath: m_Name
       value: WindowGrilledSlider (1)
@@ -517,6 +611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -614,6 +712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -691,6 +793,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -771,6 +877,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (8)
@@ -831,6 +941,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1001 &75092595
@@ -843,6 +957,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -954,6 +1072,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1081,6 +1203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stove
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a4e254c0b0d9214ea7b53f9c0c43b10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4e254c0b0d9214ea7b53f9c0c43b10, type: 3}
 --- !u!1 &94048101 stripped
@@ -1142,6 +1268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard (1)
@@ -1193,6 +1323,14 @@ PrefabInstance:
     - target: {fileID: 6243010697471452782, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -1266,9 +1404,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 2683424507733716497, guid: eae26ab7edb22a54e8fab415ccacc23e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6950854861727644666, guid: eae26ab7edb22a54e8fab415ccacc23e, type: 3}
       propertyPath: m_Name
       value: Dryer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950854861727644666, guid: eae26ab7edb22a54e8fab415ccacc23e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7727531581537182016, guid: eae26ab7edb22a54e8fab415ccacc23e, type: 3}
       propertyPath: m_RootOrder
@@ -1342,6 +1488,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_Name
       value: kitchen_shelf_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_RootOrder
@@ -1486,6 +1644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1555,6 +1717,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -1630,6 +1796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard
@@ -1677,6 +1847,14 @@ PrefabInstance:
     - target: {fileID: 6243010697471452782, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -1746,6 +1924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363372674799, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1754,6 +1936,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 47aabc01e58c0684585ba236d89cd185, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4937382130124134317, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1766,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 47aabc01e58c0684585ba236d89cd185, type: 2}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &158403285 stripped
@@ -1785,6 +1979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (16)
@@ -1845,6 +2043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &177838243 stripped
@@ -1876,6 +2078,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_Name
       value: kitchen_shelf_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_RootOrder
@@ -1962,6 +2176,10 @@ PrefabInstance:
     - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_Name
       value: Paint_07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
@@ -2065,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2137,6 +2359,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_Name
       value: kitchen_shelf_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_RootOrder
@@ -2283,6 +2517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363370904591, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33695662
@@ -2295,6 +2533,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 47aabc01e58c0684585ba236d89cd185, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4271825852330413818, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.27628642
@@ -2302,6 +2544,10 @@ PrefabInstance:
     - target: {fileID: 4271825852330413818, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4937382130122233165, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
@@ -2327,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.589
       objectReference: {fileID: 0}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &200574507 stripped
@@ -2344,6 +2594,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -2494,6 +2748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -2571,6 +2829,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -2750,6 +3012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -2862,6 +3128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 641557538031808496, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2110886379580796121, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.993174
@@ -2882,9 +3152,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f7bbd21b1298745458209aed31d9c489, type: 2}
+    - target: {fileID: 7069046435868712521, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8107088758560444937, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
       propertyPath: m_Name
       value: Microwave_Oven
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107088758560444937, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8919936416863914163, guid: 189a9280397c2594ba84092398c84bb3, type: 3}
       propertyPath: m_RootOrder
@@ -2956,6 +3234,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (5)
@@ -3157,6 +3455,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (3)
@@ -3216,6 +3518,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -3315,6 +3621,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_Name
       value: kitchen_shelf_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_RootOrder
@@ -3431,6 +3749,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1 (4)
@@ -3824,6 +4150,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (26)
@@ -3884,6 +4214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &387071647 stripped
@@ -3912,6 +4246,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 9177085781913225752, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177085781913225754, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9177085781913225758, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
       propertyPath: m_Name
       value: plant2 Variant (1)
@@ -3974,9 +4316,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 794564156}
     m_Modifications:
+    - target: {fileID: 100000, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
       propertyPath: m_Name
       value: bed_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}
       propertyPath: m_RootOrder
@@ -4102,6 +4476,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4234,6 +4612,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard (3)
@@ -4285,6 +4667,14 @@ PrefabInstance:
     - target: {fileID: 6243010697471452782, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -4357,6 +4747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4426,6 +4820,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4531,6 +4929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: da54b27642860c745b145c776f596680, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da54b27642860c745b145c776f596680, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4608,6 +5010,10 @@ PrefabInstance:
     - target: {fileID: 183806, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
       propertyPath: m_Name
       value: OldCup
+      objectReference: {fileID: 0}
+    - target: {fileID: 183806, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 449186, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
       propertyPath: m_RootOrder
@@ -4758,6 +5164,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
       propertyPath: m_Name
       value: rack_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
       propertyPath: m_RootOrder
@@ -4999,6 +5409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1231823701}
     m_Modifications:
+    - target: {fileID: 2011775704781378388, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902908185087648950, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3229216486526933480, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5055,9 +5473,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3709396667812930548, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861084191337736913, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4787966471654420588, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_Name
       value: WindowDoubleSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707967706179426333, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6797837693810011307, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
@@ -5074,6 +5504,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (6)
@@ -5134,6 +5568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1001 &543163054
@@ -5146,6 +5584,10 @@ PrefabInstance:
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
@@ -5215,6 +5657,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -5312,6 +5758,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -5443,6 +5893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -5540,6 +5994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5617,6 +6075,10 @@ PrefabInstance:
     - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_Name
       value: Paint_07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
@@ -5763,6 +6225,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (10)
@@ -5868,6 +6350,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -6031,6 +6517,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1 (5)
@@ -6183,6 +6677,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (12)
@@ -6340,6 +6854,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363372674799, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6348,6 +6866,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4937382130124134317, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6360,6 +6886,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &621034067 stripped
@@ -6502,6 +7032,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (3)
@@ -6595,6 +7145,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -6841,6 +7395,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1 (2)
@@ -7078,6 +7640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (1)
@@ -7138,6 +7704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &711009927 stripped
@@ -7185,6 +7755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard (4)
@@ -7233,6 +7807,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -7248,6 +7830,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (8)
@@ -7342,6 +7944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabels
       objectReference: {fileID: 0}
+    - target: {fileID: 131020, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 450356, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -7398,6 +8004,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
       propertyPath: m_RootOrder
@@ -7468,6 +8078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (21)
@@ -7528,6 +8142,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &730694612 stripped
@@ -7545,6 +8163,10 @@ PrefabInstance:
     - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_Name
       value: Paint_07 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
@@ -7710,6 +8332,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard (2)
@@ -7758,6 +8384,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -7773,6 +8407,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 100000, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: b071b1fb63a0b2446ad813578ad174cb, type: 3}
       propertyPath: m_Name
       value: sofa_1
@@ -7956,6 +8614,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (13)
@@ -8016,6 +8678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &797934211 stripped
@@ -8052,6 +8718,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8138,6 +8808,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (2)
@@ -8232,6 +8922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8306,6 +9000,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 9177085781913225752, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177085781913225754, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9177085781913225758, guid: 249cf98a34b9eed48b98adc07185d9cd, type: 3}
       propertyPath: m_Name
       value: plant2 Variant
@@ -8409,6 +9111,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8556,6 +9262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8679,6 +9389,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518676}
     m_Modifications:
+    - target: {fileID: 2552716002530014112, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230990514591952183, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341051804104784071, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813162384101375727, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4834528408337483204, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
       propertyPath: m_Name
       value: WindowGrilledSlider (1)
@@ -8754,6 +9480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (7)
@@ -8814,6 +9544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &885465275 stripped
@@ -8842,6 +9576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (23)
@@ -8901,6 +9639,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -9004,6 +9746,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9211,6 +9957,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Washer
       objectReference: {fileID: 0}
+    - target: {fileID: 4476818941290034795, guid: f767cce13dd852b4cbd5894364ae969e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657089071645958152, guid: f767cce13dd852b4cbd5894364ae969e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f767cce13dd852b4cbd5894364ae969e, type: 3}
 --- !u!1 &925396626 stripped
@@ -9242,6 +9996,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 27df19f247bebd344813479f564c4ef6, type: 3}
       propertyPath: m_Name
       value: rack_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 27df19f247bebd344813479f564c4ef6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 27df19f247bebd344813479f564c4ef6, type: 3}
       propertyPath: m_RootOrder
@@ -9326,6 +10084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9405,9 +10167,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 130312, guid: 074728566132335428608c1b7e7f1f14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 172082, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_Name
       value: Painting (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 184180, guid: 074728566132335428608c1b7e7f1f14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 482970, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_RootOrder
@@ -9564,6 +10334,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1
@@ -9646,6 +10424,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 4454161756409938145, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454161756409938147, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4454161756409938151, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
       propertyPath: m_Name
       value: plant4 Variant (1)
@@ -9768,7 +10554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9999998
+      value: 3.946
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9802,10 +10588,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -6067185528594298527, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 62813c54744de5d4896d2c45b75867df, type: 2}
+    - target: {fileID: -3957782524123411102, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -264430861247414160, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9813,6 +10607,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_Name
       value: demon_corgi
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866621852552652557, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4899486392329470165, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9822,6 +10620,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 62813c54744de5d4896d2c45b75867df, type: 2}
+    - target: {fileID: 6727007405964328823, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8629001bfeef34eb1467c0e1f55895, type: 3}
 --- !u!1001 &981771560
@@ -9834,6 +10636,10 @@ PrefabInstance:
     - target: {fileID: 125360, guid: 516fd0d5b53125c48abf9d5a06873180, type: 3}
       propertyPath: m_Name
       value: ElectoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 125360, guid: 516fd0d5b53125c48abf9d5a06873180, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 474866, guid: 516fd0d5b53125c48abf9d5a06873180, type: 3}
       propertyPath: m_RootOrder
@@ -9899,6 +10705,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9990,6 +10800,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605966841}
     m_Modifications:
+    - target: {fileID: 2552716002530014112, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230990514591952183, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341051804104784071, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813162384101375727, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4834528408337483204, guid: a5b17e59e720cc248bf072b8373907fc, type: 3}
       propertyPath: m_Name
       value: WindowGrilledSlider (1)
@@ -10065,6 +10891,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (9)
@@ -10159,6 +11005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -10237,6 +11087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabels (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 131020, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 450356, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -10294,6 +11148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabels (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 131020, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 450356, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -10347,6 +11205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (4)
@@ -10407,6 +11269,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1046077472 stripped
@@ -10466,7 +11332,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1056087178
 Transform:
@@ -10589,7 +11455,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!20 &1057297170
 Camera:
@@ -10655,7 +11521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057297169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b6be251234ae734bb78a2124b308b08, type: 3}
   m_Name: 
@@ -10664,7 +11530,7 @@ MonoBehaviour:
     initialListenerList: []
     useDefaultListeners: 1
   isEnvironmentAware: 0
-  isStaticObject: 0
+  isStaticObject: 1
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
@@ -10739,6 +11605,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363370904591, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33729732
@@ -10751,6 +11621,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e7159d6056eeb19409fa6cc2a5501145, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4271825852330413818, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.23868033
@@ -10758,6 +11632,10 @@ PrefabInstance:
     - target: {fileID: 4271825852330413818, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4937382130122233165, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_LocalScale.x
@@ -10787,6 +11665,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.517
       objectReference: {fileID: 0}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &1065195977 stripped
@@ -10804,6 +11686,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -10946,6 +11832,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: plant1 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4909321149650273717, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909321149650273719, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
 --- !u!4 &1068739049 stripped
@@ -10960,6 +11854,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (1)
@@ -11050,9 +11964,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 794564156}
     m_Modifications:
+    - target: {fileID: 100000, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
       propertyPath: m_Name
       value: cabinet_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
       propertyPath: m_RootOrder
@@ -11168,6 +12098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad
       objectReference: {fileID: 0}
+    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 424004, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -11274,6 +12208,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -11430,6 +12368,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (19)
@@ -11490,6 +12432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &1128189793 stripped
@@ -11532,6 +12478,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (5)
@@ -11592,6 +12542,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1131122686 stripped
@@ -11609,6 +12563,10 @@ PrefabInstance:
     - target: {fileID: 183806, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
       propertyPath: m_Name
       value: OldCup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 183806, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 449186, guid: 7e00b420d123b944b9365009b3dfd075, type: 3}
       propertyPath: m_RootOrder
@@ -11727,6 +12685,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (22)
@@ -11786,6 +12748,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -11925,6 +12891,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: plant1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4909321149650273717, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909321149650273719, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5efbdff695d22544890988ce1a13dd25, type: 3}
 --- !u!4 &1158786234 stripped
@@ -11987,7 +12961,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1168195484
 Transform:
@@ -12096,6 +13070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12174,6 +13152,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (27)
@@ -12234,6 +13216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &1185245844 stripped
@@ -12265,6 +13251,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -12396,6 +13386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12470,6 +13464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (25)
@@ -12530,6 +13528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &1209867451 stripped
@@ -12561,6 +13563,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -12809,6 +13815,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: fb246b0516d4e7f43b2e77d5ab04ab7f, type: 3}
       propertyPath: m_Name
       value: rack_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fb246b0516d4e7f43b2e77d5ab04ab7f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fb246b0516d4e7f43b2e77d5ab04ab7f, type: 3}
       propertyPath: m_RootOrder
@@ -13067,6 +14077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -13141,6 +14155,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (7)
@@ -13250,6 +14284,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (4)
@@ -13490,6 +14544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -13606,6 +14664,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting
       objectReference: {fileID: 0}
+    - target: {fileID: 120568, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190908, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 480340, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -13676,6 +14742,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (11)
@@ -13736,6 +14806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1348691607 stripped
@@ -13753,6 +14827,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14065,6 +15143,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1644559044}
     m_Modifications:
+    - target: {fileID: 1440114665140541487, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4363847737078068204, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_Name
       value: DoorwayStandard (2)
@@ -14112,6 +15194,14 @@ PrefabInstance:
     - target: {fileID: 6243010697471452782, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915249461672667911, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930848256991990682, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5184701265692424213, guid: cc4e5b940511edc469dbc1c752cd4db4, type: 3}
@@ -14222,6 +15312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14300,6 +15394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -14365,6 +15463,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (6)
@@ -14459,9 +15577,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 794564156}
     m_Modifications:
+    - target: {fileID: 100000, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
       propertyPath: m_Name
       value: chair_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
       propertyPath: m_RootOrder
@@ -14595,6 +15737,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (18)
@@ -14655,6 +15801,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1449416773 stripped
@@ -14672,6 +15822,10 @@ PrefabInstance:
     - target: {fileID: 131020, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
       propertyPath: m_Name
       value: Cabels (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 131020, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 450356, guid: 6e2ce341e5d886d478c0c5b7aba00cee, type: 3}
       propertyPath: m_RootOrder
@@ -14726,6 +15880,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (12)
@@ -14785,6 +15943,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -14871,6 +16033,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1 (1)
@@ -15035,6 +16205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363372674799, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15043,6 +16217,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4937382130124134317, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15055,6 +16237,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &1471038600 stripped
@@ -15069,6 +16255,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (11)
@@ -15178,6 +16384,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (10)
@@ -15238,6 +16448,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1001 &1489328060
@@ -15250,6 +16464,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -15325,6 +16543,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 100000, guid: 78b6f28ce2ffb9b47a8f1e7bdec4184b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 78b6f28ce2ffb9b47a8f1e7bdec4184b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 78b6f28ce2ffb9b47a8f1e7bdec4184b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 78b6f28ce2ffb9b47a8f1e7bdec4184b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 78b6f28ce2ffb9b47a8f1e7bdec4184b, type: 3}
       propertyPath: m_Name
       value: tv_table_2
@@ -15418,6 +16652,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -15604,6 +16842,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
       propertyPath: m_Name
       value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4cee08c7276bf274d91d84489cdf46de, type: 3}
       propertyPath: m_RootOrder
@@ -15856,6 +17098,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4033743363370414127, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4033743363372674799, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15864,6 +17110,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 4271825852330382042, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937382130122197357, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4937382130124134317, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15876,6 +17130,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a483303bc9fe38d4e9afcda9a29f237b, type: 2}
+    - target: {fileID: 6770902964021495455, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0066f555a799bd41a6853cfb16e746d, type: 3}
 --- !u!4 &1547418246 stripped
@@ -15890,6 +17148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (9)
@@ -15950,6 +17212,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1001 &1557098028
@@ -15962,6 +17228,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -16056,6 +17326,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2
@@ -16164,6 +17454,10 @@ PrefabInstance:
     - target: {fileID: 1718505410737859772, guid: eb766ebb61571b14baf76b08c8426daa, type: 3}
       propertyPath: m_Name
       value: Stovetop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718505410737859772, guid: eb766ebb61571b14baf76b08c8426daa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2058861071576184326, guid: eb766ebb61571b14baf76b08c8426daa, type: 3}
       propertyPath: m_RootOrder
@@ -16310,6 +17604,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: modular_kitchen_table_4
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69876b662dbfff945b3239cdac3b1811, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -16439,6 +17773,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1499058708}
     m_Modifications:
+    - target: {fileID: 2011775704781378388, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902908185087648950, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3229216486526933480, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -16495,9 +17837,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3709396667812930548, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861084191337736913, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4787966471654420588, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_Name
       value: WindowDoubleSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707967706179426333, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6797837693810011307, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
@@ -16517,6 +17871,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -16595,6 +17953,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -16712,6 +18074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rack_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -16823,6 +18189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -16900,6 +18270,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17072,6 +18446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17203,6 +18581,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 100000, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: 9093dcf6b487b4445b317d8469e66af8, type: 3}
       propertyPath: m_Name
       value: sofa_4
@@ -17317,6 +18735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (15)
@@ -17376,6 +18798,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -17446,6 +18872,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -17559,6 +18989,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1936792884}
     m_Modifications:
+    - target: {fileID: 2011775704781378388, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902908185087648950, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3229216486526933480, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17615,9 +19053,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3709396667812930548, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861084191337736913, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4787966471654420588, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
       propertyPath: m_Name
       value: WindowDoubleSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707967706179426333, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6797837693810011307, guid: ad89ff43b40605949ac051366240b8ec, type: 3}
@@ -17637,6 +19087,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
@@ -17715,6 +19169,10 @@ PrefabInstance:
     - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_Name
       value: Paint_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
@@ -17832,6 +19290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -17925,6 +19387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (24)
@@ -17984,6 +19450,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -18130,6 +19600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (14)
@@ -18189,6 +19663,10 @@ PrefabInstance:
     - target: {fileID: 6907700650237486056, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
@@ -18259,6 +19737,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18387,6 +19869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -18503,6 +19989,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchen_shelf_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: da7880317cad2524a93cbb6056bbc922, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -18604,6 +20102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (17)
@@ -18664,6 +20166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1001 &1855234914
@@ -18673,6 +20179,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (14)
@@ -18767,6 +20293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (2)
@@ -18827,6 +20357,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1857829373 stripped
@@ -18863,6 +20397,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18938,6 +20476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint_07 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715623319360768, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4057016475818478, guid: 1906dcb2568c13f4c962c7e0c0d82ac3, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -19012,6 +20554,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 1323608338484919914, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626678312682306151, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674189065372876025, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5360273405124714249, guid: 51ed19930404371458e8d3152edbad78, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19020,10 +20574,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fridge_SBS
       objectReference: {fileID: 0}
+    - target: {fileID: 6100434731370130537, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223964705008206678, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6792930207928685759, guid: 51ed19930404371458e8d3152edbad78, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f7bbd21b1298745458209aed31d9c489, type: 2}
+    - target: {fileID: 6838641303824086895, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6909306594215196371, guid: 51ed19930404371458e8d3152edbad78, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -19080,6 +20646,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7067773725115226821, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172375191582535755, guid: 51ed19930404371458e8d3152edbad78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7596127366334965452, guid: 51ed19930404371458e8d3152edbad78, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19131,6 +20705,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (28)
@@ -19191,6 +20769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!4 &1881873013 stripped
@@ -19205,9 +20787,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 130312, guid: 074728566132335428608c1b7e7f1f14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 172082, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_Name
       value: Painting (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 184180, guid: 074728566132335428608c1b7e7f1f14, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 482970, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_RootOrder
@@ -19339,6 +20929,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19542,6 +21136,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
       propertyPath: m_Name
       value: rack_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33dd0111778766843be1b10fb0c038ab, type: 3}
       propertyPath: m_RootOrder
@@ -19795,6 +21393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -19869,6 +21471,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial (20)
@@ -19929,6 +21535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &1953126822 stripped
@@ -19985,10 +21595,10 @@ GameObject:
   - component: {fileID: 1964520394}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1964520394
 MonoBehaviour:
@@ -20171,6 +21781,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 4454161756409938145, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454161756409938147, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4454161756409938151, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
       propertyPath: m_Name
       value: plant4 Variant (2)
@@ -20270,6 +21888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20347,6 +21969,10 @@ PrefabInstance:
     - target: {fileID: 183500, guid: b01fa194940f0624ca7e3df13bed1969, type: 3}
       propertyPath: m_Name
       value: Trolley
+      objectReference: {fileID: 0}
+    - target: {fileID: 183500, guid: b01fa194940f0624ca7e3df13bed1969, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 444442, guid: b01fa194940f0624ca7e3df13bed1969, type: 3}
       propertyPath: m_RootOrder
@@ -20484,6 +22110,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 354980955}
     m_Modifications:
+    - target: {fileID: 4454161756409938145, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454161756409938147, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4454161756409938151, guid: 83159a856da2fe641bdbe4edf84b1761, type: 3}
       propertyPath: m_Name
       value: plant4 Variant
@@ -20549,6 +22183,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20819,6 +22457,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
       propertyPath: m_Name
       value: kitchen_chair_1 (3)
@@ -21054,6 +22700,10 @@ PrefabInstance:
     - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Name
       value: AllPlane (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21300,6 +22950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllPlane (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 42337794951585047, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 490407855161772792, guid: c369b00273a11a446bb442c42e4fb5b5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -21378,6 +23032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floorplane (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -21452,9 +23110,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 794564156}
     m_Modifications:
+    - target: {fileID: 100000, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
       propertyPath: m_Name
       value: cabinet_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e625800ca6c186b46bf906733b1ed7b7, type: 3}
       propertyPath: m_RootOrder
@@ -21542,6 +23216,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747856572}
     m_Modifications:
+    - target: {fileID: 2029328518195319623, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6226705995126676770, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
       propertyPath: m_Name
       value: BaseboardColonial
@@ -21602,6 +23280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7214789877947997008, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004cc6a640d4fb04a9aa6d6056b8a85e, type: 3}
 --- !u!1 &2121416273 stripped
@@ -21630,6 +23312,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377348831}
     m_Modifications:
+    - target: {fileID: 100000, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 7d0701320ee303d439feed9498b8d336, type: 3}
       propertyPath: m_Name
       value: modular_kitchen_table_2 (13)
@@ -21724,9 +23426,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272587771}
     m_Modifications:
+    - target: {fileID: 100000, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 3}
       propertyPath: m_Name
       value: kitchen_table_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 3}
       propertyPath: m_RootOrder
@@ -21819,6 +23529,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_Name
       value: Floorplane (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e83b5d2b2711874896ece63113c7ad5, type: 3}
       propertyPath: m_RootOrder
