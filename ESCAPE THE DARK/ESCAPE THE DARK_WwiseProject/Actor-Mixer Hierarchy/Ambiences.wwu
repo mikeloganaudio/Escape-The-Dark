@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}" SchemaVersion="103" RootDocumentID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}" ParentDocumentID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiences" ID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}" OwnerID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Ambiences" ID="{23A3DBAB-EBCD-4129-AD27-CAF44A6CBDA8}" ShortID="622859272">
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="KitchenRoomTone" ID="{CBA37966-48A4-4A1B-87B6-97F36AC6732D}" ShortID="932742017">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Kitchen_Room_Tone_Clock_Freezer_AmbiX" ID="{30F8D344-5A65-4FE9-A0C5-FD8C19CF4579}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4401.962"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.93991397218208"/>
+										<Property Name="LoopEnd" Type="Real64" Value="41.7467784049855"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Kitchen_Room_Tone_Clock_Freezer_AmbiX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="219536861"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Kitchen_Room_Tone_Clock_Freezer_AmbiX" ID="{30F8D344-5A65-4FE9-A0C5-FD8C19CF4579}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Room Tone Light Household" ID="{2687525C-2A1F-43A3-816F-96F71FA8F0F8}" ShortID="285283778">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Room Tone Light Household" ID="{480A2037-B625-4D20-B11C-DC98588FEFCA}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4181.969"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.34626621206647"/>
+										<Property Name="LoopEnd" Type="Real64" Value="41.7955211193401"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Room Tone Light Household.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849869532"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Room Tone Light Household" ID="{480A2037-B625-4D20-B11C-DC98588FEFCA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" ShortID="569766918">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-26</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Room Tone Small Sized Room" ID="{CC0E3FAC-2885-42B9-994A-3FA9F1E815ED}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3703.869"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.95245980852601"/>
+										<Property Name="LoopEnd" Type="Real64" Value="42.4498110248073"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Room Tone Small Sized Room.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="967689289"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Room Tone Small Sized Room" ID="{CC0E3FAC-2885-42B9-994A-3FA9F1E815ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,12 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	1129712971	ResonanceAudio			\Default Work Unit\Master Audio Bus\ResonanceAudio	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	41030413	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

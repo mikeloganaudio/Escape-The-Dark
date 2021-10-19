@@ -1,0 +1,28 @@
+Event	ID	Name			Wwise Object Path	Notes
+	937063987	Play_Baby_Mobile			\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile	
+	1320004683	Play_Washing_Machine			\Default Work Unit\3dObjects\Play_Washing_Machine	
+	1660469979	Play_Blind___Window_2			\Default Work Unit\3dObjects\Play_Blind___Window_2	
+	1967779997	Play_Room_Tone_Light_Household			\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household	
+	2106530489	Stop_Baby_Mobile			\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile	
+	2470329820	Stop_Fridge_Hum			\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum	
+	2551992801	Play_Door_Slamming_Closing			\Default Work Unit\3dObjects\Play_Door_Slamming_Closing	
+	2615280544	Play_Wood_Creaking_1			\Default Work Unit\3dObjects\Play_Wood_Creaking_1	
+	2903002012	Play_Wood_Creaking_2_Short			\Default Work Unit\3dObjects\Play_Wood_Creaking_2_Short	
+	2905397547	Play_KitchenRoomTone			\Default Work Unit\Ambiences\Play_KitchenRoomTone	
+	3327054553	Play_Door_Creaking			\Default Work Unit\3dObjects\Play_Door_Creaking	
+	3365485150	Play_Fridge_Hum			\Default Work Unit\3dObjects\Fridge\Play_Fridge_Hum	
+	4095413548	Play_Room_Tone_Small_Sized_Room			\Default Work Unit\Ambiences\Play_Room_Tone_Small_Sized_Room	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	45013541	Wood Creaking 2 Short	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Wood Creaking 2 Short_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Wood Creaking 2 Short		147484
+	191968749	Baby Mobile	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Baby Mobile_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Baby Mobile		3003312
+	219536861	KitchenRoomTone	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_A8B72196.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\KitchenRoomTone		8680320
+	471059451	Door Creaking	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Creaking_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Door Creaking		5214780
+	615102212	Wood Creaking 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Wood Creaking 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Wood Creaking 1		12311360
+	617054053	Door Slamming Closing	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Slamming Closing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Door Slamming Closing		3209280
+	668352159	Fridge Hum	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Fridge_D1ED91C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Fridge Hum		6129268
+	849869532	Room Tone Light Household	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Room Tone Light Household_D21745CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Room Tone Light Household		8717740
+	891348412	Washing Machine	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Washing Machine_BBD94610.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Washing Machine		5170060
+	904011973	Blind & Window 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Blind & Window 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Blind & Window 2		1465084
+	967689289	Room Tone Small Sized Room	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Room Tone Small Sized Room_5F45DB3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Room Tone Small Sized Room		8717364
+

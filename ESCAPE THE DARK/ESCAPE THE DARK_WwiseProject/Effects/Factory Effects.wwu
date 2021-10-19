@@ -1294,6 +1294,7 @@
 										<Property Name="DecayTime" Type="Real32" Value="1.1"/>
 										<Property Name="Density" Type="Real32" Value="72"/>
 										<Property Name="Diffusion" Type="Real32" Value="72"/>
+										<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="6000"/>

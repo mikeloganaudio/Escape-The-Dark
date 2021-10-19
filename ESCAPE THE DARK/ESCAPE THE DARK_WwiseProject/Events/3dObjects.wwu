@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B32E1E3E-80EF-48C6-BF0C-2A39C94B8536}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
+	<Events>
+		<WorkUnit Name="3dObjects" ID="{B32E1E3E-80EF-48C6-BF0C-2A39C94B8536}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Blind___Window_2" ID="{043E445F-A83A-4302-82D3-7AF483C21B0A}">
+					<ChildrenList>
+						<Action Name="" ID="{B3CCBE5A-2D6D-456E-BB89-803A32C53826}" ShortID="841784617">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blind &amp; Window 2" ID="{A907F490-8839-45DE-86D2-9650108A8EF9}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Creaking" ID="{D51EA253-A82D-406F-B656-269E7A1E8195}">
+					<ChildrenList>
+						<Action Name="" ID="{46D41FF6-A4A1-47A5-B818-9DD3699E1C06}" ShortID="885199067">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door Creaking" ID="{334877E4-B5B3-4A32-BC4D-7EAFC71CF740}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Slamming_Closing" ID="{87D93533-8B49-4A7B-B29D-7EE32FB193A2}">
+					<ChildrenList>
+						<Action Name="" ID="{4B16BBF6-96A4-427C-A29E-E71B16B04991}" ShortID="700431740">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door Slamming Closing" ID="{7A554C55-FB07-4570-BA4F-24ED923F2518}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wood_Creaking_1" ID="{7224968F-C530-47F2-A9A7-39AE06A52830}">
+					<ChildrenList>
+						<Action Name="" ID="{6EF92726-D3F9-437C-9034-66568AC0AC8A}" ShortID="195940617">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wood Creaking 1" ID="{09C7EE95-6E14-42A8-9FC4-39F2B3D76E7A}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wood_Creaking_2_Short" ID="{60BA18A7-D655-42ED-8F33-A40139276B5A}">
+					<ChildrenList>
+						<Action Name="" ID="{49FCFC2A-5B37-4F54-A3C6-697F7E967220}" ShortID="482301587">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wood Creaking 2 Short" ID="{5D1848D7-70A9-440F-8650-6415272D82E3}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Fridge" ID="{1D7C7915-FE22-44BD-9951-155F93F404DB}" ShortID="801638904">
+					<ChildrenList>
+						<Event Name="Play_Fridge_Hum" ID="{AC7DA162-21C7-40BB-B0FA-FF63FF75644D}">
+							<ChildrenList>
+								<Action Name="" ID="{785C9261-F7B2-4FCD-B033-42407A06933B}" ShortID="337638804">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fridge Hum" ID="{1BD6B648-A5F1-4134-B1C1-39FEF205D5BD}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Fridge_Hum" ID="{33B14804-0D3C-4507-BBDE-9AEC4B68E20C}">
+							<ChildrenList>
+								<Action Name="" ID="{AF9A8917-BE37-48B6-9854-57A5BEFE40FA}" ShortID="319387693">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fridge Hum" ID="{1BD6B648-A5F1-4134-B1C1-39FEF205D5BD}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Washing_Machine" ID="{00CCA934-5E4B-409B-9343-3287EEA7D540}">
+					<ChildrenList>
+						<Action Name="" ID="{BD76457D-0525-4ED8-A302-73BFFA712C26}" ShortID="456150476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Washing Machine" ID="{58AD006D-13BB-44BC-99B2-C7EEE1798E33}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6CAE9ACD-8627-475B-B727-09FC7622937A}" ShortID="371606360">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64" Value="50">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{071645BB-F04C-423E-B770-F6F667AAC946}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="40"/>
+													<Property Name="Min" Type="Real64" Value="-40"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Washing Machine" ID="{58AD006D-13BB-44BC-99B2-C7EEE1798E33}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Baby Mobile" ID="{B238C5D1-A209-40EC-A23A-BA8ACF150653}" ShortID="860055117">
+					<ChildrenList>
+						<Event Name="Play_Baby_Mobile" ID="{5F6735DF-00D5-4072-BCEF-98B821D2DC21}">
+							<ChildrenList>
+								<Action Name="" ID="{CCBF0B80-79DD-4622-81CC-6768697D60DE}" ShortID="145211552">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Baby Mobile" ID="{113B91FE-A55A-47A4-A114-3899215337FF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Baby_Mobile" ID="{B9C58AFE-B614-4923-BC86-A4E640F0CC14}">
+							<ChildrenList>
+								<Action Name="" ID="{865E6C38-75E6-4A9B-A4CE-51FF47CA6B4C}" ShortID="429541903">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Baby Mobile" ID="{113B91FE-A55A-47A4-A114-3899215337FF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

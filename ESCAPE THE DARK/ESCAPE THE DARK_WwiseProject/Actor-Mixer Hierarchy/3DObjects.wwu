@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}" SchemaVersion="103" RootDocumentID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}" ParentDocumentID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}">
+	<AudioObjects>
+		<WorkUnit Name="3DObjects" ID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}" OwnerID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="3dObjects" ID="{4D5FA93E-F221-4201-BBA9-15DD79E5880E}" ShortID="881315763">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-230</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Baby Mobile" ID="{113B91FE-A55A-47A4-A114-3899215337FF}" ShortID="314004580">
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Baby Mobile" ID="{646FEF52-533D-4980-A26E-6D2E50AC67EC}">
+									<Language>SFX</Language>
+									<AudioFile>Baby Mobile.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="191968749"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Baby Mobile" ID="{646FEF52-533D-4980-A26E-6D2E50AC67EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Blind &amp; Window 2" ID="{A907F490-8839-45DE-86D2-9650108A8EF9}" ShortID="282291104">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Blind &amp; Window 2" ID="{58016826-42CF-454A-9C32-04305838C6F4}">
+									<Language>SFX</Language>
+									<AudioFile>Blind &amp; Window 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="904011973"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Blind &amp; Window 2" ID="{58016826-42CF-454A-9C32-04305838C6F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door Creaking" ID="{334877E4-B5B3-4A32-BC4D-7EAFC71CF740}" ShortID="677247121">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door Creaking" ID="{C3C2A9BA-2289-4BD9-9F6D-42EEED37B911}">
+									<Language>SFX</Language>
+									<AudioFile>Door Creaking.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="471059451"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Door Creaking" ID="{C3C2A9BA-2289-4BD9-9F6D-42EEED37B911}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door Slamming Closing" ID="{7A554C55-FB07-4570-BA4F-24ED923F2518}" ShortID="845436157">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door Slamming Closing" ID="{1A73A42A-41B9-4624-BBA6-E21159A13877}">
+									<Language>SFX</Language>
+									<AudioFile>Door Slamming Closing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="617054053"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Door Slamming Closing" ID="{1A73A42A-41B9-4624-BBA6-E21159A13877}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fridge Hum" ID="{1BD6B648-A5F1-4134-B1C1-39FEF205D5BD}" ShortID="363392365">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fridge" ID="{ABD26AE6-7B19-484F-8675-3BF2A359A086}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3053.142"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="8.55634396340424"/>
+										<Property Name="LoopEnd" Type="Real64" Value="35.9019567653651"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.26099527479585"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fridge.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="668352159"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Fridge" ID="{ABD26AE6-7B19-484F-8675-3BF2A359A086}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wood Creaking 1" ID="{09C7EE95-6E14-42A8-9FC4-39F2B3D76E7A}" ShortID="383571679">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}">
+									<Language>SFX</Language>
+									<AudioFile>Wood Creaking 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="615102212"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wood Creaking 2 Short" ID="{5D1848D7-70A9-440F-8650-6415272D82E3}" ShortID="534191439">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}">
+									<Language>SFX</Language>
+									<AudioFile>Wood Creaking 2 Short.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="45013541"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Washing Machine" ID="{58AD006D-13BB-44BC-99B2-C7EEE1798E33}" ShortID="1073631960">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Washing Machine" ID="{5D7832C7-1FBF-407D-9B77-E0A92C31EF25}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1700.636"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.90666145833333"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.51421875"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Washing Machine.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="891348412"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Washing Machine" ID="{5D7832C7-1FBF-407D-9B77-E0A92C31EF25}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

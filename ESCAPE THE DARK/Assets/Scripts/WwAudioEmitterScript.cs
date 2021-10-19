@@ -23,21 +23,21 @@ public class WwAudioEmitterScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player" || IsInCollider) { return; }
+        if (other.tag != "Capsule" || IsInCollider) { return; }
         IsInCollider = true;
         AkSoundEngine.PostEvent(EventName, gameObject);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag != "Player" || IsInCollider) { return; }
+        if (other.tag != "Capsule" || IsInCollider) { return; }
         AkSoundEngine.PostEvent(StopEvent, gameObject);
         IsInCollider = false;
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag != "Player" || IsInCollider) { return; }
+        if (other.tag != "Capsule" || IsInCollider) { return; }
         IsInCollider = true;
         AkSoundEngine.PostEvent(EventName, gameObject);
     }
