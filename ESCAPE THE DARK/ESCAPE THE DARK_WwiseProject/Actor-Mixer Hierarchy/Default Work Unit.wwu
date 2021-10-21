@@ -513,11 +513,15 @@
 				</ActorMixer>
 				<ActorMixer Name="Beast Sounds" ID="{E437166C-7A5F-433D-9E38-B92889E0F1CA}" ShortID="818962975">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
 						</Reference>
@@ -530,6 +534,11 @@
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

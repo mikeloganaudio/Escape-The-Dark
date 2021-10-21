@@ -528,7 +528,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 931a757966641347942323560043cf56
       Path: Events\Default Work Unit\Beast Sounds\Play_Growls
-      maxAttenuation: 0
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -706,7 +706,7 @@ MonoBehaviour:
     m_lastTime: -8585671101555858538
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
