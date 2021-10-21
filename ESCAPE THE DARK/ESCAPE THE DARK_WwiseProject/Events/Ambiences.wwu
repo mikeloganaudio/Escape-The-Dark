@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E98F9BF0-ACC5-42B5-B315-EB47A1F66748}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
+	<Events>
+		<WorkUnit Name="Ambiences" ID="{E98F9BF0-ACC5-42B5-B315-EB47A1F66748}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_KitchenRoomTone" ID="{42E07CD2-12CA-4396-9550-7D0C5085B96E}">
+					<ChildrenList>
+						<Action Name="" ID="{ED6C332F-7E2B-4895-8CFC-B869A959B705}" ShortID="803708465">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KitchenRoomTone" ID="{CBA37966-48A4-4A1B-87B6-97F36AC6732D}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Room_Tone_Light_Household" ID="{32FB1A73-918F-49EC-A006-14187DF6AFFF}">
+					<ChildrenList>
+						<Action Name="" ID="{77551630-8A64-4ABE-B44B-9AB5D1D956F9}" ShortID="194263869">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Room Tone Light Household" ID="{2687525C-2A1F-43A3-816F-96F71FA8F0F8}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Room_Tone_Small_Sized_Room" ID="{6FDBC832-776E-4A3E-9537-08054988F585}">
+					<ChildrenList>
+						<Action Name="" ID="{047FEBFC-FD33-420A-AFFB-8D7614645641}" ShortID="122948882">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

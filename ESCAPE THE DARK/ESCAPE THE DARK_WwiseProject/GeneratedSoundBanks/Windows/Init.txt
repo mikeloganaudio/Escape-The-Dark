@@ -1,0 +1,19 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	1129712971	ResonanceAudio			\Default Work Unit\Master Audio Bus\ResonanceAudio	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1122937468	KitchenVerb			\Default Work Unit\Master Audio Bus\KitchenVerb	
+	1655047192	BedroomVerb			\Default Work Unit\Master Audio Bus\BedroomVerb	
+	2411154035	HallVerb			\Default Work Unit\Master Audio Bus\HallVerb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	181155226	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
+	450627904	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	680072170	Room_Medium_High_Absorbtion (Custom)	Wwise RoomVerb			
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

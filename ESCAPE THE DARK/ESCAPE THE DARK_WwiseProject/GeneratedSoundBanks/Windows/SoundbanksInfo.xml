@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2477921563">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
+				<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2313849253">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="937063987" Name="Play_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="17.864357" DurationMax="17.864357">
+					<IncludedMemoryFiles>
+						<File Id="191968749" Language="SFX">
+							<ShortName>Baby Mobile.wav</ShortName>
+							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1660469979" Name="Play_Blind___Window_2" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Blind___Window_2" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="9.485110" DurationMax="9.485110">
+					<IncludedMemoryFiles>
+						<File Id="904011973" Language="SFX">
+							<ShortName>Blind &amp; Window 2.wav</ShortName>
+							<Path>SFX\Blind &amp; Window 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2730345109" Name="Play_Bumps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Bumps" DurationType="OneShot" DurationMin="0.360877" DurationMax="0.507820">
+					<IncludedMemoryFiles>
+						<File Id="68144532" Language="SFX">
+							<ShortName>Bump.wav</ShortName>
+							<Path>SFX\Bump_D6BDA533.wem</Path>
+						</File>
+						<File Id="324353487" Language="SFX">
+							<ShortName>Bump.wav</ShortName>
+							<Path>SFX\Bump_E356DFF7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3327054553" Name="Play_Door_Creaking" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Creaking" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="33.762104" DurationMax="33.762104">
+					<IncludedMemoryFiles>
+						<File Id="471059451" Language="SFX">
+							<ShortName>Door Creaking.wav</ShortName>
+							<Path>SFX\Door Creaking_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2551992801" Name="Play_Door_Slamming_Closing" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Slamming_Closing" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="16.904411" DurationMax="16.904411">
+					<IncludedMemoryFiles>
+						<File Id="617054053" Language="SFX">
+							<ShortName>Door Slamming Closing.wav</ShortName>
+							<Path>SFX\Door Slamming Closing_3AF08D82.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Footsteps" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="126669571" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_425E4B8F.wem</Path>
+						</File>
+						<File Id="355959567" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_FD35DC82.wem</Path>
+						</File>
+						<File Id="417472375" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_B0F41C5F.wem</Path>
+						</File>
+						<File Id="505333696" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_984BEDAF.wem</Path>
+						</File>
+						<File Id="520399519" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_212CCB1F.wem</Path>
+						</File>
+						<File Id="541646469" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_D6E9EF60.wem</Path>
+						</File>
+						<File Id="626480471" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_CC0D0338.wem</Path>
+						</File>
+						<File Id="966732557" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_B9F83B01.wem</Path>
+						</File>
+						<File Id="968435521" Language="SFX">
+							<ShortName>Child Foosteps.wav</ShortName>
+							<Path>SFX\Child Foosteps_78FF239C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3365485150" Name="Play_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Play_Fridge_Hum" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="668352159" Language="SFX">
+							<ShortName>Fridge.wav</ShortName>
+							<Path>SFX\Fridge_D1ED91C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2905397547" Name="Play_KitchenRoomTone" ObjectPath="\Events\Default Work Unit\Ambiences\Play_KitchenRoomTone" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="219536861" Language="SFX">
+							<ShortName>Kitchen_Room_Tone_Clock_Freezer_AmbiX.wav</ShortName>
+							<Path>SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_A8B72196.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1967779997" Name="Play_Room_Tone_Light_Household" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="849869532" Language="SFX">
+							<ShortName>Room Tone Light Household.wav</ShortName>
+							<Path>SFX\Room Tone Light Household_D21745CB.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4095413548" Name="Play_Room_Tone_Small_Sized_Room" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Room_Tone_Small_Sized_Room" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="967689289" Language="SFX">
+							<ShortName>Room Tone Small Sized Room.wav</ShortName>
+							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1320004683" Name="Play_Washing_Machine" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Washing_Machine" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="891348412" Language="SFX">
+							<ShortName>Washing Machine.wav</ShortName>
+							<Path>SFX\Washing Machine_BBD94610.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2615280544" Name="Play_Wood_Creaking_1" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Wood_Creaking_1" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="146.463684" DurationMax="146.463684">
+					<IncludedMemoryFiles>
+						<File Id="615102212" Language="SFX">
+							<ShortName>Wood Creaking 1.wav</ShortName>
+							<Path>SFX\Wood Creaking 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2903002012" Name="Play_Wood_Creaking_2_Short" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Wood_Creaking_2_Short" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="0.733771" DurationMax="0.733771">
+					<IncludedMemoryFiles>
+						<File Id="45013541" Language="SFX">
+							<ShortName>Wood Creaking 2 Short.wav</ShortName>
+							<Path>SFX\Wood Creaking 2 Short_A33F292B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2106530489" Name="Stop_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2963349357" Name="Stop_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Stop_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
