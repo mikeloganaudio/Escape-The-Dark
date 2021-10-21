@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{05E13D55-1206-4C28-9558-AF0B6DD8A952}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
+	<Events>
+		<WorkUnit Name="Beast Sounds" ID="{05E13D55-1206-4C28-9558-AF0B6DD8A952}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Growls" ID="{79751A93-6466-4713-9423-23560043CF56}">
+					<ChildrenList>
+						<Action Name="" ID="{D62612DF-775E-40A2-8679-B0ACA26A932C}" ShortID="705439748">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Growls" ID="{86792F37-E24D-46F1-8711-01937F9BCC71}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

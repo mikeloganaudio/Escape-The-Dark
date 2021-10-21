@@ -3,12 +3,13 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{31BCB464-3593-496B-AED3-F16692928256}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Documents\SCREAM JAM 2021\AUDIO\SFX\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Documents\SCREAM JAM 2021\AUDIO\Beast Sounds\"/>
 				<Property Name="Event Action List\{00CCA934-5E4B-409B-9343-3287EEA7D540}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{259B4ABC-CE91-4F99-94C3-F25E3385C010}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{33B14804-0D3C-4507-BBDE-9AEC4B68E20C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{497052B4-43B3-4A1C-A9ED-65A143E155D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5F6735DF-00D5-4072-BCEF-98B821D2DC21}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{79751A93-6466-4713-9423-23560043CF56}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{87D93533-8B49-4A7B-B29D-7EE32FB193A2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AC7DA162-21C7-40BB-B0FA-FF63FF75644D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B2F1E4CD-CBCE-4DB1-812E-52CBD82F5B07}\x64_Expand States" Type="string" Value=""/>

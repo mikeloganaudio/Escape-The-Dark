@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2313849253">
+		<SoundBank Id="3161908922" Language="SFX" Hash="330191472">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -121,6 +121,30 @@
 						<File Id="668352159" Language="SFX">
 							<ShortName>Fridge.wav</ShortName>
 							<Path>SFX\Fridge_D1ED91C1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3396512620" Name="Play_Growls" ObjectPath="\Events\Default Work Unit\Beast Sounds\Play_Growls" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="32453971" Language="SFX">
+							<ShortName>Beast Growl 5.wav</ShortName>
+							<Path>SFX\Beast Growl 5_10C4C929.wem</Path>
+						</File>
+						<File Id="220392881" Language="SFX">
+							<ShortName>Beast Growl 2.wav</ShortName>
+							<Path>SFX\Beast Growl 2_10C4C929.wem</Path>
+						</File>
+						<File Id="427048463" Language="SFX">
+							<ShortName>Beast Growl 3.wav</ShortName>
+							<Path>SFX\Beast Growl 3_10C4C929.wem</Path>
+						</File>
+						<File Id="680180418" Language="SFX">
+							<ShortName>Beast Growl 1.wav</ShortName>
+							<Path>SFX\Beast Growl 1_10C4C929.wem</Path>
+						</File>
+						<File Id="807551039" Language="SFX">
+							<ShortName>Beast Growl 4.wav</ShortName>
+							<Path>SFX\Beast Growl 4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

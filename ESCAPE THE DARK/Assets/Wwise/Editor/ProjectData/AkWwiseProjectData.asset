@@ -12,16 +12,701 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6470af9a640094d4b9a77cfaf9bc6cc2, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 88d36aae932c7a4785e6faaabbef54ae
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 88d36aae932c7a4785e6faaabbef54ae
+    GuidInternal: 
+    m_lastTime: -8585671101555848535
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2656dbdb53635f44a01005978f21d4ea
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 2656dbdb53635f44a01005978f21d4ea
+    GuidInternal: 
+    m_lastTime: -8585667841537164366
+    List:
+    - name: BedroomVerb
+      guid: ae6bb41c0f0c4a4ba482dba92b0d7362
+      id: 1655047192
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: BedroomVerb
+        ObjectType: 1
+        guid: ae6bb41c0f0c4a4ba482dba92b0d7362
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb
+    - name: HallVerb
+      guid: 1e0c224a7b542c4da13ad580c4d7fb80
+      id: 2411154035
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: HallVerb
+        ObjectType: 1
+        guid: 1e0c224a7b542c4da13ad580c4d7fb80
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb
+    - name: KitchenVerb
+      guid: 6a7a18129e20734abcb2cb7933b9846d
+      id: 1122937468
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: KitchenVerb
+        ObjectType: 1
+        guid: 6a7a18129e20734abcb2cb7933b9846d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: ResonanceAudio
+      guid: 09c0e94dff2fce4486465cf445c93734
+      id: 1129712971
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2656dbdb53635f44a01005978f21d4ea
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ResonanceAudio
+        ObjectType: 2
+        guid: 09c0e94dff2fce4486465cf445c93734
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ResonanceAudio
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 73b64445799fa442a57d4811d65568b4
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 73b64445799fa442a57d4811d65568b4
+    GuidInternal: 
+    m_lastTime: -8585667823684052989
+    List:
+    - name: Main
+      guid: 9d628864f67b4048a7089463d386e72c
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 73b64445799fa442a57d4811d65568b4
+      - ElementName: Main
+        ObjectType: 7
+        guid: 9d628864f67b4048a7089463d386e72c
+      Path: SoundBanks\Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\3dObjects.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6802f568705a044490d3e9850ca4d899
+    - ElementName: 3dObjects
+      ObjectType: 12
+      guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+    ParentPath: Events\Default Work Unit\3dObjects
+    guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+    GuidInternal: 
+    m_lastTime: -8585667841548867131
+    List:
+    - name: Baby Mobile
+      guid: d1c538b209a2ec40a23aba8acf150653
+      id: 3974826673
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Baby Mobile
+        ObjectType: 4
+        guid: d1c538b209a2ec40a23aba8acf150653
+      Path: Events\Default Work Unit\3dObjects\Baby Mobile
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fridge
+      guid: 15797c1d22febd449951155f93f404db
+      id: 2337612214
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Fridge
+        ObjectType: 4
+        guid: 15797c1d22febd449951155f93f404db
+      Path: Events\Default Work Unit\3dObjects\Fridge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Baby_Mobile
+      guid: df35675fd5007240bcef98b821d2dc21
+      id: 937063987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Baby Mobile
+        ObjectType: 4
+        guid: d1c538b209a2ec40a23aba8acf150653
+      - ElementName: Play_Baby_Mobile
+        ObjectType: 3
+        guid: df35675fd5007240bcef98b821d2dc21
+      Path: Events\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile
+      maxAttenuation: 18
+      maxDuration: 17.864357
+      minDuration: 17.864357
+    - name: Play_Blind___Window_2
+      guid: 5f443e043aa8024382d37af483c21b0a
+      id: 1660469979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Blind___Window_2
+        ObjectType: 3
+        guid: 5f443e043aa8024382d37af483c21b0a
+      Path: Events\Default Work Unit\3dObjects\Play_Blind___Window_2
+      maxAttenuation: 18
+      maxDuration: 9.48511
+      minDuration: 9.48511
+    - name: Play_Door_Creaking
+      guid: 53a21ed52da86f40b656269e7a1e8195
+      id: 3327054553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Door_Creaking
+        ObjectType: 3
+        guid: 53a21ed52da86f40b656269e7a1e8195
+      Path: Events\Default Work Unit\3dObjects\Play_Door_Creaking
+      maxAttenuation: 18
+      maxDuration: 33.762104
+      minDuration: 33.762104
+    - name: Play_Door_Slamming_Closing
+      guid: 3335d987498b7b4ab29d7ee32fb193a2
+      id: 2551992801
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Door_Slamming_Closing
+        ObjectType: 3
+        guid: 3335d987498b7b4ab29d7ee32fb193a2
+      Path: Events\Default Work Unit\3dObjects\Play_Door_Slamming_Closing
+      maxAttenuation: 18
+      maxDuration: 16.904411
+      minDuration: 16.904411
+    - name: Play_Fridge_Hum
+      guid: 62a17dacc721bb40b0faff63ff75644d
+      id: 3365485150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Fridge
+        ObjectType: 4
+        guid: 15797c1d22febd449951155f93f404db
+      - ElementName: Play_Fridge_Hum
+        ObjectType: 3
+        guid: 62a17dacc721bb40b0faff63ff75644d
+      Path: Events\Default Work Unit\3dObjects\Fridge\Play_Fridge_Hum
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Washing_Machine
+      guid: 34a9cc004b5e9b4093433287eea7d540
+      id: 1320004683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Washing_Machine
+        ObjectType: 3
+        guid: 34a9cc004b5e9b4093433287eea7d540
+      Path: Events\Default Work Unit\3dObjects\Play_Washing_Machine
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Wood_Creaking_1
+      guid: 8f96247230c5f247a9a739ae06a52830
+      id: 2615280544
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Wood_Creaking_1
+        ObjectType: 3
+        guid: 8f96247230c5f247a9a739ae06a52830
+      Path: Events\Default Work Unit\3dObjects\Play_Wood_Creaking_1
+      maxAttenuation: 18
+      maxDuration: 146.46368
+      minDuration: 146.46368
+    - name: Play_Wood_Creaking_2_Short
+      guid: a718ba6055d6ed428f33a40139276b5a
+      id: 2903002012
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Play_Wood_Creaking_2_Short
+        ObjectType: 3
+        guid: a718ba6055d6ed428f33a40139276b5a
+      Path: Events\Default Work Unit\3dObjects\Play_Wood_Creaking_2_Short
+      maxAttenuation: 18
+      maxDuration: 0.733771
+      minDuration: 0.733771
+    - name: Stop_Baby_Mobile
+      guid: fe8ac5b914b62349bc86a4e640f0cc14
+      id: 2106530489
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Baby Mobile
+        ObjectType: 4
+        guid: d1c538b209a2ec40a23aba8acf150653
+      - ElementName: Stop_Baby_Mobile
+        ObjectType: 3
+        guid: fe8ac5b914b62349bc86a4e640f0cc14
+      Path: Events\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Fridge_Hum
+      guid: 0448b1333c0d0745bbde9aec4b68e20c
+      id: 2470329820
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: Fridge
+        ObjectType: 4
+        guid: 15797c1d22febd449951155f93f404db
+      - ElementName: Stop_Fridge_Hum
+        ObjectType: 3
+        guid: 0448b1333c0d0745bbde9aec4b68e20c
+      Path: Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\Ambiences.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6802f568705a044490d3e9850ca4d899
+    - ElementName: Ambiences
+      ObjectType: 12
+      guid: f09b8fe9c5acb542b315eb47a1f66748
+    ParentPath: Events\Default Work Unit\Ambiences
+    guid: f09b8fe9c5acb542b315eb47a1f66748
+    GuidInternal: 
+    m_lastTime: -8585667841548857133
+    List:
+    - name: Play_KitchenRoomTone
+      guid: d27ce042ca12964395507d0c5085b96e
+      id: 2905397547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: f09b8fe9c5acb542b315eb47a1f66748
+      - ElementName: Play_KitchenRoomTone
+        ObjectType: 3
+        guid: d27ce042ca12964395507d0c5085b96e
+      Path: Events\Default Work Unit\Ambiences\Play_KitchenRoomTone
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room_Tone_Light_Household
+      guid: 731afb328f91ec49a00614187df6afff
+      id: 1967779997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: f09b8fe9c5acb542b315eb47a1f66748
+      - ElementName: Play_Room_Tone_Light_Household
+        ObjectType: 3
+        guid: 731afb328f91ec49a00614187df6afff
+      Path: Events\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room_Tone_Small_Sized_Room
+      guid: 32c8db6f6e773e4a953708054988f585
+      id: 4095413548
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: f09b8fe9c5acb542b315eb47a1f66748
+      - ElementName: Play_Room_Tone_Small_Sized_Room
+        ObjectType: 3
+        guid: 32c8db6f6e773e4a953708054988f585
+      Path: Events\Default Work Unit\Ambiences\Play_Room_Tone_Small_Sized_Room
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Beast Sounds.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6802f568705a044490d3e9850ca4d899
+    - ElementName: Beast Sounds
+      ObjectType: 12
+      guid: 553de1050612284c9558af0b6dd8a952
+    ParentPath: Events\Default Work Unit\Beast Sounds
+    guid: 553de1050612284c9558af0b6dd8a952
+    GuidInternal: 
+    m_lastTime: -8585667823869689145
+    List:
+    - name: Play_Growls
+      guid: 931a757966641347942323560043cf56
+      id: 3396512620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Beast Sounds
+        ObjectType: 12
+        guid: 553de1050612284c9558af0b6dd8a952
+      - ElementName: Play_Growls
+        ObjectType: 3
+        guid: 931a757966641347942323560043cf56
+      Path: Events\Default Work Unit\Beast Sounds\Play_Growls
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6802f568705a044490d3e9850ca4d899
+    ParentPath: Events\Default Work Unit
+    guid: 6802f568705a044490d3e9850ca4d899
+    GuidInternal: 
+    m_lastTime: -8585667823869249179
+    List: []
+  - PhysicalPath: Events\PlayerSounds.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6802f568705a044490d3e9850ca4d899
+    - ElementName: PlayerSounds
+      ObjectType: 12
+      guid: a99d5cc941302848afd1c5d9fb054bf8
+    ParentPath: Events\Default Work Unit\PlayerSounds
+    guid: a99d5cc941302848afd1c5d9fb054bf8
+    GuidInternal: 
+    m_lastTime: -8585667841548847130
+    List:
+    - name: Play_Bumps
+      guid: bc4a9b2591ce994f94c3f25e3385c010
+      id: 2730345109
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: PlayerSounds
+        ObjectType: 12
+        guid: a99d5cc941302848afd1c5d9fb054bf8
+      - ElementName: Player Sounds
+        ObjectType: 4
+        guid: 0399718c50076749add1d8af84a82aa1
+      - ElementName: Play_Bumps
+        ObjectType: 3
+        guid: bc4a9b2591ce994f94c3f25e3385c010
+      Path: Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Bumps
+      maxAttenuation: 0
+      maxDuration: 0.50782
+      minDuration: 0.360877
+    - name: Play_Footsteps
+      guid: b4527049b3431c4aa9ed65a143e155d5
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: PlayerSounds
+        ObjectType: 12
+        guid: a99d5cc941302848afd1c5d9fb054bf8
+      - ElementName: Player Sounds
+        ObjectType: 4
+        guid: 0399718c50076749add1d8af84a82aa1
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+        guid: b4527049b3431c4aa9ed65a143e155d5
+      Path: Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player Sounds
+      guid: 0399718c50076749add1d8af84a82aa1
+      id: 136533858
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: PlayerSounds
+        ObjectType: 12
+        guid: a99d5cc941302848afd1c5d9fb054bf8
+      - ElementName: Player Sounds
+        ObjectType: 4
+        guid: 0399718c50076749add1d8af84a82aa1
+      Path: Events\Default Work Unit\PlayerSounds\Player Sounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Footsteps
+      guid: 809f20ed853cec42b485c49e261cfdd6
+      id: 2963349357
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: PlayerSounds
+        ObjectType: 12
+        guid: a99d5cc941302848afd1c5d9fb054bf8
+      - ElementName: Player Sounds
+        ObjectType: 4
+        guid: 0399718c50076749add1d8af84a82aa1
+      - ElementName: Stop_Footsteps
+        ObjectType: 3
+        guid: 809f20ed853cec42b485c49e261cfdd6
+      Path: Events\Default Work Unit\PlayerSounds\Player Sounds\Stop_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: acff7596f53f164eb3cb74a176f85897
+    ParentPath: Game Parameters\Default Work Unit
+    guid: acff7596f53f164eb3cb74a176f85897
+    GuidInternal: 
+    m_lastTime: -8585671101555968534
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: de0f12660276ac44ba915d94588a071a
+    ParentPath: States\Default Work Unit
+    guid: de0f12660276ac44ba915d94588a071a
+    GuidInternal: 
+    m_lastTime: -8585671101555878537
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 57c3138a2d4eb843b86f3fd97aa299cf
+    ParentPath: Switches\Default Work Unit
+    guid: 57c3138a2d4eb843b86f3fd97aa299cf
+    GuidInternal: 
+    m_lastTime: -8585671101555868533
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9c6801983c0e44418c5272f620dd0d98
+    ParentPath: Triggers\Default Work Unit
+    guid: 9c6801983c0e44418c5272f620dd0d98
+    GuidInternal: 
+    m_lastTime: -8585671101555858538
+    List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000e0000000f00000018000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

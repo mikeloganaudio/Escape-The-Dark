@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID PLAY_DOOR_SLAMMING_CLOSING = 2551992801U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FRIDGE_HUM = 3365485150U;
+        static const AkUniqueID PLAY_GROWLS = 3396512620U;
         static const AkUniqueID PLAY_KITCHENROOMTONE = 2905397547U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
