@@ -13,6 +13,8 @@ public class FPSController : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
+    public string akevent = "default";
+    public string stopevent = "default";
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -74,6 +76,18 @@ public class FPSController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+        {
+            AkSoundEngine.PostEvent(akevent, gameObject);
+        }
+
+        else
+        {
+            AkSoundEngine.PostEvent(stopevent, gameObject);
+        }
+
+
     }
 
     public void Die()

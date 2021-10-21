@@ -8,27 +8,11 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{448AE656-0229-4CEC-AAFA-AAF7683073B2}" WorkUnitID="{1247951D-738C-4D2E-BC53-90578D8BC2BA}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="ResonanceAudio" ID="{4DE9C009-2FFF-44CE-8646-5CF445C93734}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>528</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Color" Type="int16" Value="4"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Resonance Audio Renderer (Custom)" ID="{FBB2E769-122C-4DE5-AD85-C47EA7022597}" ShortID="450627904" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-						</Bus>
 						<AuxBus Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="11"/>

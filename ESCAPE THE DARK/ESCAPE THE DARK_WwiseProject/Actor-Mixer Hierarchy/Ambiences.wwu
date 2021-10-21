@@ -8,6 +8,20 @@
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Ambiences" ID="{23A3DBAB-EBCD-4129-AD27-CAF44A6CBDA8}" ShortID="622859272">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>

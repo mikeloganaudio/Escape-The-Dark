@@ -38,7 +38,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="ResonanceAudio" ID="{4DE9C009-2FFF-44CE-8646-5CF445C93734}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -163,59 +163,6 @@
 								<ActiveSource Name="Fridge" ID="{ABD26AE6-7B19-484F-8675-3BF2A359A086}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Wood Creaking 1" ID="{09C7EE95-6E14-42A8-9FC4-39F2B3D76E7A}" ShortID="383571679">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}">
-									<Language>SFX</Language>
-									<AudioFile>Wood Creaking 1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="615102212"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wood Creaking 2 Short" ID="{5D1848D7-70A9-440F-8650-6415272D82E3}" ShortID="534191439">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0770540875309661"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.0326073492981007"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.675092898431049"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Wood Creaking 2 Short.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="45013541"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Washing Machine" ID="{58AD006D-13BB-44BC-99B2-C7EEE1798E33}" ShortID="1073631960">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -325,6 +272,283 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Door Slamming Closing" ID="{24CD2825-16E4-4395-A327-7F9F3320F089}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Creaks" ID="{1931A3CE-38E8-4930-975A-BE0FCFAF8C5A}" ShortID="593561768">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood Creaking 1" ID="{09C7EE95-6E14-42A8-9FC4-39F2B3D76E7A}" ShortID="383571679">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}">
+											<Language>SFX</Language>
+											<AudioFile>Wood Creaking 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="615102212"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E9473C56-B053-4C0E-9A2D-D6C29536C99F}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Creaking 1" ID="{9E00E090-1A79-4A49-BFFE-A41B6455BC8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood Creaking 2 Short" ID="{5D1848D7-70A9-440F-8650-6415272D82E3}" ShortID="534191439">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0770540875309661"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0326073492981007"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.675092898431049"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wood Creaking 2 Short.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="45013541"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{BA896849-5CDC-42A3-B522-E3FCB6CB8ED4}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood Creaking 2 Short" ID="{435D8575-4473-4DB4-9AD3-D4F6F78E31B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence" ID="{BE1853A7-4C96-49A9-A119-DE7B6F3A7AA5}" ShortID="692552627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{04370C87-FD19-4A17-9C55-4C588008B12F}" ShortID="339218376" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{04370C87-FD19-4A17-9C55-4C588008B12F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_01" ID="{E4595046-C0D9-4164-ABFC-27EF2DFA6D18}" ShortID="954513464">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{5D8D853C-2CA6-4B89-9DB5-8A4EAC890369}" ShortID="741502051" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{35FC6937-B464-415B-882F-983FEFED729F}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{5D8D853C-2CA6-4B89-9DB5-8A4EAC890369}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_02" ID="{8F68AC8C-685F-4222-B693-929704D34B7F}" ShortID="772846413">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{25AA2610-F195-47E2-8A44-FF5F9B039A21}" ShortID="373487921" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F8F62DCF-7625-4D16-A915-5DAC6E21C87D}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{25AA2610-F195-47E2-8A44-FF5F9B039A21}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_03" ID="{FC6BB2A6-FF39-497B-AF47-EFFD25073ABF}" ShortID="795925907">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{3CE18413-CF7A-41C6-88D0-8587FCB1BC85}" ShortID="446293968" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E2393B64-F069-4A69-98CD-C9CB25CFCBA6}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{3CE18413-CF7A-41C6-88D0-8587FCB1BC85}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

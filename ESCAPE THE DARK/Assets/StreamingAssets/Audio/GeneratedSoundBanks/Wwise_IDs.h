@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_BABY_MOBILE = 937063987U;
         static const AkUniqueID PLAY_BLIND___WINDOW_2 = 1660469979U;
         static const AkUniqueID PLAY_BUMPS = 2730345109U;
+        static const AkUniqueID PLAY_CREAKS = 1247850169U;
         static const AkUniqueID PLAY_DOOR_CREAKING = 3327054553U;
         static const AkUniqueID PLAY_DOOR_SLAMMING_CLOSING = 2551992801U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
@@ -41,7 +42,6 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID RESONANCEAUDIO = 1129712971U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

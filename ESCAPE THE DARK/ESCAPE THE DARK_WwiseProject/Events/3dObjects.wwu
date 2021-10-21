@@ -150,6 +150,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Creaks" ID="{58B86264-27A1-4448-8C48-98E574B0561F}">
+					<ChildrenList>
+						<Action Name="" ID="{61DFEB08-4E28-4F25-8D67-AE3D97CCD42D}" ShortID="781415593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Creaks" ID="{1931A3CE-38E8-4930-975A-BE0FCFAF8C5A}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
