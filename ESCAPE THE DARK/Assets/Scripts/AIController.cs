@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AIController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class AIController : MonoBehaviour
     [SerializeField] float patrolSpeedFraction = 0.2f;
     [SerializeField] float chaseDistance = 2.0f;
     [SerializeField] float chaseTime = 3.0f;
+    [SerializeField] float attackRange = 10.0f;
+
+    public UnityEvent onAttack;
     private float timeSinceArrivedAtWaypoint = 0.0f;
     Mover mover;
     int currentWaypointIndex = 0;
@@ -27,7 +31,7 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(InAttacRangeOfPlayer())
+        if(InAttackRangeOfPlayer())
         {
             AttackBehavior();
         }
@@ -46,11 +50,14 @@ public class AIController : MonoBehaviour
     private void AttackBehavior()
     {
         //Put attack behavior here.
+        print(("Attack"));
+        onAttack.Invoke();
     }
 
-    private bool InAttacRangeOfPlayer()
+    private bool InAttackRangeOfPlayer()
     {
-        return false;//Put attack range check in here.
+        float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
+        return distanceToPlayer < attackRange;//Put attack range check in here.
     }
 
     private void SpotPlayer()
@@ -62,7 +69,6 @@ public class AIController : MonoBehaviour
         }
         else if(timeSinceLastSawPlayer > chaseTime)
         {
-            print("chase timeout");
             spottedPlayer = false;
         }
     }
@@ -75,7 +81,6 @@ public class AIController : MonoBehaviour
 
     private void ChaseBehavior()
     {
-        print("In chase range of player");
         mover.MoveTo(player.transform.position, patrolSpeedFraction);
     }
 
@@ -125,5 +130,7 @@ public class AIController : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, chaseDistance);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
