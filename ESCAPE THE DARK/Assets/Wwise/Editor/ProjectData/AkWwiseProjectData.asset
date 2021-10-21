@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 88d36aae932c7a4785e6faaabbef54ae
     GuidInternal: 
-    m_lastTime: -8585671101555848535
+    m_lastTime: -8585669456643884006
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2656dbdb53635f44a01005978f21d4ea
     GuidInternal: 
-    m_lastTime: -8585669494241744684
+    m_lastTime: -8585669435055875705
     List:
     - name: BedroomVerb
       guid: ae6bb41c0f0c4a4ba482dba92b0d7362
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 73b64445799fa442a57d4811d65568b4
     GuidInternal: 
-    m_lastTime: -8585669518476728689
+    m_lastTime: -8585669435023720574
     List:
     - name: Main
       guid: 9d628864f67b4048a7089463d386e72c
@@ -165,7 +165,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\3dObjects
     guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
     GuidInternal: 
-    m_lastTime: -8585669526965308384
+    m_lastTime: -8585669435076291166
     List:
     - name: Baby Mobile
       guid: d1c538b209a2ec40a23aba8acf150653
@@ -433,7 +433,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiences
     guid: f09b8fe9c5acb542b315eb47a1f66748
     GuidInternal: 
-    m_lastTime: -8585669679167787538
+    m_lastTime: -8585669435076271164
     List:
     - name: Play_KitchenRoomTone
       guid: d27ce042ca12964395507d0c5085b96e
@@ -506,7 +506,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6802f568705a044490d3e9850ca4d899
     GuidInternal: 
-    m_lastTime: -8585669497350387956
+    m_lastTime: -8585669435076231159
     List: []
   - PhysicalPath: Events\PlayerSounds.wwu
     PathAndIcons:
@@ -522,7 +522,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\PlayerSounds
     guid: a99d5cc941302848afd1c5d9fb054bf8
     GuidInternal: 
-    m_lastTime: -8585669495370405774
+    m_lastTime: -8585669435076211177
     List:
     - name: Play_Bumps
       guid: bc4a9b2591ce994f94c3f25e3385c010
@@ -625,7 +625,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: acff7596f53f164eb3cb74a176f85897
     GuidInternal: 
-    m_lastTime: -8585671101555968534
+    m_lastTime: -8585669456644044000
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -639,7 +639,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: de0f12660276ac44ba915d94588a071a
     GuidInternal: 
-    m_lastTime: -8585671101555878537
+    m_lastTime: -8585669456643914006
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -653,7 +653,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 57c3138a2d4eb843b86f3fd97aa299cf
     GuidInternal: 
-    m_lastTime: -8585671101555868533
+    m_lastTime: -8585669456643904007
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -667,10 +667,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 9c6801983c0e44418c5272f620dd0d98
     GuidInternal: 
-    m_lastTime: -8585671101555858538
+    m_lastTime: -8585669456643894005
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a00000015000000160000001a000000b9910200beb90200
+  ExpandedWaapiItemIds: 0c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
