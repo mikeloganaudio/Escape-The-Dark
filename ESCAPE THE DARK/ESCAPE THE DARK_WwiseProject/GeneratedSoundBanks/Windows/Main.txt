@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	937063987	Play_Baby_Mobile			\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile	
 	1247850169	Play_Creaks			\Default Work Unit\3dObjects\Play_Creaks	
 	1320004683	Play_Washing_Machine			\Default Work Unit\3dObjects\Play_Washing_Machine	
+	1622948997	Play_Window_sounds			\Default Work Unit\3dObjects\Play_Window_sounds	
 	1660469979	Play_Blind___Window_2			\Default Work Unit\3dObjects\Play_Blind___Window_2	
 	1967779997	Play_Room_Tone_Light_Household			\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household	
 	2106530489	Stop_Baby_Mobile			\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile	
@@ -29,8 +30,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	589152	Beast Step 3	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Step 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 3		195172
+	1711305	Window sounds	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Window Ambience_8B68A116.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Window sounds		7803868
 	32453971	Beast Growl 5	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Growl 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Beast Growl 5		1783896
-	45013541	Wood Creaking 2 Short	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Wood Creaking 2 Short_D96BA644.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 2 Short		113400
+	45013541	Wood Creaking 2 Short	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Wood Creaking 2 Short_F4A5D760.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 2 Short		113400
 	68144532	Bump 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Bump_D6BDA533.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Bumps\Bump 2		71380
 	122591689	Beast Step 6	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Step 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 6		167300
 	126669571	Step 1_02	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Child Foosteps_425E4B8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_02		59908
@@ -53,13 +55,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	668352159	Fridge Hum	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Fridge_D1ED91C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Fridge Hum		6129268
 	680180418	Beast Growl 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Growl 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Beast Growl 1		3567728
 	807551039	Beast Growl 4	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Growl 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Beast Growl 4		3567728
-	809789661	Door Slamming Closing	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Slamming Closing_41FC3175.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Slamming Closing		324692
+	809789661	Door Slamming Closing	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Slamming Closing_0C5E828A.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Slamming Closing		324692
 	849869532	Room Tone Light Household	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Room Tone Light Household_D21745CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Room Tone Light Household		8717740
 	850914399	Beast Step 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Step 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 2		167300
 	891348412	Washing Machine	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Washing Machine_BBD94610.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Washing Machine		5170060
 	904011973	Blind & Window 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Blind & Window 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Blind & Window 2		1465084
 	951859966	Beast Step 5	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Beast Step 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 5		223044
-	962479127	Door Slamming Closing_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Slamming Closing_F2F9A41A.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Slamming Closing_01		245856
+	962479127	Door Slamming Closing_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Door Slamming Closing_0D9BA0AB.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Slamming Closing_01		245856
 	966732557	Step 1_04	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Child Foosteps_B9F83B01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_04		52136
 	967689289	Room Tone Small Sized Room	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Room Tone Small Sized Room_5F45DB3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Room Tone Small Sized Room		8717364
 	968435521	Step 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Child Foosteps_78FF239C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1		23458

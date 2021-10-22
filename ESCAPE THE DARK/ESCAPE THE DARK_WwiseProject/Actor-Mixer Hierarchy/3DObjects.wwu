@@ -26,7 +26,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-96</Value>
+								<Value>-24</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -38,7 +38,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+							<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
@@ -982,6 +982,64 @@
 							</PositioningInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Window sounds" ID="{151518D2-DF15-42A2-8706-3A0AB086AFCF}" ShortID="872857048">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Att_8" ID="{A51D7596-29B1-4B16-BB5E-B62EB8A292BC}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Window Ambience" ID="{402C7589-371A-4296-809B-45DD18DB5A8F}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1069.592"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.4"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.0572263367052"/>
+										<Property Name="LoopEnd" Type="Real64" Value="39.4697832369942"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Window Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1711305"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Window Ambience" ID="{402C7589-371A-4296-809B-45DD18DB5A8F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Position Name="" ID="{2A9240B9-C9A3-41BC-A785-6E0EEC8B563A}"/>

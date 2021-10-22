@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="ESCAPE THE DARK_WwiseProject" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
+		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudioFX" StaticLib="ResonanceAudioFX"/>
 		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
 		<Plugin Name="System" ID="11403271"/>

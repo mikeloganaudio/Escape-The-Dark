@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID PLAY_WASHING_MACHINE = 1320004683U;
+        static const AkUniqueID PLAY_WINDOW_SOUNDS = 1622948997U;
         static const AkUniqueID STOP_BABY_MOBILE = 2106530489U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_FRIDGE_HUM = 2470329820U;
@@ -41,6 +42,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID RESONANCEAUDIO = 1129712971U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

@@ -139,6 +139,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Window_sounds" ID="{4809ACB1-6E2D-490C-8C06-35D86FCBDC76}">
+					<ChildrenList>
+						<Action Name="" ID="{19BDDE81-C240-483F-B8F3-AE0B38998971}" ShortID="16761787">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Window sounds" ID="{151518D2-DF15-42A2-8706-3A0AB086AFCF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CA8DE8FE-22A6-4A63-B4C1-591A9714A1E7}" ShortID="383230131">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64" Value="50">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{087B9857-42AA-4624-A257-44730DE5C898}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="40"/>
+													<Property Name="Min" Type="Real64" Value="-40"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Window sounds" ID="{151518D2-DF15-42A2-8706-3A0AB086AFCF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

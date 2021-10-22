@@ -89,6 +89,23 @@
 							</ReferenceList>
 							<ObjectLists/>
 						</AuxBus>
+						<Bus Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{2A6D477B-6500-4884-B085-6344E776D321}" ShortID="139137844" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

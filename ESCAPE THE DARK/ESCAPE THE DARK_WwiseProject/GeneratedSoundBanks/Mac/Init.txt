@@ -1,4 +1,5 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1129712971	ResonanceAudio			\Default Work Unit\Master Audio Bus\ResonanceAudio	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
@@ -8,6 +9,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	7132934	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
+	139137844	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	181155226	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 

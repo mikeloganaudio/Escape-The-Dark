@@ -3,12 +3,13 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{31BCB464-3593-496B-AED3-F16692928256}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Documents\SCREAM JAM 2021\AUDIO\Beast Sounds\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Documents\SCREAM JAM 2021\AUDIO\Ambient Sounds\"/>
 				<Property Name="Event Action List\{00CCA934-5E4B-409B-9343-3287EEA7D540}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{043E445F-A83A-4302-82D3-7AF483C21B0A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0914267C-B7C6-4B01-8251-8D8567D2DB1E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{259B4ABC-CE91-4F99-94C3-F25E3385C010}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{33B14804-0D3C-4507-BBDE-9AEC4B68E20C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4809ACB1-6E2D-490C-8C06-35D86FCBDC76}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{497052B4-43B3-4A1C-A9ED-65A143E155D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{58B86264-27A1-4448-8C48-98E574B0561F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5F6735DF-00D5-4072-BCEF-98B821D2DC21}\x64_Expand States" Type="string" Value=""/>
@@ -40,7 +41,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="+NGDP+EcGkK5CyPDdFYSOQEDQUb/////xtQb5P2gp0uOhoaHiYQjdAEDQUb/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="+NGDP+EcGkK5CyPDdFYSOQED6jj/////xtQb5P2gp0uOhoaHiYQjdAED6jj/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -58,7 +59,7 @@
 				<Property Name="PluginUserAcknowledge\ConvolutionReverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{1EBFD365-8678-44FD-83E3-ED15C4607386}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{6464A238-581B-4052-AB3E-8A0D817D439F}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
