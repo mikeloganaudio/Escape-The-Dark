@@ -8,9 +8,6 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{448AE656-0229-4CEC-AAFA-AAF7683073B2}" WorkUnitID="{1247951D-738C-4D2E-BC53-90578D8BC2BA}"/>
 						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}">
@@ -20,23 +17,24 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0">
-									<Custom CreatedFrom="{E22DBBB6-7656-4B93-A28D-C003FD416889}">
-										<Effect Name="Room_Medium_High_Absorbtion (Custom)" ID="{35F169AD-1787-4379-8840-B083CE6B7624}" ShortID="680072170" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<Custom CreatedFrom="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}">
+										<Effect Name="Room_Medium_Tiled (Custom)" ID="{98D97C0E-A857-4969-9D25-6563E50323C2}" ShortID="7132934" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<PropertyList>
-												<Property Name="Density" Type="Real32" Value="70"/>
-												<Property Name="Diffusion" Type="Real32" Value="46"/>
+												<Property Name="DecayTime" Type="Real32" Value="1.1"/>
+												<Property Name="Density" Type="Real32" Value="72"/>
+												<Property Name="Diffusion" Type="Real32" Value="72"/>
 												<Property Name="ERLevel" Type="Real32" Value="-23"/>
 												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
-												<Property Name="Filter2Freq" Type="Real32" Value="10520"/>
-												<Property Name="Filter2Gain" Type="Real32" Value="-12"/>
+												<Property Name="Filter2Freq" Type="Real32" Value="6000"/>
 												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-												<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
-												<Property Name="HFDamping" Type="Real32" Value="7"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="-2"/>
+												<Property Name="HFDamping" Type="Real32" Value="1.05"/>
+												<Property Name="PreDelay" Type="Real32" Value="26"/>
 												<Property Name="Quality" Type="int32" Value="10"/>
-												<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-9"/>
 												<Property Name="RoomShape" Type="Real32" Value="55"/>
-												<Property Name="RoomSize" Type="Real32" Value="15"/>
-												<Property Name="StereoWidth" Type="Real32" Value="115"/>
+												<Property Name="RoomSize" Type="Real32" Value="44"/>
+												<Property Name="StereoWidth" Type="Real32" Value="135"/>
 											</PropertyList>
 										</Effect>
 									</Custom>

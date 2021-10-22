@@ -7,9 +7,8 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2411154035	HallVerb			\Default Work Unit\Master Audio Bus\HallVerb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	7132934	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
 	181155226	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
-	680072170	Room_Medium_High_Absorbtion (Custom)	Wwise RoomVerb			
-	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

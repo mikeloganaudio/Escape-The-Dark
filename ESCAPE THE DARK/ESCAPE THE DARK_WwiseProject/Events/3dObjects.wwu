@@ -36,28 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Wood_Creaking_1" ID="{7224968F-C530-47F2-A9A7-39AE06A52830}">
-					<ChildrenList>
-						<Action Name="" ID="{6EF92726-D3F9-437C-9034-66568AC0AC8A}" ShortID="195940617">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Wood Creaking 1" ID="{09C7EE95-6E14-42A8-9FC4-39F2B3D76E7A}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Wood_Creaking_2_Short" ID="{60BA18A7-D655-42ED-8F33-A40139276B5A}">
-					<ChildrenList>
-						<Action Name="" ID="{49FCFC2A-5B37-4F54-A3C6-697F7E967220}" ShortID="482301587">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Wood Creaking 2 Short" ID="{5D1848D7-70A9-440F-8650-6415272D82E3}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Fridge" ID="{1D7C7915-FE22-44BD-9951-155F93F404DB}" ShortID="801638904">
 					<ChildrenList>
 						<Event Name="Play_Fridge_Hum" ID="{AC7DA162-21C7-40BB-B0FA-FF63FF75644D}">

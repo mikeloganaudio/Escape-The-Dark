@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Steps" ID="{0914267C-B7C6-4B01-8251-8D8567D2DB1E}">
+					<ChildrenList>
+						<Action Name="" ID="{E24171E5-09DF-48EE-974F-11027CA68A58}" ShortID="1039285896">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{9E5F7449-CE87-49D3-B292-186EA3B54B9E}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

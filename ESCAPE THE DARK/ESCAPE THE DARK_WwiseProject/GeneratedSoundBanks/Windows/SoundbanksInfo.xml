@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4019380893">
+		<SoundBank Id="1355168291" Language="SFX" Hash="868368637">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3933781742">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2862430854">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -33,6 +33,9 @@
 							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1660469979" Name="Play_Blind___Window_2" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Blind___Window_2" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="9.485110" DurationMax="9.485110">
 					<IncludedMemoryFiles>
@@ -41,6 +44,9 @@
 							<Path>SFX\Blind &amp; Window 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2730345109" Name="Play_Bumps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Bumps" DurationType="OneShot" DurationMin="0.360877" DurationMax="0.507820">
 					<IncludedMemoryFiles>
@@ -61,13 +67,28 @@
 					<IncludedMemoryFiles>
 						<File Id="45013541" Language="SFX">
 							<ShortName>Wood Creaking 2 Short.wav</ShortName>
-							<Path>SFX\Wood Creaking 2 Short_A33F292B.wem</Path>
+							<Path>SFX\Wood Creaking 2 Short_D96BA644.wem</Path>
+						</File>
+						<File Id="471059451" Language="SFX">
+							<ShortName>Door Creaking.wav</ShortName>
+							<Path>SFX\Door Creaking_10C4C929.wem</Path>
 						</File>
 						<File Id="615102212" Language="SFX">
 							<ShortName>Wood Creaking 1.wav</ShortName>
 							<Path>SFX\Wood Creaking 1_10C4C929.wem</Path>
 						</File>
+						<File Id="809789661" Language="SFX">
+							<ShortName>Door Slamming Closing.wav</ShortName>
+							<Path>SFX\Door Slamming Closing_41FC3175.wem</Path>
+						</File>
+						<File Id="962479127" Language="SFX">
+							<ShortName>Door Slamming Closing.wav</ShortName>
+							<Path>SFX\Door Slamming Closing_F2F9A41A.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3327054553" Name="Play_Door_Creaking" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Creaking" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="33.762104" DurationMax="33.762104">
 					<IncludedMemoryFiles>
@@ -76,14 +97,20 @@
 							<Path>SFX\Door Creaking_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2551992801" Name="Play_Door_Slamming_Closing" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Slamming_Closing" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="16.904411" DurationMax="16.904411">
+				<Event Id="2551992801" Name="Play_Door_Slamming_Closing" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Slamming_Closing" DurationType="OneShot" DurationMin="16.904411" DurationMax="16.904411">
 					<IncludedMemoryFiles>
 						<File Id="617054053" Language="SFX">
 							<ShortName>Door Slamming Closing.wav</ShortName>
 							<Path>SFX\Door Slamming Closing_3AF08D82.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Play_Footsteps" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -135,6 +162,9 @@
 							<Path>SFX\Fridge_D1ED91C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3396512620" Name="Play_Growls" ObjectPath="\Events\Default Work Unit\Beast Sounds\Play_Growls" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -159,6 +189,9 @@
 							<Path>SFX\Beast Growl 4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2905397547" Name="Play_KitchenRoomTone" ObjectPath="\Events\Default Work Unit\Ambiences\Play_KitchenRoomTone" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -184,6 +217,41 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2600469463" Name="Play_Steps" ObjectPath="\Events\Default Work Unit\Beast Sounds\Play_Steps" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="589152" Language="SFX">
+							<ShortName>Beast Step 3.wav</ShortName>
+							<Path>SFX\Beast Step 3_10C4C929.wem</Path>
+						</File>
+						<File Id="122591689" Language="SFX">
+							<ShortName>Beast Step 6.wav</ShortName>
+							<Path>SFX\Beast Step 6_10C4C929.wem</Path>
+						</File>
+						<File Id="231893292" Language="SFX">
+							<ShortName>Beast Step 4.wav</ShortName>
+							<Path>SFX\Beast Step 4_10C4C929.wem</Path>
+						</File>
+						<File Id="326948762" Language="SFX">
+							<ShortName>Beast Step 1.wav</ShortName>
+							<Path>SFX\Beast Step 1_10C4C929.wem</Path>
+						</File>
+						<File Id="850914399" Language="SFX">
+							<ShortName>Beast Step 2.wav</ShortName>
+							<Path>SFX\Beast Step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="951859966" Language="SFX">
+							<ShortName>Beast Step 5.wav</ShortName>
+							<Path>SFX\Beast Step 5_10C4C929.wem</Path>
+						</File>
+						<File Id="976449610" Language="SFX">
+							<ShortName>Beast Step 7.wav</ShortName>
+							<Path>SFX\Beast Step 7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1320004683" Name="Play_Washing_Machine" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Washing_Machine" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="891348412" Language="SFX">
@@ -191,22 +259,9 @@
 							<Path>SFX\Washing Machine_BBD94610.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2615280544" Name="Play_Wood_Creaking_1" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Wood_Creaking_1" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="146.463684" DurationMax="146.463684">
-					<IncludedMemoryFiles>
-						<File Id="615102212" Language="SFX">
-							<ShortName>Wood Creaking 1.wav</ShortName>
-							<Path>SFX\Wood Creaking 1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2903002012" Name="Play_Wood_Creaking_2_Short" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Wood_Creaking_2_Short" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="0.733771" DurationMax="0.733771">
-					<IncludedMemoryFiles>
-						<File Id="45013541" Language="SFX">
-							<ShortName>Wood Creaking 2 Short.wav</ShortName>
-							<Path>SFX\Wood Creaking 2 Short_A33F292B.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2106530489" Name="Stop_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2963349357" Name="Stop_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Stop_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

@@ -12020,7 +12020,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-200</YPos>
+										<YPos>-5.74484</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -12041,7 +12041,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>60.32258</YPos>
+										<YPos>48.70968</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -12083,7 +12083,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-200</YPos>
+										<YPos>-3.98211</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -12104,7 +12104,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>48.70968</YPos>
+										<YPos>37.41935</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -12112,7 +12112,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{8695E755-9FE2-434E-BA6F-10DBAE4E2A35}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
@@ -12125,7 +12125,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>100</YPos>
+										<YPos>9.67742</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
