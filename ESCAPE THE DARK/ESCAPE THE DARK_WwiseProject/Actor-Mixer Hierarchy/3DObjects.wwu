@@ -1248,12 +1248,189 @@
 								<ActiveSource Name="boiler room" ID="{24E574CC-2E13-4040-88F5-1623F9A5CFB4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Folder Name="EndingSceneSFX" ID="{A5C54EA6-AA7B-4380-BDB9-AD71A54926DF}" ShortID="417199076">
+							<ChildrenList>
+								<Sound Name="Crickets" ID="{2EEBDD7D-2DF0-433E-8377-AD8BB32EA321}" ShortID="950817148">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1103octobernight" ID="{9BD28331-CCF7-4692-828F-0CD30703F2A3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.3613420491107"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.272268409822146"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="104.823337781524"/>
+												<Property Name="TrimEnd" Type="Real64" Value="119.525831911919"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>1103octobernight.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="197723045"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{4A41385E-601E-40EA-A0DF-9B5636029051}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="1103octobernight" ID="{9BD28331-CCF7-4692-828F-0CD30703F2A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Snoring" ID="{C6C5F9AC-9E83-4950-82C4-BF81EDC1C67C}" ShortID="64235725">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Light snores of a man sleeping" ID="{2E5423B5-6EC0-412D-9331-252CD6FC777A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.34207276302851"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.2691382743363"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Light snores of a man sleeping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="888004193"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Light snores of a man sleeping" ID="{2E5423B5-6EC0-412D-9331-252CD6FC777A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mum Laugh" ID="{CD9A923C-CB9A-4DD6-BE94-7A5BAC969629}" ShortID="791177854">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>200</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-46</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Girl Chuckle" ID="{32C057C2-9759-4C4C-B637-ADF859192C70}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0517821523889792"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0388366142917345"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.871666231881149"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.70018067010482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Girl Chuckle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1055869509"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Girl Chuckle" ID="{32C057C2-9759-4C4C-B637-ADF859192C70}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<PositioningInfo>
 						<Position Name="" ID="{2A9240B9-C9A3-41BC-A785-6E0EEC8B563A}"/>
 					</PositioningInfo>
 					<ObjectLists/>
 				</ActorMixer>
+				<Sound Name="UI Impact" ID="{88899126-2A49-4E42-9E5C-28E7A72A9D83}" ShortID="831525901">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Impact 2" ID="{C6A7A76E-2F95-4C52-A291-AAD82C710FBF}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.730871410511105"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.54919751971585"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Impact 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="556392547"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Impact 2" ID="{C6A7A76E-2F95-4C52-A291-AAD82C710FBF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

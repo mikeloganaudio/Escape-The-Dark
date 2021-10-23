@@ -921,6 +921,46 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Puppy Morph" ID="{728EF6D1-4CDF-43D7-A0B8-3D46DB60A4A5}" ShortID="4169757">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Puppy Morph" ID="{10BF5039-C7A0-48AA-8E54-9CFB9C7E811E}">
+									<Language>SFX</Language>
+									<AudioFile>Puppy Morph.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="909125617"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Puppy Morph" ID="{10BF5039-C7A0-48AA-8E54-9CFB9C7E811E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

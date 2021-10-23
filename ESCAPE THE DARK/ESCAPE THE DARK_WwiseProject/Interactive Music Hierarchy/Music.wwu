@@ -246,7 +246,16 @@
 					</TransitionList>
 					<ObjectLists/>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{BB717FCB-0466-454B-B507-969BC68498E5}" ShortID="578701020"/>
+						<MusicPlaylistItem Name="" ID="{BB717FCB-0466-454B-B507-969BC68498E5}" ShortID="578701020">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{59DE750D-A01D-429C-B99A-A5AA0BBA72F4}" ShortID="658178511">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Credits Theme" ID="{ECD91769-6027-4FE3-A545-C8EF57C12B90}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
 			</ChildrenList>

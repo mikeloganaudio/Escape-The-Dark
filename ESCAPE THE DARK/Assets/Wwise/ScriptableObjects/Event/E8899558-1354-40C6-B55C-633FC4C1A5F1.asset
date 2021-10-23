@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f678212b5ec03e469120f5368e8c08c, type: 3}
-  m_Name: 00CCA934-5E4B-409B-9343-3287EEA7D540
+  m_Name: E8899558-1354-40C6-B55C-633FC4C1A5F1
   m_EditorClassIdentifier: 
-  objectName: Play_Washing_Machine
-  id: 1320004683
-  guid: 00CCA934-5E4B-409B-9343-3287EEA7D540
+  objectName: Play_Image2
+  id: 1977286601
+  guid: E8899558-1354-40C6-B55C-633FC4C1A5F1

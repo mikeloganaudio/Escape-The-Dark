@@ -187,6 +187,149 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="EndingSceneSFX" ID="{23010CD5-3DB5-4B6A-975F-EEC94824B46D}" ShortID="346901293">
+					<ChildrenList>
+						<Event Name="Play_Image1" ID="{D0B9C3C4-8637-4DF9-A4BD-95DA344B5EA3}">
+							<ChildrenList>
+								<Action Name="" ID="{00A91DFF-AB10-4AD5-B97E-07375094CC58}" ShortID="812725212">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{2EEBDD7D-2DF0-433E-8377-AD8BB32EA321}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{08384FAC-78F8-4097-8B62-798308F61498}" ShortID="49777499">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Snoring" ID="{C6C5F9AC-9E83-4950-82C4-BF81EDC1C67C}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DAA704F8-8D92-4D45-8E36-C5A1AD5DEF18}" ShortID="120079898">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Image2" ID="{E8899558-1354-40C6-B55C-633FC4C1A5F1}">
+							<ChildrenList>
+								<Action Name="" ID="{CE83C604-7B36-4875-A0C4-23B080DC2740}" ShortID="265523147">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{2EEBDD7D-2DF0-433E-8377-AD8BB32EA321}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{94B3C176-8078-489C-A3AF-3A6C35964F34}" ShortID="219096774">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{95285F9E-3FA4-4433-B072-88FEFF855887}" ShortID="30658365">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Puppy Morph" ID="{728EF6D1-4CDF-43D7-A0B8-3D46DB60A4A5}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Image3" ID="{34C57C4E-F80D-445F-A92B-3FF765CAA60B}">
+							<ChildrenList>
+								<Action Name="" ID="{6AC7A76B-C0F3-4DF7-B6BF-DA9CAEBC2CFE}" ShortID="880358284">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{2EEBDD7D-2DF0-433E-8377-AD8BB32EA321}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB514CE5-9855-436D-9F12-49F806B26787}" ShortID="699982242">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Snoring" ID="{C6C5F9AC-9E83-4950-82C4-BF81EDC1C67C}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{907E1EF6-DCD8-441B-9097-121159990548}" ShortID="282850688">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Snoring" ID="{C6C5F9AC-9E83-4950-82C4-BF81EDC1C67C}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A355D1D8-99E7-499B-A4EE-68C84E78E0C8}" ShortID="497975231">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1BC871BD-1CA6-4B84-9D75-190971CFB40B}" ShortID="152685788">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mum Laugh" ID="{CD9A923C-CB9A-4DD6-BE94-7A5BAC969629}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Image4" ID="{0D995275-B0B4-4ABE-B947-3A685B497F8F}">
+							<ChildrenList>
+								<Action Name="" ID="{1F598E38-D9C9-49D0-8BDB-F543C0B7AF31}" ShortID="716818998">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{2EEBDD7D-2DF0-433E-8377-AD8BB32EA321}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B3E84008-0BF4-4F2E-90FA-6359A86B20D8}" ShortID="911308716">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Snoring" ID="{C6C5F9AC-9E83-4950-82C4-BF81EDC1C67C}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C2B86218-19A6-4350-A302-A4B613A7E4CD}" ShortID="997142372">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Room Tone Small Sized Room" ID="{672D0F4A-2593-4A5E-98F4-3E1F3BB23E62}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{623941F2-DE62-43C6-9D9C-1D3E9E6C9EDD}" ShortID="445592427">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-10"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Baby Mobile" ID="{113B91FE-A55A-47A4-A114-3899215337FF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E1BF273A-3F19-42A4-9FD0-EE74B3513D8B}" ShortID="704315782">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Baby Mobile" ID="{113B91FE-A55A-47A4-A114-3899215337FF}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_UI_Impact" ID="{4224667F-93ED-48B4-8689-9BB7AD56A8E0}">
+					<ChildrenList>
+						<Action Name="" ID="{450F2AF6-0D15-4D70-BAD4-192B5DBD3439}" ShortID="803141148">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI Impact" ID="{88899126-2A49-4E42-9E5C-28E7A72A9D83}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

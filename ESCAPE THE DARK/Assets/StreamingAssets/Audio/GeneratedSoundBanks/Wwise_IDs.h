@@ -24,11 +24,16 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FRIDGE_HUM = 3365485150U;
         static const AkUniqueID PLAY_GROWLS = 3396512620U;
+        static const AkUniqueID PLAY_IMAGE1 = 1977286602U;
+        static const AkUniqueID PLAY_IMAGE2 = 1977286601U;
+        static const AkUniqueID PLAY_IMAGE3 = 1977286600U;
+        static const AkUniqueID PLAY_IMAGE4 = 1977286607U;
         static const AkUniqueID PLAY_KITCHENROOMTONE = 2905397547U;
         static const AkUniqueID PLAY_MENU_THEME = 2181630209U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
+        static const AkUniqueID PLAY_UI_IMPACT = 460547701U;
         static const AkUniqueID PLAY_WASHING_MACHINE = 1320004683U;
         static const AkUniqueID PLAY_WINDOW_SOUNDS = 1622948997U;
         static const AkUniqueID STOP_BABY_MOBILE = 2106530489U;

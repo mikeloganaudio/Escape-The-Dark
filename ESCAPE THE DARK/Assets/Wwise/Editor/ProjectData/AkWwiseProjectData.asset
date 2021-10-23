@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 73b64445799fa442a57d4811d65568b4
     GuidInternal: 
-    m_lastTime: -8585666105752309467
+    m_lastTime: -8585666100740406179
     List:
     - name: Main
       guid: 9d628864f67b4048a7089463d386e72c
@@ -150,6 +150,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9d628864f67b4048a7089463d386e72c
       Path: SoundBanks\Default Work Unit\Main
+    - name: Music
+      guid: c19757f25dd5a5428fcb2b8bfe9017db
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 73b64445799fa442a57d4811d65568b4
+      - ElementName: Music
+        ObjectType: 7
+        guid: c19757f25dd5a5428fcb2b8bfe9017db
+      Path: SoundBanks\Default Work Unit\Music
   EventWwu:
   - PhysicalPath: Events\3dObjects.wwu
     PathAndIcons:
@@ -165,7 +179,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\3dObjects
     guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
     GuidInternal: 
-    m_lastTime: -8585666120393462012
+    m_lastTime: -8585666075329646837
     List:
     - name: Baby Mobile
       guid: d1c538b209a2ec40a23aba8acf150653
@@ -184,6 +198,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: d1c538b209a2ec40a23aba8acf150653
       Path: Events\Default Work Unit\3dObjects\Baby Mobile
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EndingSceneSFX
+      guid: d50c0123b53d6a4b975feec94824b46d
+      id: 2429281521
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: EndingSceneSFX
+        ObjectType: 4
+        guid: d50c0123b53d6a4b975feec94824b46d
+      Path: Events\Default Work Unit\3dObjects\EndingSceneSFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -350,6 +384,98 @@ MonoBehaviour:
         ObjectType: 3
         guid: 62a17dacc721bb40b0faff63ff75644d
       Path: Events\Default Work Unit\3dObjects\Fridge\Play_Fridge_Hum
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Image1
+      guid: c4c3b9d03786f94da4bd95da344b5ea3
+      id: 1977286602
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: EndingSceneSFX
+        ObjectType: 4
+        guid: d50c0123b53d6a4b975feec94824b46d
+      - ElementName: Play_Image1
+        ObjectType: 3
+        guid: c4c3b9d03786f94da4bd95da344b5ea3
+      Path: Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image1
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Image2
+      guid: 589589e85413c640b55c633fc4c1a5f1
+      id: 1977286601
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: EndingSceneSFX
+        ObjectType: 4
+        guid: d50c0123b53d6a4b975feec94824b46d
+      - ElementName: Play_Image2
+        ObjectType: 3
+        guid: 589589e85413c640b55c633fc4c1a5f1
+      Path: Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image2
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Image3
+      guid: 4e7cc5340df85f44a92b3ff765caa60b
+      id: 1977286600
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: EndingSceneSFX
+        ObjectType: 4
+        guid: d50c0123b53d6a4b975feec94824b46d
+      - ElementName: Play_Image3
+        ObjectType: 3
+        guid: 4e7cc5340df85f44a92b3ff765caa60b
+      Path: Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image3
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Image4
+      guid: 7552990db4b0be4ab9473a685b497f8f
+      id: 1977286607
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: 3dObjects
+        ObjectType: 12
+        guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
+      - ElementName: EndingSceneSFX
+        ObjectType: 4
+        guid: d50c0123b53d6a4b975feec94824b46d
+      - ElementName: Play_Image4
+        ObjectType: 3
+        guid: 7552990db4b0be4ab9473a685b497f8f
+      Path: Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image4
       maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
@@ -582,7 +708,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6802f568705a044490d3e9850ca4d899
     GuidInternal: 
-    m_lastTime: -8585666105820720686
+    m_lastTime: -8585666086448808912
     List: []
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
@@ -598,7 +724,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Music
     guid: b72fd9bf5fa6a344b88acd06fbdc4555
     GuidInternal: 
-    m_lastTime: -8585666105820520877
+    m_lastTime: -8585666096754104018
     List:
     - name: Play_Ending_Music
       guid: fb223bb2aafbec42a622434ad5f8a7f6
@@ -618,8 +744,8 @@ MonoBehaviour:
         guid: fb223bb2aafbec42a622434ad5f8a7f6
       Path: Events\Default Work Unit\Music\Play_Ending_Music
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 31.8
+      minDuration: 31.8
     - name: Play_Menu_Theme
       guid: 243204df2462f546bb35904e07c4fa60
       id: 2181630209
@@ -640,6 +766,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 64.8
       minDuration: 64.8
+    - name: Play_UI_Impact
+      guid: 7f662442ed93b44886899bb7ad56a8e0
+      id: 460547701
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Music
+        ObjectType: 12
+        guid: b72fd9bf5fa6a344b88acd06fbdc4555
+      - ElementName: Play_UI_Impact
+        ObjectType: 3
+        guid: 7f662442ed93b44886899bb7ad56a8e0
+      Path: Events\Default Work Unit\Music\Play_UI_Impact
+      maxAttenuation: 0
+      maxDuration: 1.549198
+      minDuration: 1.549198
   - PhysicalPath: Events\PlayerSounds.wwu
     PathAndIcons:
     - ElementName: Events
@@ -802,7 +948,7 @@ MonoBehaviour:
     m_lastTime: -8585671101555858538
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000080000000a000000779c0000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000e0000000f0000001100000012000000130000001b0000002b000000779c0000530c0100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

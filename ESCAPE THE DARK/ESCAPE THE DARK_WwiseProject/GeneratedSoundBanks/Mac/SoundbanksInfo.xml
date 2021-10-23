@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="388926759">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1821794947">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -204,6 +204,90 @@
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1977286602" Name="Play_Image1" ObjectPath="\Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image1" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="197723045" Language="SFX">
+							<ShortName>1103octobernight.wav</ShortName>
+							<Path>SFX\1103octobernight_84700D3E.wem</Path>
+						</File>
+						<File Id="888004193" Language="SFX">
+							<ShortName>Light snores of a man sleeping.wav</ShortName>
+							<Path>SFX\Light snores of a man sleeping_B87CD3CC.wem</Path>
+						</File>
+						<File Id="967689289" Language="SFX">
+							<ShortName>Room Tone Small Sized Room.wav</ShortName>
+							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1977286601" Name="Play_Image2" ObjectPath="\Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image2" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="197723045" Language="SFX">
+							<ShortName>1103octobernight.wav</ShortName>
+							<Path>SFX\1103octobernight_84700D3E.wem</Path>
+						</File>
+						<File Id="909125617" Language="SFX">
+							<ShortName>Puppy Morph.wav</ShortName>
+							<Path>SFX\Puppy Morph_10C4C929.wem</Path>
+						</File>
+						<File Id="967689289" Language="SFX">
+							<ShortName>Room Tone Small Sized Room.wav</ShortName>
+							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1977286600" Name="Play_Image3" ObjectPath="\Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image3" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="197723045" Language="SFX">
+							<ShortName>1103octobernight.wav</ShortName>
+							<Path>SFX\1103octobernight_84700D3E.wem</Path>
+						</File>
+						<File Id="888004193" Language="SFX">
+							<ShortName>Light snores of a man sleeping.wav</ShortName>
+							<Path>SFX\Light snores of a man sleeping_B87CD3CC.wem</Path>
+						</File>
+						<File Id="967689289" Language="SFX">
+							<ShortName>Room Tone Small Sized Room.wav</ShortName>
+							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+						<File Id="1055869509" Language="SFX">
+							<ShortName>Girl Chuckle.wav</ShortName>
+							<Path>SFX\Girl Chuckle_A9A55E02.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1977286607" Name="Play_Image4" ObjectPath="\Events\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image4" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="191968749" Language="SFX">
+							<ShortName>Baby Mobile.wav</ShortName>
+							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
+						</File>
+						<File Id="197723045" Language="SFX">
+							<ShortName>1103octobernight.wav</ShortName>
+							<Path>SFX\1103octobernight_84700D3E.wem</Path>
+						</File>
+						<File Id="888004193" Language="SFX">
+							<ShortName>Light snores of a man sleeping.wav</ShortName>
+							<Path>SFX\Light snores of a man sleeping_B87CD3CC.wem</Path>
+						</File>
+						<File Id="967689289" Language="SFX">
+							<ShortName>Room Tone Small Sized Room.wav</ShortName>
+							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="2905397547" Name="Play_KitchenRoomTone" ObjectPath="\Events\Default Work Unit\Ambiences\Play_KitchenRoomTone" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="219536861" Language="SFX">
@@ -290,12 +374,12 @@
 				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3991369925">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2743273107">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="352231959" Name="Play_Ending_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Ending_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="352231959" Name="Play_Ending_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Ending_Music" DurationType="OneShot" DurationMin="31.799999" DurationMax="31.799999">
 					<IncludedMemoryFiles>
 						<File Id="46120217" Language="SFX">
 							<ShortName>escape the dark happy theme.wav</ShortName>
@@ -308,6 +392,14 @@
 						<File Id="808321884" Language="SFX">
 							<ShortName>escape the dark theme.wav</ShortName>
 							<Path>SFX\escape the dark theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="460547701" Name="Play_UI_Impact" ObjectPath="\Events\Default Work Unit\Music\Play_UI_Impact" DurationType="OneShot" DurationMin="1.549198" DurationMax="1.549198">
+					<IncludedMemoryFiles>
+						<File Id="556392547" Language="SFX">
+							<ShortName>Impact 2.wav</ShortName>
+							<Path>SFX\Impact 2_7AF894E6.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
