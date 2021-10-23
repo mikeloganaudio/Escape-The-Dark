@@ -374,7 +374,7 @@
 				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2743273107">
+		<SoundBank Id="3991942870" Language="SFX" Hash="878551838">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
