@@ -29,6 +29,13 @@
 								<Value>-24</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EA66E48F-E503-4D34-8C59-9A87B2B5722A}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -302,12 +309,36 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5939F860-E93F-46E3-B7D6-B5D0559ABD6F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-8</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FF12E71D-35ED-4100-ADB7-9CDAECB6E199}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -394,6 +425,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Silence" ID="{BE1853A7-4C96-49A9-A119-DE7B6F3A7AA5}" ShortID="692552627">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -421,6 +459,11 @@
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
 												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -465,6 +508,11 @@
 												<Value>-10</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
@@ -505,6 +553,11 @@
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
 												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -893,6 +946,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Silence_04" ID="{1EBFD365-8678-44FD-83E3-ED15C4607386}" ShortID="588661124">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -918,24 +978,50 @@
 							<PositioningInfo>
 								<Position Name="" ID="{0D4A4381-0929-43C0-AD5D-54508482C2B7}">
 									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
 									</PropertyList>
 									<ChildrenList>
 										<Path2D Name="Creaks_Path" ID="{B9FD8140-C59C-4BD9-8748-E26797121F88}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="17"/>
+												<Property Name="RandomY" Type="Real64" Value="19"/>
+												<Property Name="RandomZ" Type="Real64" Value="3"/>
+											</PropertyList>
 											<PointList>
 												<Point>
-													<XPos>52.28427</XPos>
-													<YPos>53.9548</YPos>
+													<XPos>39.0863</XPos>
+													<YPos>52.25988</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>61.42132</XPos>
+													<YPos>12.99435</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>34.01015</XPos>
+													<YPos>-32.76836</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>3.04568527918782</XPos>
+													<YPos>0.564971751412429</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_01" ID="{5FE08EA7-5C40-4097-A5CC-FF3CD959942D}">
 											<PointList>
 												<Point>
-													<XPos>-83.24873</XPos>
-													<YPos>-38.13559</YPos>
+													<XPos>-38.57868</XPos>
+													<YPos>-30.79096</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
@@ -950,10 +1036,16 @@
 										<Path2D Name="Creaks_Path_02" ID="{17A7FDAA-ADA2-415B-B41A-62992012B377}">
 											<PointList>
 												<Point>
-													<XPos>22.33502</XPos>
-													<YPos>-21.18644</YPos>
+													<XPos>-19.28935</XPos>
+													<YPos>-79.9435</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>15.22843</XPos>
+													<YPos>-75.14124</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
@@ -965,6 +1057,24 @@
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
+												<Point>
+													<XPos>-45.6852791878173</XPos>
+													<YPos>50.2824858757062</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>-61.42132</XPos>
+													<YPos>14.12429</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>-51.77665</XPos>
+													<YPos>-54.80226</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_04" ID="{28E0BAD7-3716-442E-965F-0D3DDA64BCBF}">
@@ -974,6 +1084,62 @@
 													<YPos>50</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-37.05584</XPos>
+													<YPos>75.70621</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-12.18274</XPos>
+													<YPos>15.25424</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>-63.95939</XPos>
+													<YPos>6.77966</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>-44.1624365482233</XPos>
+													<YPos>-28.2485875706215</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Creaks_Path_05" ID="{37132799-AE41-4CBC-95E0-C72FE086A90F}">
+											<PointList>
+												<Point>
+													<XPos>-19.79695</XPos>
+													<YPos>88.98305</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>34.5177664974619</XPos>
+													<YPos>90.9604519774011</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Creaks_Path_06" ID="{874329F2-7647-47AE-8C1B-3485D87A291B}">
+											<PointList>
+												<Point>
+													<XPos>-17.25888</XPos>
+													<YPos>82.20339</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>20.8121827411168</XPos>
+													<YPos>87.5706214689266</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
@@ -1038,6 +1204,48 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Window Ambience" ID="{402C7589-371A-4296-809B-45DD18DB5A8F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Boiler" ID="{42CE9803-EF77-42FF-A4E8-895417D8E44A}" ShortID="605208934">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>29</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="boiler room" ID="{24E574CC-2E13-4040-88F5-1623F9A5CFB4}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1333.194"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.477457138924934"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.84616760384308"/>
+										<Property Name="LoopEnd" Type="Real64" Value="21.1354360164104"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>boiler room.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="410287976"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="boiler room" ID="{24E574CC-2E13-4040-88F5-1623F9A5CFB4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

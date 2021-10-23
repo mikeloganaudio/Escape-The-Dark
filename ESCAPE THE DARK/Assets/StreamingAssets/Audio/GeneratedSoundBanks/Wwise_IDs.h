@@ -15,14 +15,17 @@ namespace AK
     {
         static const AkUniqueID PLAY_BABY_MOBILE = 937063987U;
         static const AkUniqueID PLAY_BLIND___WINDOW_2 = 1660469979U;
+        static const AkUniqueID PLAY_BOILER = 3479462977U;
         static const AkUniqueID PLAY_BUMPS = 2730345109U;
         static const AkUniqueID PLAY_CREAKS = 1247850169U;
         static const AkUniqueID PLAY_DOOR_CREAKING = 3327054553U;
         static const AkUniqueID PLAY_DOOR_SLAMMING_CLOSING = 2551992801U;
+        static const AkUniqueID PLAY_ENDING_MUSIC = 352231959U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FRIDGE_HUM = 3365485150U;
         static const AkUniqueID PLAY_GROWLS = 3396512620U;
         static const AkUniqueID PLAY_KITCHENROOMTONE = 2905397547U;
+        static const AkUniqueID PLAY_MENU_THEME = 2181630209U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
@@ -37,6 +40,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
     namespace BUSSES

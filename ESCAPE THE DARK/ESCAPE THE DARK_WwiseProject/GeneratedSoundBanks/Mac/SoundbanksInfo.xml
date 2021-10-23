@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2362474339">
+		<SoundBank Id="1355168291" Language="SFX" Hash="575804205">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4118896310">
+		<SoundBank Id="3161908922" Language="SFX" Hash="388926759">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -42,6 +42,17 @@
 						<File Id="904011973" Language="SFX">
 							<ShortName>Blind &amp; Window 2.wav</ShortName>
 							<Path>SFX\Blind &amp; Window 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3479462977" Name="Play_Boiler" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Boiler" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="25.156294" DurationMax="25.156294">
+					<IncludedMemoryFiles>
+						<File Id="410287976" Language="SFX">
+							<ShortName>boiler room.wav</ShortName>
+							<Path>SFX\boiler room_6B27D878.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -90,7 +101,7 @@
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3327054553" Name="Play_Door_Creaking" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Creaking" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="33.762104" DurationMax="33.762104">
+				<Event Id="3327054553" Name="Play_Door_Creaking" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Door_Creaking" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="28.390430" DurationMax="40.150131">
 					<IncludedMemoryFiles>
 						<File Id="471059451" Language="SFX">
 							<ShortName>Door Creaking.wav</ShortName>
@@ -267,7 +278,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1711305" Language="SFX">
 							<ShortName>Window Ambience.wav</ShortName>
-							<Path>SFX\Window Ambience_8B68A116.wem</Path>
+							<Path>SFX\Window Ambience_2FE51CAE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -277,6 +288,29 @@
 				<Event Id="2106530489" Name="Stop_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2963349357" Name="Stop_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Stop_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="3991369925">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="352231959" Name="Play_Ending_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Ending_Music" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="46120217" Language="SFX">
+							<ShortName>escape the dark happy theme.wav</ShortName>
+							<Path>SFX\escape the dark happy theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2181630209" Name="Play_Menu_Theme" ObjectPath="\Events\Default Work Unit\Music\Play_Menu_Theme" DurationType="OneShot" DurationMin="64.800003" DurationMax="64.800003">
+					<IncludedMemoryFiles>
+						<File Id="808321884" Language="SFX">
+							<ShortName>escape the dark theme.wav</ShortName>
+							<Path>SFX\escape the dark theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

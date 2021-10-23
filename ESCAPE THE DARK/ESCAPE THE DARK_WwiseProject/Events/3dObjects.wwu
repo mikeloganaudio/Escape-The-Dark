@@ -176,6 +176,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Boiler" ID="{B26F49FB-D922-4408-8F5E-193B796455F7}">
+					<ChildrenList>
+						<Action Name="" ID="{61F115AB-A7C3-48A2-8256-BB98A1A2EA5F}" ShortID="787015221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Boiler" ID="{42CE9803-EF77-42FF-A4E8-895417D8E44A}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
