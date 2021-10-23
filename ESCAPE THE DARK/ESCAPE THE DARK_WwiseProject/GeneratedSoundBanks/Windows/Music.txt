@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
-	352231959	Play_Ending_Music			\Default Work Unit\Music\Play_Ending_Music	
+	16398088	Play_CutsceneAudio			\Default Work Unit\Music\Play_CutsceneAudio	
+	163583310	Stop_CutsceneAudio			\Default Work Unit\Music\Stop_CutsceneAudio	
 	460547701	Play_UI_Impact			\Default Work Unit\Music\Play_UI_Impact	
+	810056023	Stop_Menu_Theme			\Default Work Unit\Music\Stop_Menu_Theme	
 	2181630209	Play_Menu_Theme			\Default Work Unit\Music\Play_Menu_Theme	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	46120217	escape the dark happy theme	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\escape the dark happy theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ending Music\Credits Theme\escape the dark happy theme		18784320
+	359245261	CutsceneAudio	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\ending sequence_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\CutsceneAudio		6976648
 	556392547	UI Impact	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\Impact 2_7AF894E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\UI Impact		273344
 	808321884	escape the dark theme	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Windows\SFX\escape the dark theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu Music\Menu Theme\escape the dark theme		12441664
 

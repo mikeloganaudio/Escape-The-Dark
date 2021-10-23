@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{BFD92FB7-A65F-44A3-B88A-CD06FBDC4555}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_Ending_Music" ID="{B23B22FB-FBAA-42EC-A622-434AD5F8A7F6}">
-					<ChildrenList>
-						<Action Name="" ID="{637714A7-82ED-4C6A-A727-D4338814D7CE}" ShortID="721404182">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ending Music" ID="{CC13EDEB-A466-416F-9FA5-D9F59C6961F3}" WorkUnitID="{AAD8280B-C06A-430E-9603-BADFDB9958C5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Menu_Theme" ID="{DF043224-6224-46F5-BB35-904E07C4FA60}">
 					<ChildrenList>
 						<Action Name="" ID="{3C5FAD95-134B-4B7D-A9F3-7A38ADC9C60F}" ShortID="578008797">
@@ -31,6 +20,59 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI Impact" ID="{88899126-2A49-4E42-9E5C-28E7A72A9D83}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Menu_Theme" ID="{734F9C82-1485-49CE-BB03-9EE49B0C8E2B}">
+					<ChildrenList>
+						<Action Name="" ID="{51980410-2BE5-48E0-8FBC-11641FD7B17D}" ShortID="868465444">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu Theme" ID="{0EB5AD79-4B24-47D8-8AF3-D014D5B4419D}" WorkUnitID="{AAD8280B-C06A-430E-9603-BADFDB9958C5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{830BB10F-E112-4253-AD8E-4A6501182E14}" ShortID="448854664">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu Theme" ID="{0EB5AD79-4B24-47D8-8AF3-D014D5B4419D}" WorkUnitID="{AAD8280B-C06A-430E-9603-BADFDB9958C5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CutsceneAudio" ID="{0FE28081-09FE-4877-B85C-C3AFADDD4668}">
+					<ChildrenList>
+						<Action Name="" ID="{93FFF39A-2450-4B21-9C64-57F417B7ABFA}" ShortID="633582137">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CutsceneAudio" ID="{64A3B27E-795E-47AC-82E1-71BBD26E03B2}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_CutsceneAudio" ID="{C0D17BDC-630B-4DB1-85D4-343B24A2363D}">
+					<ChildrenList>
+						<Action Name="" ID="{F7F1D54F-6A23-4481-BFE4-1B2F5D30480D}" ShortID="375362351">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CutsceneAudio" ID="{64A3B27E-795E-47AC-82E1-71BBD26E03B2}" WorkUnitID="{ED3B9086-6D34-4BE2-BE6F-FDF9EE381906}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

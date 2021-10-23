@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1821794947">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2165153246">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -374,18 +374,21 @@
 				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="878551838">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2506246602">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="352231959" Name="Play_Ending_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Ending_Music" DurationType="OneShot" DurationMin="31.799999" DurationMax="31.799999">
+				<Event Id="16398088" Name="Play_CutsceneAudio" ObjectPath="\Events\Default Work Unit\Music\Play_CutsceneAudio" DurationType="OneShot" DurationMin="36.336376" DurationMax="36.336376">
 					<IncludedMemoryFiles>
-						<File Id="46120217" Language="SFX">
-							<ShortName>escape the dark happy theme.wav</ShortName>
-							<Path>SFX\escape the dark happy theme_D79FB2B7.wem</Path>
+						<File Id="359245261" Language="SFX">
+							<ShortName>ending sequence.wav</ShortName>
+							<Path>SFX\ending sequence_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2181630209" Name="Play_Menu_Theme" ObjectPath="\Events\Default Work Unit\Music\Play_Menu_Theme" DurationType="OneShot" DurationMin="64.800003" DurationMax="64.800003">
 					<IncludedMemoryFiles>
@@ -403,6 +406,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="163583310" Name="Stop_CutsceneAudio" ObjectPath="\Events\Default Work Unit\Music\Stop_CutsceneAudio" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="810056023" Name="Stop_Menu_Theme" ObjectPath="\Events\Default Work Unit\Music\Stop_Menu_Theme" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

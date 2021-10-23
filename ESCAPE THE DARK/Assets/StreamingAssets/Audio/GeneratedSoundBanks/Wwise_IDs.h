@@ -18,9 +18,9 @@ namespace AK
         static const AkUniqueID PLAY_BOILER = 3479462977U;
         static const AkUniqueID PLAY_BUMPS = 2730345109U;
         static const AkUniqueID PLAY_CREAKS = 1247850169U;
+        static const AkUniqueID PLAY_CUTSCENEAUDIO = 16398088U;
         static const AkUniqueID PLAY_DOOR_CREAKING = 3327054553U;
         static const AkUniqueID PLAY_DOOR_SLAMMING_CLOSING = 2551992801U;
-        static const AkUniqueID PLAY_ENDING_MUSIC = 352231959U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FRIDGE_HUM = 3365485150U;
         static const AkUniqueID PLAY_GROWLS = 3396512620U;
@@ -37,8 +37,10 @@ namespace AK
         static const AkUniqueID PLAY_WASHING_MACHINE = 1320004683U;
         static const AkUniqueID PLAY_WINDOW_SOUNDS = 1622948997U;
         static const AkUniqueID STOP_BABY_MOBILE = 2106530489U;
+        static const AkUniqueID STOP_CUTSCENEAUDIO = 163583310U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_FRIDGE_HUM = 2470329820U;
+        static const AkUniqueID STOP_MENU_THEME = 810056023U;
     } // namespace EVENTS
 
     namespace BANKS

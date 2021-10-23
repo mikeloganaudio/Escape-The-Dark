@@ -701,7 +701,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 524fd946f2cd55a4e87d4c0ad0814c63, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 2365477f99bfeae46bdbe1085a50c6d1, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35a03cecb96a96f4593c770d93274465, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5ab7a5b90c4b88341b41dbd84a5633c0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -4240,7 +4240,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35a03cecb96a96f4593c770d93274465, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5ab7a5b90c4b88341b41dbd84a5633c0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -11358,7 +11358,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35a03cecb96a96f4593c770d93274465, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5ab7a5b90c4b88341b41dbd84a5633c0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -13244,6 +13244,89 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300008, guid: 0e0146a28c9ff004db1a9e81b928b4a9, type: 3}
+--- !u!1 &780671532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780671535}
+  - component: {fileID: 780671534}
+  - component: {fileID: 780671533}
+  m_Layer: 0
+  m_Name: MenuMusicStop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &780671533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780671532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de7ca2c3d3328e4daa3c6fdf58af3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eaf2dd0060422d945a1b184eaf973fda, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &780671534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780671532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6be251234ae734bb78a2124b308b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!4 &780671535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780671532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 685.5, y: 299, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782987550
 GameObject:
   m_ObjectHideFlags: 0
@@ -20796,7 +20879,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dd455cfa1f900ef4ea9632b59284f563, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4f8efb26c25250a46a54bc4643072644, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -24693,7 +24776,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35a03cecb96a96f4593c770d93274465, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5ab7a5b90c4b88341b41dbd84a5633c0, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -32150,7 +32233,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9e1c94328c097be4889cfcc7883e8a26, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ec7a2c533fd4df4458f63f82dcad7179, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -34823,7 +34906,7 @@ PrefabInstance:
     - target: {fileID: 4973163807586330090, guid: 5aae0e9d9d5ca7a488ae09e022dee196, type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 488559224934fea4e9cf798ff8810f43, type: 2}
+      objectReference: {fileID: 11400000, guid: f5841e0d1aac6ba449638c37b829fdcb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aae0e9d9d5ca7a488ae09e022dee196, type: 3}
 --- !u!4 &2141489801 stripped
