@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="575804205">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1762304890">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,16 +21,16 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2165153246">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2541282237">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="937063987" Name="Play_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="17.864357" DurationMax="17.864357">
+				<Event Id="937063987" Name="Play_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="17.574522" DurationMax="17.574522">
 					<IncludedMemoryFiles>
 						<File Id="191968749" Language="SFX">
 							<ShortName>Baby Mobile.wav</ShortName>
-							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
+							<Path>SFX\Baby Mobile_A40080B9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -179,25 +179,41 @@
 				</Event>
 				<Event Id="3396512620" Name="Play_Growls" ObjectPath="\Events\Default Work Unit\Beast Sounds\Play_Growls" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="32453971" Language="SFX">
-							<ShortName>Beast Growl 5.wav</ShortName>
-							<Path>SFX\Beast Growl 5_10C4C929.wem</Path>
+						<File Id="20828903" Language="SFX">
+							<ShortName>Growl 4.wav</ShortName>
+							<Path>SFX\Growl 4_10C4C929.wem</Path>
 						</File>
-						<File Id="220392881" Language="SFX">
-							<ShortName>Beast Growl 2.wav</ShortName>
-							<Path>SFX\Beast Growl 2_10C4C929.wem</Path>
+						<File Id="22207633" Language="SFX">
+							<ShortName>Growl 1.wav</ShortName>
+							<Path>SFX\Growl 1_10C4C929.wem</Path>
 						</File>
-						<File Id="427048463" Language="SFX">
-							<ShortName>Beast Growl 3.wav</ShortName>
-							<Path>SFX\Beast Growl 3_10C4C929.wem</Path>
+						<File Id="181402200" Language="SFX">
+							<ShortName>Growl 3.wav</ShortName>
+							<Path>SFX\Growl 3_10C4C929.wem</Path>
 						</File>
-						<File Id="680180418" Language="SFX">
-							<ShortName>Beast Growl 1.wav</ShortName>
-							<Path>SFX\Beast Growl 1_10C4C929.wem</Path>
+						<File Id="225426101" Language="SFX">
+							<ShortName>Growl 7.wav</ShortName>
+							<Path>SFX\Growl 7_10C4C929.wem</Path>
 						</File>
-						<File Id="807551039" Language="SFX">
-							<ShortName>Beast Growl 4.wav</ShortName>
-							<Path>SFX\Beast Growl 4_10C4C929.wem</Path>
+						<File Id="423278672" Language="SFX">
+							<ShortName>Growl 8.wav</ShortName>
+							<Path>SFX\Growl 8_10C4C929.wem</Path>
+						</File>
+						<File Id="527177115" Language="SFX">
+							<ShortName>Growl 5.wav</ShortName>
+							<Path>SFX\Growl 5_10C4C929.wem</Path>
+						</File>
+						<File Id="716508710" Language="SFX">
+							<ShortName>Growl 9.wav</ShortName>
+							<Path>SFX\Growl 9_10C4C929.wem</Path>
+						</File>
+						<File Id="927141232" Language="SFX">
+							<ShortName>Growl 6.wav</ShortName>
+							<Path>SFX\Growl 6_10C4C929.wem</Path>
+						</File>
+						<File Id="1026634374" Language="SFX">
+							<ShortName>Growl 2.wav</ShortName>
+							<Path>SFX\Growl 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -269,7 +285,7 @@
 					<IncludedMemoryFiles>
 						<File Id="191968749" Language="SFX">
 							<ShortName>Baby Mobile.wav</ShortName>
-							<Path>SFX\Baby Mobile_10C4C929.wem</Path>
+							<Path>SFX\Baby Mobile_A40080B9.wem</Path>
 						</File>
 						<File Id="197723045" Language="SFX">
 							<ShortName>1103octobernight.wav</ShortName>
@@ -309,6 +325,14 @@
 						<File Id="967689289" Language="SFX">
 							<ShortName>Room Tone Small Sized Room.wav</ShortName>
 							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Rumble" MaxAttenuation="18.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="332319077" Language="SFX">
+							<ShortName>Low-Water-Rumble-TDRNova_01.wav</ShortName>
+							<Path>SFX\Low-Water-Rumble-TDRNova_01_53AE459F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -372,7 +396,11 @@
 				<Event Id="2106530489" Name="Stop_Baby_Mobile" ObjectPath="\Events\Default Work Unit\3dObjects\Baby Mobile\Stop_Baby_Mobile" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2963349357" Name="Stop_Footsteps" ObjectPath="\Events\Default Work Unit\PlayerSounds\Player Sounds\Stop_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2470329820" Name="Stop_Fridge_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Fridge\Stop_Fridge_Hum" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3415675391" Name="Stop_Rumble" ObjectPath="\Events\Default Work Unit\Ambiences\Stop_Rumble" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3819246579" Name="ProxToCorgi" ObjectPath="\Game Parameters\Default Work Unit\ProxToCorgi"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX" Hash="2506246602">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>

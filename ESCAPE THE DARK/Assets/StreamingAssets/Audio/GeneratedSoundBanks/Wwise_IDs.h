@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_MENU_THEME = 2181630209U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
+        static const AkUniqueID PLAY_RUMBLE = 1002643937U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID PLAY_UI_IMPACT = 460547701U;
         static const AkUniqueID PLAY_WASHING_MACHINE = 1320004683U;
@@ -41,7 +42,13 @@ namespace AK
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
         static const AkUniqueID STOP_FRIDGE_HUM = 2470329820U;
         static const AkUniqueID STOP_MENU_THEME = 810056023U;
+        static const AkUniqueID STOP_RUMBLE = 3415675391U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PROXTOCORGI = 3819246579U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

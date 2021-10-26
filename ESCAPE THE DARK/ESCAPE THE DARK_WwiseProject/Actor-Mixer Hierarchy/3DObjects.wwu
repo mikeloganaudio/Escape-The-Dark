@@ -76,6 +76,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Baby Mobile" ID="{646FEF52-533D-4980-A26E-6D2E50AC67EC}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.253777409046214"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.253777409046214"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Baby Mobile.wav</AudioFile>
 									<MediaIDList>

@@ -36,6 +36,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Rumble" ID="{70535C39-0E9A-4127-9827-E96AEFD809E2}">
+					<ChildrenList>
+						<Action Name="" ID="{27EB7B65-C001-4FB9-8A92-85841D518331}" ShortID="526074149">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rumble" ID="{8BDCCE1D-6F47-45B9-B120-FA67A549DD4B}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Rumble" ID="{DF73D383-5D53-45FA-B78F-F26EE31EFF5D}">
+					<ChildrenList>
+						<Action Name="" ID="{ABD1E0E3-38D9-42CB-AE73-C4DEFA14DEB4}" ShortID="862118255">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rumble" ID="{8BDCCE1D-6F47-45B9-B120-FA67A549DD4B}" WorkUnitID="{35A36A70-F4DD-41F3-A98E-A28430A6CC2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

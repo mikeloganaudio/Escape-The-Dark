@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9675FFAC-3FF5-4E16-B3CB-74A176F85897}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{9675FFAC-3FF5-4E16-B3CB-74A176F85897}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9675FFAC-3FF5-4E16-B3CB-74A176F85897}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ProxToCorgi" ID="{74E1E3B9-B700-48EE-8960-10F720B89703}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="30"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

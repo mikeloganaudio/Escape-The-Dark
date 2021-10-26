@@ -8,6 +8,26 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{448AE656-0229-4CEC-AAFA-AAF7683073B2}" WorkUnitID="{1247951D-738C-4D2E-BC53-90578D8BC2BA}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Gain (Custom)" ID="{76149B77-4CC7-4232-8507-22A615D647BE}" ShortID="953420092" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<PropertyList>
+										<Property Name="FullBandGain" Type="Real32" Value="5.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Wwise Compressor (Custom)" ID="{484FF0FD-8927-4930-ACB9-DAFE79C5B8C6}" ShortID="42425335" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="0.7"/>
+										<Property Name="Ratio" Type="Real32" Value="6.2"/>
+										<Property Name="Threshold" Type="Real32" Value="-21.3"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}">
@@ -100,7 +120,7 @@
 							<ReferenceList>
 								<Reference Name="Effect0">
 									<Custom>
-										<Effect Name="Resonance Audio Renderer (Custom)" ID="{2A6D477B-6500-4884-B085-6344E776D321}" ShortID="139137844" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{3C463937-E228-4A24-BDAA-C3D0993948F2}" ShortID="601073868" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
 									</Custom>
 								</Reference>
 							</ReferenceList>

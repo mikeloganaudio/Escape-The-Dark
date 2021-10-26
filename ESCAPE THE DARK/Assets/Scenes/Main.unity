@@ -339,6 +339,35 @@ MonoBehaviour:
     m_Bits: 8
   maxDistance: -1
   refreshInterval: 1
+--- !u!114 &2729811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de7ca2c3d3328e4daa3c6fdf58af3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ebc3bee7e93a03b43baea3ab70781f6f, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &14243483
 GameObject:
   m_ObjectHideFlags: 0
@@ -32195,6 +32224,7 @@ GameObject:
   - component: {fileID: 1964520401}
   - component: {fileID: 1964520400}
   - component: {fileID: 1964520402}
+  - component: {fileID: 1964520403}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -32223,6 +32253,7 @@ MonoBehaviour:
   lookXLimit: 45
   akevent: Play_Footsteps
   stopevent: Stop_Footsteps
+  demon_corgi: {fileID: 2127806311}
   canMove: 1
 --- !u!143 &1964520395
 CharacterController:
@@ -32384,6 +32415,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eacd2f00c3c21244ba087fd58fbecc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1964520403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964520393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de7ca2c3d3328e4daa3c6fdf58af3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ebc3bee7e93a03b43baea3ab70781f6f, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &1967244297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: b4bf5e3a00974a94ea1549814fc16ebf, type: 3}

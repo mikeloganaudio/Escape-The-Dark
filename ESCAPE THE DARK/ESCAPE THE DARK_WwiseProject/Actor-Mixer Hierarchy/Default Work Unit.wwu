@@ -602,11 +602,24 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>-3</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3C05B7F6-F65E-40A2-B7DE-37EBD78FBBCF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -618,7 +631,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Beast Growl 1" ID="{3291F579-441D-44CF-AEE4-1B8B5B1ECA45}" ShortID="667981465">
+								<Sound Name="Growl 1" ID="{B8C77EB8-D21E-4782-A32F-18C095B0EBDC}" ShortID="370179344">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -628,20 +641,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Beast Growl 1" ID="{0628EAA9-0218-4557-B2FE-F36DC25BEC18}">
+										<AudioFileSource Name="Growl 1" ID="{B5C55152-5E7C-4295-90E6-FA41150E8FA8}">
 											<Language>SFX</Language>
-											<AudioFile>Beast Growl 1.wav</AudioFile>
+											<AudioFile>Growl 1.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="680180418"/>
+												<MediaID ID="22207633"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Beast Growl 1" ID="{0628EAA9-0218-4557-B2FE-F36DC25BEC18}" Platform="Linked"/>
+										<ActiveSource Name="Growl 1" ID="{B5C55152-5E7C-4295-90E6-FA41150E8FA8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Beast Growl 2" ID="{85ACE532-CA13-4D08-B13F-D6D52A199337}" ShortID="403678563">
+								<Sound Name="Growl 2" ID="{DE0A0A5A-E3D7-431D-857A-C7CB047621D6}" ShortID="167340543">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -651,20 +664,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Beast Growl 2" ID="{8761E266-30DD-4109-85BE-8A249A91DD6F}">
+										<AudioFileSource Name="Growl 2" ID="{D841A874-1BE6-400D-BC92-C4FD82A032F3}">
 											<Language>SFX</Language>
-											<AudioFile>Beast Growl 2.wav</AudioFile>
+											<AudioFile>Growl 2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="220392881"/>
+												<MediaID ID="1026634374"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Beast Growl 2" ID="{8761E266-30DD-4109-85BE-8A249A91DD6F}" Platform="Linked"/>
+										<ActiveSource Name="Growl 2" ID="{D841A874-1BE6-400D-BC92-C4FD82A032F3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Beast Growl 3" ID="{99AF237B-026D-40DF-86F9-C66AF8465B86}" ShortID="922173200">
+								<Sound Name="Growl 3" ID="{7B6BF75F-2DE3-4F27-81D9-606C31552F34}" ShortID="33246764">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -674,20 +687,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Beast Growl 3" ID="{5B97DEB4-1E6B-413D-B6D9-DD83958974E3}">
+										<AudioFileSource Name="Growl 3" ID="{15BDB067-324B-44A0-BE98-DB3891449F67}">
 											<Language>SFX</Language>
-											<AudioFile>Beast Growl 3.wav</AudioFile>
+											<AudioFile>Growl 3.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="427048463"/>
+												<MediaID ID="181402200"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Beast Growl 3" ID="{5B97DEB4-1E6B-413D-B6D9-DD83958974E3}" Platform="Linked"/>
+										<ActiveSource Name="Growl 3" ID="{15BDB067-324B-44A0-BE98-DB3891449F67}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Beast Growl 4" ID="{94CB1A94-45C7-455F-B1A8-091E984E4099}" ShortID="669995056">
+								<Sound Name="Growl 4" ID="{B4F3ACF5-AB12-4083-A584-EAD70A26B073}" ShortID="160572762">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -697,20 +710,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Beast Growl 4" ID="{B435995B-CCD9-42FA-AE62-5B7B47FD4E42}">
+										<AudioFileSource Name="Growl 4" ID="{64348360-1FC1-4E4F-BFD0-2F03BE81C3F6}">
 											<Language>SFX</Language>
-											<AudioFile>Beast Growl 4.wav</AudioFile>
+											<AudioFile>Growl 4.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="807551039"/>
+												<MediaID ID="20828903"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Beast Growl 4" ID="{B435995B-CCD9-42FA-AE62-5B7B47FD4E42}" Platform="Linked"/>
+										<ActiveSource Name="Growl 4" ID="{64348360-1FC1-4E4F-BFD0-2F03BE81C3F6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Beast Growl 5" ID="{1E424C4D-0D1A-4579-B87F-894D6C13C20E}" ShortID="732940738">
+								<Sound Name="Growl 5" ID="{4FAB8C5B-1588-4093-9645-2D2324AD036F}" ShortID="431560630">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
@@ -720,17 +733,109 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Beast Growl 5" ID="{B0F9FBF7-8926-41A3-98C4-00D80DCA65A6}">
+										<AudioFileSource Name="Growl 5" ID="{E80D0948-E864-49E5-8E48-F30B29FAAE7F}">
 											<Language>SFX</Language>
-											<AudioFile>Beast Growl 5.wav</AudioFile>
+											<AudioFile>Growl 5.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="32453971"/>
+												<MediaID ID="527177115"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Beast Growl 5" ID="{B0F9FBF7-8926-41A3-98C4-00D80DCA65A6}" Platform="Linked"/>
+										<ActiveSource Name="Growl 5" ID="{E80D0948-E864-49E5-8E48-F30B29FAAE7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Growl 6" ID="{C7F5F85E-0043-4C02-8150-AE3D01FCEAF5}" ShortID="59730564">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Growl 6" ID="{67C3A2FB-21E1-4EBC-BFF9-2304F6CD786F}">
+											<Language>SFX</Language>
+											<AudioFile>Growl 6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="927141232"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Growl 6" ID="{67C3A2FB-21E1-4EBC-BFF9-2304F6CD786F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Growl 7" ID="{75FC73AE-D1F9-443E-B935-348897121982}" ShortID="882145808">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Growl 7" ID="{57F4BB32-543D-44C9-AE4D-B1EA157165F2}">
+											<Language>SFX</Language>
+											<AudioFile>Growl 7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225426101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Growl 7" ID="{57F4BB32-543D-44C9-AE4D-B1EA157165F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Growl 8" ID="{3E1EEEA7-465D-49A5-93AF-E0CC4275C719}" ShortID="897514576">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Growl 8" ID="{7089557F-27D7-4A69-8D8F-07CB300C83D6}">
+											<Language>SFX</Language>
+											<AudioFile>Growl 8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423278672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Growl 8" ID="{7089557F-27D7-4A69-8D8F-07CB300C83D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Growl 9" ID="{9851327A-B616-40BF-89E7-3FC4EA7A1C05}" ShortID="517107618">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Growl 9" ID="{2B5BBFC9-C48B-4CF1-AED1-E9590B799630}">
+											<Language>SFX</Language>
+											<AudioFile>Growl 9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="716508710"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Growl 9" ID="{2B5BBFC9-C48B-4CF1-AED1-E9590B799630}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -764,7 +869,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

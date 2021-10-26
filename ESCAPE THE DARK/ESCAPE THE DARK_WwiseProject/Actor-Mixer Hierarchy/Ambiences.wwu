@@ -150,6 +150,106 @@
 								<ActiveSource Name="Room Tone Small Sized Room" ID="{CC0E3FAC-2885-42B9-994A-3FA9F1E815ED}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Rumble" ID="{8BDCCE1D-6F47-45B9-B120-FA67A549DD4B}" ShortID="1059727439">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{E3E68D9D-6CBA-49CA-A202-A623358EA3C1}" ShortID="749345652">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="ProxToCorgi" ID="{74E1E3B9-B700-48EE-8960-10F720B89703}" WorkUnitID="{9675FFAC-3FF5-4E16-B3CB-74A176F85897}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{289223A6-49CE-4082-B333-0291FAADA75A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>30</XPos>
+														<YPos>93</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{A0D53819-6DA5-4EA2-8370-C08CD762547F}" ShortID="869392874">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="ProxToCorgi" ID="{74E1E3B9-B700-48EE-8960-10F720B89703}" WorkUnitID="{9675FFAC-3FF5-4E16-B3CB-74A176F85897}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0B66864A-F114-4150-BDC4-F8AD65B9155B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0.37325</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>4.6483</XPos>
+														<YPos>-6.80862</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>30</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Low-Water-Rumble-TDRNova_01" ID="{CD41175A-23CB-489D-8859-A1109FD6C626}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2287.339"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.41693537979351"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.944623586529005"/>
+										<Property Name="LoopBegin" Type="Real64" Value="5.06048349926254"/>
+										<Property Name="LoopEnd" Type="Real64" Value="29.1483849557522"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.15913962635202"/>
+										<Property Name="TrimEnd" Type="Real64" Value="31.9147826020157"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Low-Water-Rumble-TDRNova_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="332319077"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Low-Water-Rumble-TDRNova_01" ID="{CD41175A-23CB-489D-8859-A1109FD6C626}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

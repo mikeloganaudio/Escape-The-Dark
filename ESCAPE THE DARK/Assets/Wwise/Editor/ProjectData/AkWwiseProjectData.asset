@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 88d36aae932c7a4785e6faaabbef54ae
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671101555848535
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 2656dbdb53635f44a01005978f21d4ea
     GuidInternal: 
-    m_lastTime: -8585666273645379917
+    m_lastTime: -8585663466564054911
     List:
     - name: BedroomVerb
       guid: ae6bb41c0f0c4a4ba482dba92b0d7362
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 73b64445799fa442a57d4811d65568b4
     GuidInternal: 
-    m_lastTime: -8585665916898133909
+    m_lastTime: -8585666100740406179
     List:
     - name: Main
       guid: 9d628864f67b4048a7089463d386e72c
@@ -179,7 +179,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\3dObjects
     guid: 3e1e2eb3ef80c648bf0c2a39c94b8536
     GuidInternal: 
-    m_lastTime: -8585665916923420761
+    m_lastTime: -8585666075329646837
     List:
     - name: Baby Mobile
       guid: d1c538b209a2ec40a23aba8acf150653
@@ -262,8 +262,8 @@ MonoBehaviour:
         guid: df35675fd5007240bcef98b821d2dc21
       Path: Events\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile
       maxAttenuation: 18
-      maxDuration: 17.864357
-      minDuration: 17.864357
+      maxDuration: 17.574522
+      minDuration: 17.574522
     - name: Play_Blind___Window_2
       guid: 5f443e043aa8024382d37af483c21b0a
       id: 1660469979
@@ -579,7 +579,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiences
     guid: f09b8fe9c5acb542b315eb47a1f66748
     GuidInternal: 
-    m_lastTime: -8585667800359019863
+    m_lastTime: -8585663453586977997
     List:
     - name: Play_KitchenRoomTone
       guid: d27ce042ca12964395507d0c5085b96e
@@ -641,6 +641,26 @@ MonoBehaviour:
       maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
+    - name: Play_Rumble
+      guid: 395c53709a0e27419827e96aefd809e2
+      id: 1002643937
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6802f568705a044490d3e9850ca4d899
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: f09b8fe9c5acb542b315eb47a1f66748
+      - ElementName: Play_Rumble
+        ObjectType: 3
+        guid: 395c53709a0e27419827e96aefd809e2
+      Path: Events\Default Work Unit\Ambiences\Play_Rumble
+      maxAttenuation: 18
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Beast Sounds.wwu
     PathAndIcons:
     - ElementName: Events
@@ -655,7 +675,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Beast Sounds
     guid: 553de1050612284c9558af0b6dd8a952
     GuidInternal: 
-    m_lastTime: -8585667006091693062
+    m_lastTime: -8585667075786318357
     List:
     - name: Play_Growls
       guid: 931a757966641347942323560043cf56
@@ -708,7 +728,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6802f568705a044490d3e9850ca4d899
     GuidInternal: 
-    m_lastTime: -8585665916923420761
+    m_lastTime: -8585663453586468023
     List: []
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
@@ -724,7 +744,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Music
     guid: b72fd9bf5fa6a344b88acd06fbdc4555
     GuidInternal: 
-    m_lastTime: -8585665859404273236
+    m_lastTime: -8585665863379684127
     List:
     - name: Play_CutsceneAudio
       guid: 8180e20ffe097748b85cc3afaddd4668
@@ -840,7 +860,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\PlayerSounds
     guid: a99d5cc941302848afd1c5d9fb054bf8
     GuidInternal: 
-    m_lastTime: -8585667800358940071
+    m_lastTime: -8585667841548847130
     List:
     - name: Play_Bumps
       guid: bc4a9b2591ce994f94c3f25e3385c010
@@ -943,8 +963,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: acff7596f53f164eb3cb74a176f85897
     GuidInternal: 
-    m_lastTime: -8585674534405721450
-    List: []
+    m_lastTime: -8585663453586688047
+    List:
+    - name: ProxToCorgi
+      guid: b9e3e17400b7ee48896010f720b89703
+      id: 3819246579
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: acff7596f53f164eb3cb74a176f85897
+      - ElementName: ProxToCorgi
+        ObjectType: 13
+        guid: b9e3e17400b7ee48896010f720b89703
+      Path: Game Parameters\Default Work Unit\ProxToCorgi
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -957,7 +991,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: de0f12660276ac44ba915d94588a071a
     GuidInternal: 
-    m_lastTime: -8585674534405671582
+    m_lastTime: -8585671101555878537
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -971,7 +1005,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 57c3138a2d4eb843b86f3fd97aa299cf
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671101555868533
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -985,10 +1019,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 9c6801983c0e44418c5272f620dd0d98
     GuidInternal: 
-    m_lastTime: -8585674534405661611
+    m_lastTime: -8585671101555858538
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000800000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

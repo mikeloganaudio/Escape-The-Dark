@@ -15,6 +15,7 @@ public class FPSController : MonoBehaviour
     public float lookXLimit = 45.0f;
     public string akevent = "default";
     public string stopevent = "default";
+    public Transform demon_corgi;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -22,6 +23,7 @@ public class FPSController : MonoBehaviour
 
     [HideInInspector]
     public bool canMove = true;
+
 
     void Start()
     {
@@ -87,6 +89,8 @@ public class FPSController : MonoBehaviour
             AkSoundEngine.PostEvent(stopevent, gameObject);
         }
 
+        float distanceToCorgi = Vector3.Distance(demon_corgi.transform.position, transform.position);
+        AkSoundEngine.SetRTPCValue("ProxToCorgi", distanceToCorgi);
 
     }
 
@@ -96,5 +100,6 @@ public class FPSController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         canMove = false;
+        AkSoundEngine.PostEvent("Stop_Rumble", gameObject);
     }
 }

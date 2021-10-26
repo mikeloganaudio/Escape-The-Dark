@@ -9,8 +9,10 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	7132934	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
-	139137844	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	42425335	Wwise Compressor (Custom)	Wwise Compressor			
 	181155226	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
+	601073868	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	953420092	Wwise Gain (Custom)	Wwise Gain			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
