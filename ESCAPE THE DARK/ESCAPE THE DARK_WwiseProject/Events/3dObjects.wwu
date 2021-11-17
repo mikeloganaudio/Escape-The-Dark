@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{B32E1E3E-80EF-48C6-BF0C-2A39C94B8536}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
 	<Events>
 		<WorkUnit Name="3dObjects" ID="{B32E1E3E-80EF-48C6-BF0C-2A39C94B8536}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_Blind___Window_2" ID="{043E445F-A83A-4302-82D3-7AF483C21B0A}">
 					<ChildrenList>
@@ -188,6 +192,10 @@
 					</ChildrenList>
 				</Event>
 				<Folder Name="EndingSceneSFX" ID="{23010CD5-3DB5-4B6A-975F-EEC94824B46D}" ShortID="346901293">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Play_Image1" ID="{D0B9C3C4-8637-4DF9-A4BD-95DA344B5EA3}">
 							<ChildrenList>
@@ -330,6 +338,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Lamp_Hum" ID="{11BD559A-608E-443E-AFC4-2C1A708F8D45}">
+					<ChildrenList>
+						<Action Name="" ID="{A6C095B8-01FB-4316-9D4D-ACC0BF62C4B0}" ShortID="33924468">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lamp Hum" ID="{0FBD9702-04EE-4872-AB86-08CB5213122B}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Whispers" ID="{02B6E1CD-5C22-4681-86E7-056955CE05FD}">
+					<ChildrenList>
+						<Action Name="" ID="{8E762712-A559-48E6-8543-01DF97432205}" ShortID="451626301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whispers" ID="{04D07557-9B74-48B0-9103-00EBBE8BC17C}" WorkUnitID="{BD0F9381-9829-4F1F-BCBF-DABF3E415A18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

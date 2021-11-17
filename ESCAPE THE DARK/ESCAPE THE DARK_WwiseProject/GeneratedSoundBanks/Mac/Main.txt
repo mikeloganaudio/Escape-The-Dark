@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	937063987	Play_Baby_Mobile			\Default Work Unit\3dObjects\Baby Mobile\Play_Baby_Mobile	
 	1002643937	Play_Rumble			\Default Work Unit\Ambiences\Play_Rumble	
+	1161902643	Play_Lamp_Hum			\Default Work Unit\3dObjects\Play_Lamp_Hum	
 	1247850169	Play_Creaks			\Default Work Unit\3dObjects\Play_Creaks	
 	1320004683	Play_Washing_Machine			\Default Work Unit\3dObjects\Play_Washing_Machine	
 	1622948997	Play_Window_sounds			\Default Work Unit\3dObjects\Play_Window_sounds	
 	1660469979	Play_Blind___Window_2			\Default Work Unit\3dObjects\Play_Blind___Window_2	
+	1781039267	Play_Whispers			\Default Work Unit\3dObjects\Play_Whispers	
 	1967779997	Play_Room_Tone_Light_Household			\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household	
 	1977286600	Play_Image3			\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image3	
 	1977286601	Play_Image2			\Default Work Unit\3dObjects\EndingSceneSFX\Play_Image2	
@@ -29,36 +31,54 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3819246579	ProxToCorgi			\Default Work Unit\ProxToCorgi	
 
 Effect plug-ins	ID	Name	Type				Notes
+	176439046	Caught_in_a_loop	Wwise Stereo Delay			
+	1674078407	Chorus_Like	Wwise Flanger			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	3354577677	Fast_LF_Tremolo	Wwise Tremolo			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	226991276	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Silence_02\Wwise Silence	
+	339218376	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Silence\Wwise Silence	
+	373487921	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Silence_02\Wwise Silence	
+	523213678	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Silence_04\Wwise Silence	
+	692583940	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Silence_01\Wwise Silence	
+	741502051	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Silence_01\Wwise Silence	
+	793470009	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Silence\Wwise Silence	
+	844506963	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Silence_03\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	589152	Beast Step 3	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 3		195172
-	1711305	Window sounds	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Window Ambience_2FE51CAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Window sounds		7803868
+	1711305	Window sounds	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Window Ambience_46DAAE1B.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Window sounds		7135456
 	20828903	Growl 4	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 4		334536
 	22207633	Growl 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 1		446024
 	45013541	Wood Creaking 2 Short	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Wood Creaking 2 Short_F4A5D760.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 2 Short		113400
 	68144532	Bump 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Bump_D6BDA533.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Bumps\Bump 2		71380
 	122591689	Beast Step 6	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 6		167300
+	123531406	Lamp Hum	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Neon Lamp, Switch On, Hum_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Lamp Hum		5069784
 	126669571	Step 1_02	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_425E4B8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_02		59908
+	149795026	Knocking_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Knocking_D29A4DF1.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Knocking\Knocking_01		272332
+	179516032	Knocking	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Knocking_E002ECB2.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Knocking\Knocking		229548
 	181402200	Growl 3	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 3		446024
-	191968749	Baby Mobile	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Baby Mobile_A40080B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Baby Mobile		2954588
+	191968749	Baby Mobile	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Baby Mobile_ADB1595A.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Baby Mobile		2954588
 	197723045	Crickets	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\1103octobernight_84700D3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\EndingSceneSFX\Crickets		2593580
 	219536861	KitchenRoomTone	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_A8B72196.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\KitchenRoomTone		8680320
 	225426101	Growl 7	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 7		557512
 	231893292	Beast Step 4	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 4		223044
 	324353487	Bump 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Bump_E356DFF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Bumps\Bump 1		89476
 	326948762	Beast Step 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 1		167300
-	332319077	Rumble	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Low-Water-Rumble-TDRNova_01_53AE459F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Rumble		5713212
+	332319077	Rumble	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Low-Water-Rumble-TDRNova_01_C8958576.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Rumble		5713212
 	355959567	Step 1_05	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_FD35DC82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_05		38638
 	410287976	Boiler	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\boiler room_6B27D878.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Boiler		3885572
 	417472375	Step 1_03	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_B0F41C5F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_03		31308
 	423278672	Growl 8	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 8		669004
+	431390040	Wood Creaking 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Wood Creaking 1_33C1283F.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 1		1093616
+	449140143	Whispers_02	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Whispers_A7D4A09B.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Whispers_02		380272
 	471059451	Door Creaking	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Door Creaking_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Creaking		5214780
 	505333696	Step 1_07	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_984BEDAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_07		62550
 	520399519	Step 1_08	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_212CCB1F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_08		33412
 	527177115	Growl 5	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 5		446024
 	541646469	Step 1_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_D6E9EF60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_01		33246
-	615102212	Wood Creaking 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Wood Creaking 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 1		12311360
+	615102212	Wood Creaking 1_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Wood Creaking 1_7EDE6820.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Wood Creaking 1_01		1887324
 	617054053	Door Slam 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Door Slamming Closing_3AF08D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Door Slams\Door Slam 1		2611032
 	626480471	Step 1_06	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_CC0D0338.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_06		47976
 	668352159	Fridge Hum	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Fridge_D1ED91C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Fridge Hum		6129268
@@ -71,12 +91,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	904011973	Blind & Window 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Blind & Window 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Blind & Window 2		1465084
 	909125617	Puppy Morph	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Puppy Morph_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Puppy Morph		2675812
 	927141232	Growl 6	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 6		446024
+	927181379	Whispers	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Whispers_4A37FC69.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Whispers		842132
 	951859966	Beast Step 5	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 5		223044
 	962479127	Door Slamming Closing_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Door Slamming Closing_0D9BA0AB.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Creaks\Door Slamming Closing_01		245856
 	966732557	Step 1_04	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_B9F83B01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1_04		52136
 	967689289	Room Tone Small Sized Room	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Room Tone Small Sized Room_5F45DB3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambiences\Room Tone Small Sized Room		8717364
 	968435521	Step 1	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Child Foosteps_78FF239C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character Sounds\Footsteps\Step 1		23458
 	976449610	Beast Step 7	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Beast Step 7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Steps\Beast Step 7		167300
+	1020360021	Whispers_01	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Whispers_DA352E5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\Whispers\Whispers_01		768132
 	1026634374	Growl 2	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Growl 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beast Sounds\Growls\Growl 2		446024
 	1055869509	Mum Laugh	D:\Documents\GitHub\Escape-The-Dark\ESCAPE THE DARK\ESCAPE THE DARK_WwiseProject\.cache\Mac\SFX\Girl Chuckle_A9A55E02.wem		\Actor-Mixer Hierarchy\Default Work Unit\3DObjects\3dObjects\EndingSceneSFX\Mum Laugh		146216
 

@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID PLAY_IMAGE3 = 1977286600U;
         static const AkUniqueID PLAY_IMAGE4 = 1977286607U;
         static const AkUniqueID PLAY_KITCHENROOMTONE = 2905397547U;
+        static const AkUniqueID PLAY_LAMP_HUM = 1161902643U;
         static const AkUniqueID PLAY_MENU_THEME = 2181630209U;
         static const AkUniqueID PLAY_ROOM_TONE_LIGHT_HOUSEHOLD = 1967779997U;
         static const AkUniqueID PLAY_ROOM_TONE_SMALL_SIZED_ROOM = 4095413548U;
@@ -36,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID PLAY_UI_IMPACT = 460547701U;
         static const AkUniqueID PLAY_WASHING_MACHINE = 1320004683U;
+        static const AkUniqueID PLAY_WHISPERS = 1781039267U;
         static const AkUniqueID PLAY_WINDOW_SOUNDS = 1622948997U;
         static const AkUniqueID STOP_BABY_MOBILE = 2106530489U;
         static const AkUniqueID STOP_CUTSCENEAUDIO = 163583310U;

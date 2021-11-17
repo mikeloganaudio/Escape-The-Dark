@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="ESCAPE THE DARK_WwiseProject" Platform="Mac" BasePlatform="Mac">
 	<Plugins>
-		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudioFX" StaticLib="ResonanceAudioFX"/>
+		<Plugin Name="Resonance Audio Renderer" ID="6557955" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise Compressor" ID="7077891" DLL="AkCompressor" StaticLib="AkCompressorFX"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<Plugin Name="Wwise Flanger" ID="8192003" DLL="AkFlanger" StaticLib="AkFlangerFX"/>
+		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo" StaticLib="AkTremoloFX"/>
+		<Plugin Name="Wwise Stereo Delay" ID="8847363" DLL="AkStereoDelay" StaticLib="AkStereoDelayFX"/>
 		<Plugin Name="Wwise Gain" ID="9109507" DLL="AkGain" StaticLib="AkGainFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>

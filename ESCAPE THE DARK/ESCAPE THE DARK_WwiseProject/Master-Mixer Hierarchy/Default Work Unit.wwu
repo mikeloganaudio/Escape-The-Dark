@@ -51,7 +51,7 @@
 												<Property Name="HFDamping" Type="Real32" Value="1.05"/>
 												<Property Name="PreDelay" Type="Real32" Value="26"/>
 												<Property Name="Quality" Type="int32" Value="10"/>
-												<Property Name="ReverbLevel" Type="Real32" Value="-9"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-8"/>
 												<Property Name="RoomShape" Type="Real32" Value="55"/>
 												<Property Name="RoomSize" Type="Real32" Value="44"/>
 												<Property Name="StereoWidth" Type="Real32" Value="135"/>
@@ -98,7 +98,7 @@
 												<Property Name="HFDamping" Type="Real32" Value="1.05"/>
 												<Property Name="PreDelay" Type="Real32" Value="26"/>
 												<Property Name="Quality" Type="int32" Value="10"/>
-												<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-18"/>
 												<Property Name="RoomShape" Type="Real32" Value="55"/>
 												<Property Name="RoomSize" Type="Real32" Value="44"/>
 												<Property Name="StereoWidth" Type="Real32" Value="135"/>
@@ -120,7 +120,7 @@
 							<ReferenceList>
 								<Reference Name="Effect0">
 									<Custom>
-										<Effect Name="Resonance Audio Renderer (Custom)" ID="{3C463937-E228-4A24-BDAA-C3D0993948F2}" ShortID="601073868" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{83EA93D1-3036-4BFE-926B-CA6F4586D923}" ShortID="839288268" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
 									</Custom>
 								</Reference>
 							</ReferenceList>

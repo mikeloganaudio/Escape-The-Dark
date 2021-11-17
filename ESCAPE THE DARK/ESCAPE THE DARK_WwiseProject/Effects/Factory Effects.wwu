@@ -861,7 +861,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
 										<Property Name="PreDelay" Type="Real32" Value="48"/>
 										<Property Name="Quality" Type="int32" Value="16"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-38"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-25"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="53"/>
 										<Property Name="StereoWidth" Type="Real32" Value="165"/>
@@ -1596,6 +1596,7 @@
 										<Property Name="ModDepth" Type="Real32" Value="60"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.85"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="WetDryMix" Type="Real32" Value="43"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1835,17 +1836,17 @@
 						</Effect>
 						<Effect Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
-								<Property Name="DryLevel" Type="Real32" Value="-96"/>
 								<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
 								<Property Name="EnableFeedback" Type="bool" Value="True"/>
 								<Property Name="FilterFrequency" Type="Real32" Value="2364"/>
 								<Property Name="FilterGain" Type="Real32" Value="-24"/>
-								<Property Name="LeftCrossfeed" Type="Real32" Value="-15"/>
-								<Property Name="LeftDelayTime" Type="Real32" Value="0.47"/>
-								<Property Name="LeftFeedback" Type="Real32" Value="-18.5"/>
-								<Property Name="RightCrossfeed" Type="Real32" Value="-6"/>
-								<Property Name="RightDelayTime" Type="Real32" Value="0.39"/>
-								<Property Name="RightFeedback" Type="Real32" Value="-6"/>
+								<Property Name="FrontRearBalance" Type="Real32" Value="-57"/>
+								<Property Name="LeftCrossfeed" Type="Real32" Value="-18.4"/>
+								<Property Name="LeftDelayTime" Type="Real32" Value="0.55"/>
+								<Property Name="RightCrossfeed" Type="Real32" Value="-18"/>
+								<Property Name="RightDelayTime" Type="Real32" Value="0.69"/>
+								<Property Name="RightFeedback" Type="Real32" Value="-12.4"/>
+								<Property Name="WetLevel" Type="Real32" Value="-15"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Straight_Delay" ID="{00ADE3F8-B4F2-465A-9DC3-9EA55A7B3235}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
@@ -1929,12 +1930,12 @@
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="19.84"/>
+								<Property Name="ModDepth" Type="Real32" Value="41.6"/>
+								<Property Name="ModFrequency" Type="Real32" Value="6.76"/>
 								<Property Name="ModPWM" Type="Real32" Value="4"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="87"/>
 								<Property Name="ModPhaseSpread" Type="Real32" Value="121"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
-								<Property Name="ModWaveform" Type="int32" Value="3"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">

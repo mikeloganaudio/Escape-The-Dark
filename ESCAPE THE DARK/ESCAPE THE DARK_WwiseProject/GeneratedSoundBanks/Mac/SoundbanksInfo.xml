@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1762304890">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1645727194">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<AuxBus Id="2411154035" Name="HallVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HallVerb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2541282237">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2147060753">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -30,7 +30,7 @@
 					<IncludedMemoryFiles>
 						<File Id="191968749" Language="SFX">
 							<ShortName>Baby Mobile.wav</ShortName>
-							<Path>SFX\Baby Mobile_A40080B9.wem</Path>
+							<Path>SFX\Baby Mobile_ADB1595A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -80,13 +80,25 @@
 							<ShortName>Wood Creaking 2 Short.wav</ShortName>
 							<Path>SFX\Wood Creaking 2 Short_F4A5D760.wem</Path>
 						</File>
+						<File Id="149795026" Language="SFX">
+							<ShortName>Knocking.wav</ShortName>
+							<Path>SFX\Knocking_D29A4DF1.wem</Path>
+						</File>
+						<File Id="179516032" Language="SFX">
+							<ShortName>Knocking.wav</ShortName>
+							<Path>SFX\Knocking_E002ECB2.wem</Path>
+						</File>
+						<File Id="431390040" Language="SFX">
+							<ShortName>Wood Creaking 1.wav</ShortName>
+							<Path>SFX\Wood Creaking 1_33C1283F.wem</Path>
+						</File>
 						<File Id="471059451" Language="SFX">
 							<ShortName>Door Creaking.wav</ShortName>
 							<Path>SFX\Door Creaking_10C4C929.wem</Path>
 						</File>
 						<File Id="615102212" Language="SFX">
 							<ShortName>Wood Creaking 1.wav</ShortName>
-							<Path>SFX\Wood Creaking 1_10C4C929.wem</Path>
+							<Path>SFX\Wood Creaking 1_7EDE6820.wem</Path>
 						</File>
 						<File Id="809789661" Language="SFX">
 							<ShortName>Door Slamming Closing.wav</ShortName>
@@ -236,6 +248,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
@@ -255,6 +268,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
@@ -278,6 +292,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
@@ -285,7 +300,7 @@
 					<IncludedMemoryFiles>
 						<File Id="191968749" Language="SFX">
 							<ShortName>Baby Mobile.wav</ShortName>
-							<Path>SFX\Baby Mobile_A40080B9.wem</Path>
+							<Path>SFX\Baby Mobile_ADB1595A.wem</Path>
 						</File>
 						<File Id="197723045" Language="SFX">
 							<ShortName>1103octobernight.wav</ShortName>
@@ -301,6 +316,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
@@ -311,6 +327,20 @@
 							<Path>SFX\Kitchen_Room_Tone_Clock_Freezer_AmbiX_A8B72196.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1161902643" Name="Play_Lamp_Hum" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Lamp_Hum" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="30.156445" DurationMax="30.156445">
+					<IncludedMemoryFiles>
+						<File Id="123531406" Language="SFX">
+							<ShortName>Neon Lamp, Switch On, Hum.wav</ShortName>
+							<Path>SFX\Neon Lamp, Switch On, Hum_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1967779997" Name="Play_Room_Tone_Light_Household" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Room_Tone_Light_Household" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -319,6 +349,9 @@
 							<Path>SFX\Room Tone Light Household_D21745CB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4095413548" Name="Play_Room_Tone_Small_Sized_Room" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Room_Tone_Small_Sized_Room" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -327,14 +360,20 @@
 							<Path>SFX\Room Tone Small Sized Room_5F45DB3C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1002643937" Name="Play_Rumble" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Rumble" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="332319077" Language="SFX">
 							<ShortName>Low-Water-Rumble-TDRNova_01.wav</ShortName>
-							<Path>SFX\Low-Water-Rumble-TDRNova_01_53AE459F.wem</Path>
+							<Path>SFX\Low-Water-Rumble-TDRNova_01_C8958576.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1122937468" Name="KitchenVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\KitchenVerb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2600469463" Name="Play_Steps" ObjectPath="\Events\Default Work Unit\Beast Sounds\Play_Steps" MaxAttenuation="18.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -382,11 +421,30 @@
 						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1781039267" Name="Play_Whispers" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Whispers" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="449140143" Language="SFX">
+							<ShortName>Whispers.wav</ShortName>
+							<Path>SFX\Whispers_A7D4A09B.wem</Path>
+						</File>
+						<File Id="927181379" Language="SFX">
+							<ShortName>Whispers.wav</ShortName>
+							<Path>SFX\Whispers_4A37FC69.wem</Path>
+						</File>
+						<File Id="1020360021" Language="SFX">
+							<ShortName>Whispers.wav</ShortName>
+							<Path>SFX\Whispers_DA352E5E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1655047192" Name="BedroomVerb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\BedroomVerb"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1622948997" Name="Play_Window_sounds" ObjectPath="\Events\Default Work Unit\3dObjects\Play_Window_sounds" MaxAttenuation="8.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1711305" Language="SFX">
 							<ShortName>Window Ambience.wav</ShortName>
-							<Path>SFX\Window Ambience_2FE51CAE.wem</Path>
+							<Path>SFX\Window Ambience_46DAAE1B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -402,7 +460,7 @@
 				<GameParameter Id="3819246579" Name="ProxToCorgi" ObjectPath="\Game Parameters\Default Work Unit\ProxToCorgi"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2506246602">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2029744002">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

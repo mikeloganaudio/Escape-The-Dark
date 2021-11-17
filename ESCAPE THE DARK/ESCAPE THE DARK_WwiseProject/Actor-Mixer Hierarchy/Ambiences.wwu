@@ -21,6 +21,11 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-4</Value>
@@ -37,16 +42,14 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="KitchenVerb" ID="{12187A6A-209E-4A73-BCB2-CB7933B9846D}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="KitchenRoomTone" ID="{CBA37966-48A4-4A1B-87B6-97F36AC6732D}" ShortID="932742017">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -81,7 +84,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-13</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -118,7 +121,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-33</Value>
+										<Value>-27</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

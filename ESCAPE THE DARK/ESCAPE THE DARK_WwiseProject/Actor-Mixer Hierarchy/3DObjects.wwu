@@ -23,7 +23,6 @@
 								<Value>-230</Value>
 							</ValueList>
 						</Property>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>-24</Value>
@@ -431,9 +430,9 @@
 								</Sound>
 								<Sound Name="Silence" ID="{BE1853A7-4C96-49A9-A119-DE7B6F3A7AA5}" ShortID="692552627">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>27.001</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -447,9 +446,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="Wwise Silence" ID="{04370C87-FD19-4A17-9C55-4C588008B12F}" ShortID="339218376" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="5"/>
-											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>
 									</ChildrenList>
@@ -466,15 +462,15 @@
 												<Value>-10</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>27.001</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -492,7 +488,7 @@
 									<ChildrenList>
 										<SourcePlugin Name="Wwise Silence" ID="{5D8D853C-2CA6-4B89-9DB5-8A4EAC890369}" ShortID="741502051" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="5"/>
+												<Property Name="Length" Type="Real32" Value="0.5"/>
 											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>
@@ -513,15 +509,15 @@
 												<Value>-10</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>27.001</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -539,7 +535,7 @@
 									<ChildrenList>
 										<SourcePlugin Name="Wwise Silence" ID="{25AA2610-F195-47E2-8A44-FF5F9B039A21}" ShortID="373487921" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="5"/>
+												<Property Name="Length" Type="Real32" Value="0.2"/>
 											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>
@@ -550,53 +546,6 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Wwise Silence" ID="{25AA2610-F195-47E2-8A44-FF5F9B039A21}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Silence_03" ID="{FC6BB2A6-FF39-497B-AF47-EFFD25073ABF}" ShortID="795925907">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="GameAuxSendVolume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UserAuxSendVolume0" Type="Real64">
-											<ValueList>
-												<Value>-96</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{3CE18413-CF7A-41C6-88D0-8587FCB1BC85}" ShortID="446293968" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="5"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{E2393B64-F069-4A69-98CD-C9CB25CFCBA6}"/>
-									</PositioningInfo>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{3CE18413-CF7A-41C6-88D0-8587FCB1BC85}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Wood Creaking 1" ID="{6E28EF2E-4B6E-440B-B02C-E98601711FBC}" ShortID="456172197">
@@ -651,10 +600,14 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Wood Creaking 1" ID="{7DC8668A-B5B4-4BA4-BBB9-8BBA5A347BD0}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.391182425979"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Wood Creaking 1.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="615102212"/>
+												<MediaID ID="431390040"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -718,6 +671,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Wood Creaking 1" ID="{7C5B800F-2CBC-4986-A32C-E367B2C283F8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="65.0399770773639"/>
+												<Property Name="TrimEnd" Type="Real64" Value="84.698953199618"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Wood Creaking 1.wav</AudioFile>
 											<MediaIDList>
@@ -783,12 +741,17 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>56</Value>
+												<Value>41</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-150</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -950,35 +913,631 @@
 										<ActiveSource Name="Door Slamming Closing" ID="{01324365-CE97-4C1F-A627-77D94FF9DDD8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Silence_04" ID="{1EBFD365-8678-44FD-83E3-ED15C4607386}" ShortID="588661124">
+								<RandomSequenceContainer Name="Knocking" ID="{843C4959-A547-46FB-990E-BF41458A5B62}" ShortID="266055094">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-230</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{70214CD1-B7A8-4E19-8B41-76182E91381F}" ShortID="52297934" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+										<Sound Name="Knocking" ID="{E1A55CF2-30CB-4240-B89F-DF9DB797C15A}" ShortID="410921074">
 											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="3"/>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-380</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-24</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knocking" ID="{904214DE-C6FD-4008-80AB-8CBBDED52049}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.47731149575398"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.77822758902988"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Knocking.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="179516032"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{7C461443-B772-40EA-8037-92A29EB3F64D}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="Creaks_Path" ID="{59BAB057-8A1E-4B4F-AB90-7F33EB79CFD7}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="17"/>
+																<Property Name="RandomY" Type="Real64" Value="19"/>
+																<Property Name="RandomZ" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.0863</XPos>
+																	<YPos>52.25988</YPos>
+																	<ZPos>-52</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>61.42132</XPos>
+																	<YPos>12.99435</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>34.01015</XPos>
+																	<YPos>-32.76836</YPos>
+																	<ZPos>-28</ZPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>0.56497</YPos>
+																	<ZPos>-103</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_01" ID="{92DF958F-922C-42BF-8D71-453E7F357D17}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="11"/>
+																<Property Name="RandomY" Type="Real64" Value="12"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-38.57868</XPos>
+																	<YPos>-30.79096</YPos>
+																	<ZPos>-31</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.68528</XPos>
+																	<YPos>72.88136</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_02" ID="{998F7BE3-98B2-4B67-9520-D78F0FE4D7A0}">
+															<PointList>
+																<Point>
+																	<XPos>-19.28935</XPos>
+																	<YPos>-79.9435</YPos>
+																	<ZPos>-276</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>15.22843</XPos>
+																	<YPos>-75.14124</YPos>
+																	<ZPos>-276</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_03" ID="{696017AA-EE39-4A98-9F47-5F14F001F34F}">
+															<PropertyList>
+																<Property Name="RandomZ" Type="Real64" Value="17"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<ZPos>-25</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.68528</XPos>
+																	<YPos>50.28249</YPos>
+																	<ZPos>-5</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>-61.42132</XPos>
+																	<YPos>14.12429</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>-51.77665</XPos>
+																	<YPos>-54.80226</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_04" ID="{F1954536-9653-492C-934A-F40BB676EC06}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="17"/>
+																<Property Name="RandomZ" Type="Real64" Value="16"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<ZPos>-205</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-37.05584</XPos>
+																	<YPos>75.70621</YPos>
+																	<ZPos>-161</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-12.18274</XPos>
+																	<YPos>15.25424</YPos>
+																	<ZPos>-155</ZPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-63.95939</XPos>
+																	<YPos>6.77966</YPos>
+																	<ZPos>-138</ZPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>-44.16244</XPos>
+																	<YPos>-28.24859</YPos>
+																	<ZPos>-134</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_05" ID="{3BAEBBCD-3365-45AB-AA91-85293CACA24F}">
+															<PropertyList>
+																<Property Name="RandomZ" Type="Real64" Value="13"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-19.79695</XPos>
+																	<YPos>88.98305</YPos>
+																	<ZPos>-24</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>34.51777</XPos>
+																	<YPos>90.96045</YPos>
+																	<ZPos>-41</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_06" ID="{9AF34EEF-FF1E-4908-AC15-F55B3B038D49}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="12"/>
+																<Property Name="RandomY" Type="Real64" Value="11"/>
+																<Property Name="RandomZ" Type="Real64" Value="12"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-17.25888</XPos>
+																	<YPos>82.20339</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>20.81218</XPos>
+																	<YPos>87.57062</YPos>
+																	<ZPos>-35</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Knocking" ID="{904214DE-C6FD-4008-80AB-8CBBDED52049}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knocking_01" ID="{3458B455-5C41-47C0-AA2E-B6B2309664B0}" ShortID="26038040">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>27</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-280</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B556C90E-E59E-4EAD-BB03-A7D9725662AF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="253"/>
+																	<Property Name="Min" Type="Real64" Value="-101"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knocking" ID="{98DC539A-7117-4C72-B0E4-7DDDE8F05F1A}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.88719655770618"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.43065632938944"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Knocking.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149795026"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{6951FDB4-1FFA-4E6C-BB14-E52F9EF1EC47}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="Creaks_Path" ID="{DA2164EA-EDF9-49F3-97AE-857C2B50DE42}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="17"/>
+																<Property Name="RandomY" Type="Real64" Value="19"/>
+																<Property Name="RandomZ" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.0863</XPos>
+																	<YPos>52.25988</YPos>
+																	<ZPos>-52</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>61.42132</XPos>
+																	<YPos>12.99435</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>34.01015</XPos>
+																	<YPos>-32.76836</YPos>
+																	<ZPos>-28</ZPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>3.04569</XPos>
+																	<YPos>0.56497</YPos>
+																	<ZPos>-103</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_01" ID="{6439F110-00A0-415D-B782-FCB7E1A97B76}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="11"/>
+																<Property Name="RandomY" Type="Real64" Value="12"/>
+																<Property Name="RandomZ" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-38.57868</XPos>
+																	<YPos>-30.79096</YPos>
+																	<ZPos>-31</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.68528</XPos>
+																	<YPos>72.88136</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_02" ID="{A1E94A2C-7527-406D-8C11-6BC46A7295D6}">
+															<PointList>
+																<Point>
+																	<XPos>-19.28935</XPos>
+																	<YPos>-79.9435</YPos>
+																	<ZPos>-276</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>15.22843</XPos>
+																	<YPos>-75.14124</YPos>
+																	<ZPos>-276</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_03" ID="{084E4EFD-CE42-43E6-9426-6962FCDA8333}">
+															<PropertyList>
+																<Property Name="RandomZ" Type="Real64" Value="17"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<ZPos>-25</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.68528</XPos>
+																	<YPos>50.28249</YPos>
+																	<ZPos>-5</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1666</Time>
+																</Point>
+																<Point>
+																	<XPos>-61.42132</XPos>
+																	<YPos>14.12429</YPos>
+																	<Flags>0</Flags>
+																	<Time>3333</Time>
+																</Point>
+																<Point>
+																	<XPos>-51.77665</XPos>
+																	<YPos>-54.80226</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_04" ID="{18BC3790-A378-4346-AED4-9D6B9C08DCC8}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="17"/>
+																<Property Name="RandomZ" Type="Real64" Value="16"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<ZPos>-205</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-37.05584</XPos>
+																	<YPos>75.70621</YPos>
+																	<ZPos>-161</ZPos>
+																	<Flags>0</Flags>
+																	<Time>1250</Time>
+																</Point>
+																<Point>
+																	<XPos>-12.18274</XPos>
+																	<YPos>15.25424</YPos>
+																	<ZPos>-155</ZPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-63.95939</XPos>
+																	<YPos>6.77966</YPos>
+																	<ZPos>-138</ZPos>
+																	<Flags>0</Flags>
+																	<Time>3750</Time>
+																</Point>
+																<Point>
+																	<XPos>-44.16244</XPos>
+																	<YPos>-28.24859</YPos>
+																	<ZPos>-134</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_05" ID="{B8C847B6-A09C-40CD-A8BE-81BA1AA4F76D}">
+															<PropertyList>
+																<Property Name="RandomZ" Type="Real64" Value="13"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-19.79695</XPos>
+																	<YPos>88.98305</YPos>
+																	<ZPos>-24</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>34.51777</XPos>
+																	<YPos>90.96045</YPos>
+																	<ZPos>-41</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Creaks_Path_06" ID="{7B8EE020-80C5-4A76-808F-2F6E03316F2F}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="12"/>
+																<Property Name="RandomY" Type="Real64" Value="11"/>
+																<Property Name="RandomZ" Type="Real64" Value="12"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-17.25888</XPos>
+																	<YPos>82.20339</YPos>
+																	<ZPos>-45</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>20.81218</XPos>
+																	<YPos>87.57062</YPos>
+																	<ZPos>-35</ZPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Knocking" ID="{98DC539A-7117-4C72-B0E4-7DDDE8F05F1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{7AFA264D-E7AE-48D2-8D23-41F0B03FE85A}">
+											<ChildrenList>
+												<Path2D Name="Knocking_Path" ID="{C2A58435-6AF5-40F0-BFDC-33333E0992DC}">
+													<PointList>
+														<Point>
+															<XPos>-1.52284</XPos>
+															<YPos>41.52542</YPos>
+															<ZPos>-26</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>42.93785</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{70214CD1-B7A8-4E19-8B41-76182E91381F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{0D4A4381-0929-43C0-AD5D-54508482C2B7}">
@@ -993,46 +1552,57 @@
 											<PropertyList>
 												<Property Name="RandomX" Type="Real64" Value="17"/>
 												<Property Name="RandomY" Type="Real64" Value="19"/>
-												<Property Name="RandomZ" Type="Real64" Value="3"/>
+												<Property Name="RandomZ" Type="Real64" Value="15"/>
 											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>39.0863</XPos>
 													<YPos>52.25988</YPos>
+													<ZPos>-52</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
 													<XPos>61.42132</XPos>
 													<YPos>12.99435</YPos>
+													<ZPos>-45</ZPos>
 													<Flags>0</Flags>
 													<Time>1666</Time>
 												</Point>
 												<Point>
 													<XPos>34.01015</XPos>
 													<YPos>-32.76836</YPos>
+													<ZPos>-28</ZPos>
 													<Flags>0</Flags>
 													<Time>3333</Time>
 												</Point>
 												<Point>
-													<XPos>3.04568527918782</XPos>
-													<YPos>0.564971751412429</YPos>
+													<XPos>3.04569</XPos>
+													<YPos>0.56497</YPos>
+													<ZPos>-40</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_01" ID="{5FE08EA7-5C40-4097-A5CC-FF3CD959942D}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="11"/>
+												<Property Name="RandomY" Type="Real64" Value="12"/>
+												<Property Name="RandomZ" Type="Real64" Value="11"/>
+											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>-38.57868</XPos>
 													<YPos>-30.79096</YPos>
+													<ZPos>-31</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
 													<XPos>-45.68528</XPos>
 													<YPos>72.88136</YPos>
+													<ZPos>-27</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
@@ -1043,28 +1613,35 @@
 												<Point>
 													<XPos>-19.28935</XPos>
 													<YPos>-79.9435</YPos>
+													<ZPos>-208</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
 													<XPos>15.22843</XPos>
 													<YPos>-75.14124</YPos>
+													<ZPos>-212</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_03" ID="{22762F33-0E08-4F66-B89E-2719292DC247}">
+											<PropertyList>
+												<Property Name="RandomZ" Type="Real64" Value="17"/>
+											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>0</XPos>
 													<YPos>50</YPos>
+													<ZPos>-25</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
-													<XPos>-45.6852791878173</XPos>
-													<YPos>50.2824858757062</YPos>
+													<XPos>-45.68528</XPos>
+													<YPos>50.28249</YPos>
+													<ZPos>-5</ZPos>
 													<Flags>0</Flags>
 													<Time>1666</Time>
 												</Point>
@@ -1083,66 +1660,88 @@
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_04" ID="{28E0BAD7-3716-442E-965F-0D3DDA64BCBF}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="15"/>
+												<Property Name="RandomY" Type="Real64" Value="17"/>
+												<Property Name="RandomZ" Type="Real64" Value="16"/>
+											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>0</XPos>
 													<YPos>50</YPos>
+													<ZPos>-136</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
 													<XPos>-37.05584</XPos>
 													<YPos>75.70621</YPos>
+													<ZPos>-58</ZPos>
 													<Flags>0</Flags>
 													<Time>1250</Time>
 												</Point>
 												<Point>
 													<XPos>-12.18274</XPos>
 													<YPos>15.25424</YPos>
+													<ZPos>-47</ZPos>
 													<Flags>0</Flags>
 													<Time>2500</Time>
 												</Point>
 												<Point>
 													<XPos>-63.95939</XPos>
 													<YPos>6.77966</YPos>
+													<ZPos>-35</ZPos>
 													<Flags>0</Flags>
 													<Time>3750</Time>
 												</Point>
 												<Point>
-													<XPos>-44.1624365482233</XPos>
-													<YPos>-28.2485875706215</YPos>
+													<XPos>-44.16244</XPos>
+													<YPos>-28.24859</YPos>
+													<ZPos>-58</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_05" ID="{37132799-AE41-4CBC-95E0-C72FE086A90F}">
+											<PropertyList>
+												<Property Name="RandomZ" Type="Real64" Value="13"/>
+											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>-19.79695</XPos>
 													<YPos>88.98305</YPos>
+													<ZPos>-24</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
-													<XPos>34.5177664974619</XPos>
-													<YPos>90.9604519774011</YPos>
+													<XPos>34.51777</XPos>
+													<YPos>90.96045</YPos>
+													<ZPos>-41</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
 											</PointList>
 										</Path2D>
 										<Path2D Name="Creaks_Path_06" ID="{874329F2-7647-47AE-8C1B-3485D87A291B}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="12"/>
+												<Property Name="RandomY" Type="Real64" Value="11"/>
+												<Property Name="RandomZ" Type="Real64" Value="12"/>
+											</PropertyList>
 											<PointList>
 												<Point>
 													<XPos>-17.25888</XPos>
 													<YPos>82.20339</YPos>
+													<ZPos>-45</ZPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>
 												<Point>
-													<XPos>20.8121827411168</XPos>
-													<YPos>87.5706214689266</YPos>
+													<XPos>20.81218</XPos>
+													<YPos>87.57062</YPos>
+													<ZPos>-35</ZPos>
 													<Flags>0</Flags>
 													<Time>5000</Time>
 												</Point>
@@ -1172,7 +1771,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1193,10 +1792,11 @@
 							<ChildrenList>
 								<AudioFileSource Name="Window Ambience" ID="{402C7589-371A-4296-809B-45DD18DB5A8F}">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="1069.592"/>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.4"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1.0572263367052"/>
-										<Property Name="LoopEnd" Type="Real64" Value="39.4697832369942"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1271.371"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.58293672397326"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.59727077363897"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.28739302769819"/>
+										<Property Name="LoopEnd" Type="Real64" Value="34.8205028653295"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -1395,6 +1995,1330 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Sound Name="Lamp Hum" ID="{0FBD9702-04EE-4872-AB86-08CB5213122B}" ShortID="282288896">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Neon Lamp, Switch On, Hum" ID="{98EB250D-E90A-418E-9BDA-D2936BD42880}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1737.157"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.06416636819484"/>
+										<Property Name="LoopEnd" Type="Real64" Value="25.0807691618911"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Neon Lamp, Switch On, Hum.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="123531406"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Neon Lamp, Switch On, Hum" ID="{98EB250D-E90A-418E-9BDA-D2936BD42880}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Whispers" ID="{04D07557-9B74-48B0-9103-00EBBE8BC17C}" ShortID="743186913">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>11</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{50EBE560-7E60-4583-854D-E40251A36427}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+													<Property Name="Min" Type="Real64" Value="-51"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-23</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+									<ObjectRef Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+									<ObjectRef Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Whispers" ID="{7D665333-DF72-4A77-B6AA-C93AF5D36437}" ShortID="624424201">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Whispers" ID="{4718F546-649E-489E-95E9-F15168E9810B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.305675287356322"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.372126436781609"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.38577586206897"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Whispers.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="927181379"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Whispers" ID="{4718F546-649E-489E-95E9-F15168E9810B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Whispers_01" ID="{0F0C4A5D-1C52-4707-88F5-A4A97A06FEAA}" ShortID="552842680">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Whispers" ID="{B8C21E54-902E-4B84-89E1-57436D79716A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.252514367816092"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15948275862069"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.84087643678161"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.84123563218391"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Whispers.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1020360021"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{FCFD112F-C873-48C9-92F1-701017BE43C8}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Whispers" ID="{B8C21E54-902E-4B84-89E1-57436D79716A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Whispers_02" ID="{DCFF5F93-FCDC-4628-A322-944F48D381CD}" ShortID="879676548">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_18" ID="{148409F0-8C34-425A-91CB-D0AAA812EF71}" WorkUnitID="{6C446DCF-161E-4528-8D06-B349B5442C8E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Whispers" ID="{AE672C68-C0D4-40D5-90E5-0FC97F128FAF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.305675287356322"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.358836206896552"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.26975574712644"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Whispers.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="449140143"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{3340556E-0D3B-4259-AC05-A4126A74F9FE}"/>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Whispers" ID="{AE672C68-C0D4-40D5-90E5-0FC97F128FAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence" ID="{4ECA3400-1BC8-4FA1-899C-30F7FB579F3A}" ShortID="693067542">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{8FF1FF66-71E2-48A2-BD85-53AE084A5E21}" ShortID="793470009" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{8FF1FF66-71E2-48A2-BD85-53AE084A5E21}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_01" ID="{3C5E54B2-5536-4ACD-96CA-175C1E79D329}" ShortID="306880104">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{C47FB98B-E569-4815-A3B4-5E03F3954AA5}" ShortID="692583940" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DF72D674-A9A3-4569-96C2-891EC3F4ADE1}">
+											<ChildrenList>
+												<Path2D Name="Whispers_Path" ID="{51827786-0324-4EE0-BC8D-CF0D6799D364}">
+													<PointList>
+														<Point>
+															<XPos>61.42132</XPos>
+															<YPos>61.86441</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>55.3299492385787</XPos>
+															<YPos>-23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-1.52284</XPos>
+															<YPos>-25.9887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>47.4576271186441</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>37.05584</XPos>
+															<YPos>46.89266</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_01" ID="{567A4DAE-9A67-4AA9-96B6-A47A9FCB1F91}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-56.85279</XPos>
+															<YPos>14.68927</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-41.11675</XPos>
+															<YPos>-30.50847</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>18.2741116751269</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>31.9796954314721</XPos>
+															<YPos>24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_02" ID="{4B29D5E3-D6FB-4107-A78C-DBDE084CC813}">
+													<PointList>
+														<Point>
+															<XPos>0.50761</XPos>
+															<YPos>-43.78531</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-25.3807106598985</XPos>
+															<YPos>-3.954802259887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>35.5329949238579</XPos>
+															<YPos>15.819209039548</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_03" ID="{C6F64DD4-81BA-465F-91C1-8383AF8EABDE}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-21.3197969543147</XPos>
+															<YPos>29.3785310734463</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>9.13705583756345</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_04" ID="{FDFA7D4E-EF05-4DDE-A03A-9FBD4873EE5F}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>19.49153</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-40.1015228426396</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-11.1675126903553</XPos>
+															<YPos>-15.2542372881356</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-38.4180790960452</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>40.6091370558376</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_05" ID="{E8C21554-E1EF-43EF-949D-1088D0A9F09D}">
+													<PointList>
+														<Point>
+															<XPos>55.83756</XPos>
+															<YPos>-40.96045</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>33.502538071066</XPos>
+															<YPos>-54.2372881355932</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-3.04568527918782</XPos>
+															<YPos>-58.1920903954802</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-44.1624365482233</XPos>
+															<YPos>-46.3276836158192</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-62.9441624365482</XPos>
+															<YPos>-24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{C47FB98B-E569-4815-A3B4-5E03F3954AA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_02" ID="{92961C2A-4D2B-4974-A85B-7D6854B6B619}" ShortID="309930681">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{C4FCA864-039D-44EB-A6F7-76FD000C852A}" ShortID="226991276" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{834AD4CC-0A92-4A7E-9F73-9E70869E2D53}">
+											<ChildrenList>
+												<Path2D Name="Whispers_Path" ID="{DE286DAC-3DF1-4026-BFD3-D2F741EC1F90}">
+													<PointList>
+														<Point>
+															<XPos>61.42132</XPos>
+															<YPos>61.86441</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>55.3299492385787</XPos>
+															<YPos>-23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-1.52284</XPos>
+															<YPos>-25.9887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>47.4576271186441</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>37.05584</XPos>
+															<YPos>46.89266</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_01" ID="{D41B862E-5149-4E8F-AA87-885EEE3B0054}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-56.85279</XPos>
+															<YPos>14.68927</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-41.11675</XPos>
+															<YPos>-30.50847</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>18.2741116751269</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>31.9796954314721</XPos>
+															<YPos>24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_02" ID="{2F21A26F-54AA-46D0-920B-3365CBDC4261}">
+													<PointList>
+														<Point>
+															<XPos>0.50761</XPos>
+															<YPos>-43.78531</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-25.3807106598985</XPos>
+															<YPos>-3.954802259887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>35.5329949238579</XPos>
+															<YPos>15.819209039548</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_03" ID="{C81AE663-3488-438D-94C8-7B285AAA8967}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-21.3197969543147</XPos>
+															<YPos>29.3785310734463</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>9.13705583756345</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_04" ID="{EEE94AA5-585A-4937-8FA5-B0A680321523}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>19.49153</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-40.1015228426396</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-11.1675126903553</XPos>
+															<YPos>-15.2542372881356</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-38.4180790960452</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>40.6091370558376</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_05" ID="{A7A58D6C-0E37-4450-B177-E85CAAC9651C}">
+													<PointList>
+														<Point>
+															<XPos>55.83756</XPos>
+															<YPos>-40.96045</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>33.502538071066</XPos>
+															<YPos>-54.2372881355932</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-3.04568527918782</XPos>
+															<YPos>-58.1920903954802</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-44.1624365482233</XPos>
+															<YPos>-46.3276836158192</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-62.9441624365482</XPos>
+															<YPos>-24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{C4FCA864-039D-44EB-A6F7-76FD000C852A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_03" ID="{C2ED1026-5340-4A16-A397-C98BFD7067F6}" ShortID="653282162">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{A96B493A-0A39-43EB-86A2-94901F7B2348}" ShortID="844506963" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{B8540137-C1C5-4969-A780-C2BBF4EEC4E3}">
+											<ChildrenList>
+												<Path2D Name="Whispers_Path" ID="{C77D55EB-90A8-40A2-9CF3-38E3C97BD6F1}">
+													<PointList>
+														<Point>
+															<XPos>61.42132</XPos>
+															<YPos>61.86441</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>55.3299492385787</XPos>
+															<YPos>-23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-1.52284</XPos>
+															<YPos>-25.9887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>47.4576271186441</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>37.05584</XPos>
+															<YPos>46.89266</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_01" ID="{11F8F9AB-578F-4F64-AABA-51638A30F28E}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-56.85279</XPos>
+															<YPos>14.68927</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-41.11675</XPos>
+															<YPos>-30.50847</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>18.2741116751269</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>31.9796954314721</XPos>
+															<YPos>24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_02" ID="{C95B56DD-F229-46F0-9778-F2D414188596}">
+													<PointList>
+														<Point>
+															<XPos>0.50761</XPos>
+															<YPos>-43.78531</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-25.3807106598985</XPos>
+															<YPos>-3.954802259887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>35.5329949238579</XPos>
+															<YPos>15.819209039548</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_03" ID="{84756BE9-E25D-45FE-AC7D-F854EF0B1F8C}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-21.3197969543147</XPos>
+															<YPos>29.3785310734463</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>9.13705583756345</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_04" ID="{569F7D86-5A9B-42C4-8DDB-7F1EE9BFE23B}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>19.49153</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-40.1015228426396</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-11.1675126903553</XPos>
+															<YPos>-15.2542372881356</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-38.4180790960452</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>40.6091370558376</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_05" ID="{1CC44296-F7CC-46FA-A8AC-5D92C7500DB5}">
+													<PointList>
+														<Point>
+															<XPos>55.83756</XPos>
+															<YPos>-40.96045</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>33.502538071066</XPos>
+															<YPos>-54.2372881355932</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-3.04568527918782</XPos>
+															<YPos>-58.1920903954802</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-44.1624365482233</XPos>
+															<YPos>-46.3276836158192</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-62.9441624365482</XPos>
+															<YPos>-24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{A96B493A-0A39-43EB-86A2-94901F7B2348}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silence_04" ID="{452D3BBA-C2B4-4999-B64F-27918586E5F4}" ShortID="844784026">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4BC953D-5E71-4F3B-A86A-5E3EB796CE4D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+											<ObjectRef Name="Caught_in_a_loop" ID="{8FC64215-9A75-4BE3-A33A-584C8CA49963}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceAudio" ID="{D6FF15BD-3678-4EB8-89B2-1D72969197B7}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="BedroomVerb" ID="{1CB46BAE-0C0F-4B4A-A482-DBA92B0D7362}" WorkUnitID="{DBDB5626-6353-445F-A010-05978F21D4EA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{C267F2CF-04BD-4168-81D1-C60E34E00C7B}" ShortID="523213678" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{1AD9FADC-5B8B-495E-8517-B946D57CB25A}">
+											<ChildrenList>
+												<Path2D Name="Whispers_Path" ID="{E5CED16E-7112-46C1-B085-D241CA173634}">
+													<PointList>
+														<Point>
+															<XPos>61.42132</XPos>
+															<YPos>61.86441</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>55.3299492385787</XPos>
+															<YPos>-23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-1.52284</XPos>
+															<YPos>-25.9887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>47.4576271186441</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>37.05584</XPos>
+															<YPos>46.89266</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_01" ID="{67BCD92D-1DCD-4326-B64D-F343B9847553}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-56.85279</XPos>
+															<YPos>14.68927</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-41.11675</XPos>
+															<YPos>-30.50847</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>18.2741116751269</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>31.9796954314721</XPos>
+															<YPos>24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_02" ID="{9D25F0F6-B70A-49BD-8F8C-0A78D7B7967E}">
+													<PointList>
+														<Point>
+															<XPos>0.50761</XPos>
+															<YPos>-43.78531</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-25.3807106598985</XPos>
+															<YPos>-3.954802259887</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>35.5329949238579</XPos>
+															<YPos>15.819209039548</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_03" ID="{51461AC6-FF5D-414B-9113-C625AC454987}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-21.3197969543147</XPos>
+															<YPos>29.3785310734463</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>9.13705583756345</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_04" ID="{E70D65F5-B911-404A-AB2D-2829B9EB913A}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>19.49153</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-40.1015228426396</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-11.1675126903553</XPos>
+															<YPos>-15.2542372881356</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-38.4180790960452</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>40.6091370558376</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Whispers_Path_05" ID="{763CA120-5E7E-46E6-97E1-3FBB9D2FE6DC}">
+													<PointList>
+														<Point>
+															<XPos>55.83756</XPos>
+															<YPos>-40.96045</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>33.502538071066</XPos>
+															<YPos>-54.2372881355932</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-3.04568527918782</XPos>
+															<YPos>-58.1920903954802</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>-44.1624365482233</XPos>
+															<YPos>-46.3276836158192</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-62.9441624365482</XPos>
+															<YPos>-24.8587570621469</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{C267F2CF-04BD-4168-81D1-C60E34E00C7B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{B0C126E5-5331-43A5-BC10-324693C37D43}">
+									<ChildrenList>
+										<Path2D Name="Whispers_Path" ID="{1C6CA2F9-0215-476C-9873-364D1459D268}">
+											<PointList>
+												<Point>
+													<XPos>61.42132</XPos>
+													<YPos>61.86441</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>55.3299492385787</XPos>
+													<YPos>-23.1638418079096</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-1.52284</XPos>
+													<YPos>-25.9887</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>-3.55329949238579</XPos>
+													<YPos>47.4576271186441</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>37.05584</XPos>
+													<YPos>46.89266</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Whispers_Path_01" ID="{137C2041-BD44-4883-8394-83CD748D8327}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-56.85279</XPos>
+													<YPos>14.68927</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-41.11675</XPos>
+													<YPos>-30.50847</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>18.2741116751269</XPos>
+													<YPos>-31.6384180790961</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>31.9796954314721</XPos>
+													<YPos>24.8587570621469</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Whispers_Path_02" ID="{32037FC8-B141-4E51-8AFA-7ECED4378F52}">
+											<PointList>
+												<Point>
+													<XPos>0.50761</XPos>
+													<YPos>-43.78531</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-25.3807106598985</XPos>
+													<YPos>-3.954802259887</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>35.5329949238579</XPos>
+													<YPos>15.819209039548</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Whispers_Path_03" ID="{90DCCC2C-CCFB-48B2-8467-A118F3EF6234}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-21.3197969543147</XPos>
+													<YPos>29.3785310734463</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>9.13705583756345</XPos>
+													<YPos>0</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Whispers_Path_04" ID="{0302A9C4-898B-4939-993A-B12C9D630C6A}">
+											<PointList>
+												<Point>
+													<XPos>1.01523</XPos>
+													<YPos>19.49153</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-40.1015228426396</XPos>
+													<YPos>18.0790960451977</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-11.1675126903553</XPos>
+													<YPos>-15.2542372881356</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>19.7969543147208</XPos>
+													<YPos>-38.4180790960452</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>40.6091370558376</XPos>
+													<YPos>-10.7344632768362</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Whispers_Path_05" ID="{3537AE74-5078-4AEE-8A4F-F63B05C9EE41}">
+											<PointList>
+												<Point>
+													<XPos>55.83756</XPos>
+													<YPos>-40.96045</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>33.502538071066</XPos>
+													<YPos>-54.2372881355932</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-3.04568527918782</XPos>
+													<YPos>-58.1920903954802</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>-44.1624365482233</XPos>
+													<YPos>-46.3276836158192</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>-62.9441624365482</XPos>
+													<YPos>-24.8587570621469</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Position Name="" ID="{2A9240B9-C9A3-41BC-A785-6E0EEC8B563A}"/>

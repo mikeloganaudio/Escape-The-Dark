@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{BFD92FB7-A65F-44A3-B88A-CD06FBDC4555}" SchemaVersion="103" RootDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}" ParentDocumentID="{68F50268-5A70-4404-90D3-E9850CA4D899}">
 	<Events>
 		<WorkUnit Name="Music" ID="{BFD92FB7-A65F-44A3-B88A-CD06FBDC4555}" OwnerID="{68F50268-5A70-4404-90D3-E9850CA4D899}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_Menu_Theme" ID="{DF043224-6224-46F5-BB35-904E07C4FA60}">
 					<ChildrenList>
